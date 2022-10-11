@@ -1,8 +1,9 @@
 h1 {
-    font-family: 'Times New Roman', sans-serif;
+    font-family: Roboto, sans-serif;
     background-color: lightgreen;
 }
 
 p {
+    font-family: Roboto, sans-serif;
     line-height: 1.5;
 }
