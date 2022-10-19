@@ -23,6 +23,10 @@ h2 {
     font-size: 1.5rem;
 }
 
+h3 {
+    font-size: 1rem;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -89,16 +93,12 @@ dt {
     margin-top: 1rem;
 }
 
-.container p {
-    margin: 0;
+button {
+    float: right;
 }
 
 #about {
     padding-top: 6rem;
-}
-
-.navbar-btn {
-    text-align: right;
 }
 
 
