@@ -194,4 +194,42 @@ button {
   }
   
 
+  /* Explore Page */
+
+  .explore-container {
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
   
+  .explore-item {
+    width: 32%;
+    padding-bottom: 18%; 
+  }
+
+.plant-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .explore-heading {
+        padding-top: 8rem;
+        padding-left: 4rem;
+        margin: 2rem;
+    }
+    
+    .explore-subheading {
+        padding-left: 4rem;
+        margin: 2rem;
+    }
+
+    .explore-container {
+        padding: 6%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
