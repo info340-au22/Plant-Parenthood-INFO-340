@@ -5,6 +5,8 @@
 body {
     font-family: 'Nunito Sans', Arial, sans-serif;
     font-size: 16px;
+    background-image: url('../img/bg-home.jpg');
+    background-size: cover;
 }
 
 h1, h2, h3 {
@@ -34,9 +36,6 @@ nav {
     width: 100%;
     color: white;
     background-color: #787C53;
-    /* padding: .5rem; */
-    /* padding-bottom: 1rem; */
-    /* margin-left: 40rem; */
 }
 
 .container {
@@ -76,15 +75,10 @@ nav a:hover {
 }
 
 header {
-    background-size: cover;
-    background-color: #A0A66F;
-    background-image: url('../img/bg-home.jpg');
-    background-size: cover;
     color: white;
     padding-top: 6rem;
     padding-bottom: 28rem;
     padding-left: 4rem;
-    /* margin-left: 40rem; */
 }
 
 dt {
