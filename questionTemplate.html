@@ -10,7 +10,7 @@
       rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 
-  <link rel="stylesheet" href="css/quiz.css">
+  <link rel="stylesheet" href="css/questionTemplate.css">
 </head>
 
 <body>
@@ -29,13 +29,15 @@
         </nav>
     </div>
 
-    <header>
-        <div class="container">
-            <h1>Discover the plant that will fit you!</h1>
-        </div>
-    </header>
-
-    <div class="quiz_contain">
-        <button class="quiz_button">Start Quiz</button>
+    <div class="quiz-container">
+        <section class=questions-part>
+            <div class=question>
+                <h2 class=question>Have you owned a plant before?</h2>
+            </div>
+            <div class="options">
+                <button class="button-choice" role="button">No</button>
+                <button class="button-choice" role="button">Yes</button>
+            </div>
+        </section>
     </div>
 </body>
