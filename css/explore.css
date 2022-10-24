@@ -1,35 +1,15 @@
 /* NAV BAR */
 
-
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: white;
     background-color: #787C53;
-    padding-bottom: 0.6rem;
-}
-
-/* ul, p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-} */
-
-nav ul {
-    margin: 1rem;
-}
-
-nav li {
-    display: inline;
-    margin: 0 1rem;
+    padding: 0.5rem;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
 }
+
 
 nav a:hover {
     color: #f0f0f0;
@@ -37,13 +17,8 @@ nav a:hover {
     transition: .25s ease-in-out;
 }
 
-button {
-    margin: .25rem;
-    float: right;
-}
-
-#about {
-    padding-top: 6rem;
+.button-right {
+    margin-left: auto;
 }
 
 
@@ -62,19 +37,19 @@ h2 {
     font-size: 1.75rem;
 }
 
-.container {
+.explore-container {
     padding: 6%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
   
-  .item {
+  .explore-item {
     width: 32%;
     padding-bottom: 18%; 
   }
 
-img {
+.plant-img img {
     max-width: 100%;
     height: auto;
 }
@@ -91,7 +66,7 @@ img {
         margin: 2rem;
     }
 
-    .container {
+    .explore-container {
         padding: 6%;
         display: flex;
         flex-direction: row;
