@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -14,15 +14,15 @@ nav {
     width: 100%;
     color: white;
     background-color: #787C53;
-}
+} */
 
-.container {
+.quiz-body-container {
     max-width: 960px;
     margin-right: auto;
     padding-left: 1rem;
 }
 
-ul, p {
+/* ul, p {
     margin-top: 0;
     margin-bottom: 1rem;
 }
@@ -49,7 +49,7 @@ nav a:hover {
 
 button {
   float: right;
-}
+} */
 
 .quiz-container h2 {
   position: absolute;
@@ -61,7 +61,7 @@ button {
 }
 
 
-.button-choice {
+.quiz-button-choice {
   background-color: white;
   border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
@@ -77,13 +77,13 @@ button {
   position: relative;
 }
 
-.button-choice:hover {
+.quiz-button-choice:hover {
   background-color: #F3F4F6;
   text-decoration: none;
   transition-duration: 0.1s;
 }
 
-.options {
+.quiz-options {
   position: absolute;
   top: 60%;
   left: 50%;
