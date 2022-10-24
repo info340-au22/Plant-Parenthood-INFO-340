@@ -1,12 +1,27 @@
+/* shared elements across all pages */
+
 * {
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Nunito Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+}
+
 h1, h2, h3 {
-    font-family: 'Raleway', Helvetica, sans-serif;
+    font-family: 'Nunito Sans', Helvetica, sans-serif;
     font-weight: 300;
-    margin-top: 0;
-    margin-bottom: .5rem;
 }
 
 h1 {
@@ -22,7 +37,7 @@ h3 {
     font-size: 1rem;
 }
 
- nav {
+nav {
     background-color: #787C53;
     padding: 0.5rem;
 }
@@ -31,7 +46,6 @@ nav a {
     color: white;
     text-decoration: none;
 }
-
 
 nav a:hover {
     color: #f0f0f0;
@@ -43,58 +57,56 @@ nav a:hover {
     margin-left: auto;
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
+button {
+    margin-right: .25rem;
 }
 
-body {
-    font-family: 'Nunito Sans', Arial, sans-serif;
-    font-size: 16px;
-    height: 100vh;
+/* home page */
+
+.home-body {
+    margin-top: 0;
+    margin-bottom: .5rem;
 }
 
-.container-fluid {
+.home-body .container-fluid {
     color:#595c3f;
 }
 
-#backdrop-container {
+.home-body #backdrop-container {
     background-image: url('../img/bg-home.jpg');
     background-size: cover; 
 }
 
-#text-container {
+.home-body #text-container {
     background-color: #F0F7F1;
     text-align: center;
     padding-top: 10rem;
 }
 
-#text-container h2 {
+.home-body #text-container h2 {
     margin-top: 2rem;
     font-weight:lighter;
 }
 
-#text-container :first-child {
+.home-body #text-container :first-child {
     padding-bottom: 3rem;
     font-weight:bolder;
 }
 
-dt {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-top: 1rem;
+.home-body #text-container :nth-child(4) {
+    padding-bottom: 2.5rem;
 }
 
-button {
-    margin-right: .25rem;
+.home-body .btn-default{
+    background-color: #595c3f; 
+    color:#FFF;
+    border-color: #595c3f;
 }
+
+/* about page */
 
 #about {
-    padding-top: 6rem;
-}
-
-html {
-    height: 100%;
+    padding-top: 2rem;
 }
 
   
