@@ -1,6 +1,6 @@
 /* NAV BAR */
 
-nav {
+/* nav {
     background-color: #787C53;
     padding: 0.5rem;
 }
@@ -19,11 +19,11 @@ nav a:hover {
 
 .button-right {
     margin-left: auto;
-}
+} */
 
 
 /* PAGE CONTENT */
-
+/* 
 h1 {
     padding-top: 5rem;
     padding-left: 5rem;
@@ -35,7 +35,7 @@ h2 {
     padding-left: 8rem;
     margin: 2rem;
     font-size: 1.75rem;
-}
+} */
 
 .explore-container {
     padding: 6%;
@@ -55,14 +55,14 @@ h2 {
 }
 
 @media (min-width: 768px) {
-    h1 {
+    .explore-heading {
         padding-top: 8rem;
-        padding-left: 8rem;
+        padding-left: 4rem;
         margin: 2rem;
     }
     
-    h2 {
-        padding-left: 8rem;
+    .explore-subheading {
+        padding-left: 4rem;
         margin: 2rem;
     }
 
