@@ -1,5 +1,4 @@
-/* shared elements across all pages */
-
+/* General Formatting (shared across all pages) */
 * {
     box-sizing: border-box;
 }
@@ -37,6 +36,7 @@ h3 {
     font-size: 1rem;
 }
 
+/* Nav bar styling */
 nav {
     background-color: #787C53;
     padding: 0.5rem;
