@@ -22,39 +22,9 @@ h3 {
     font-size: 1rem;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: white;
+ nav {
     background-color: #787C53;
-    max-width: 100%;
-}
-
-ul, p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-nav ul {
-    margin: 1rem;
-    display: flex;
-}
-
-.button-right {
-    margin-left: auto;
-}
-
-nav li {
-    display: inline;
-    margin: 0 1rem;
-    padding-top: .5rem;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
+    padding: 0.5rem;
 }
 
 nav a {
@@ -62,10 +32,20 @@ nav a {
     text-decoration: none;
 }
 
+
 nav a:hover {
     color: #f0f0f0;
     border-bottom: .2rem dotted #f0f0f0; 
     transition: .25s ease-in-out;
+}
+
+.button-right {
+    margin-left: auto;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
 
 body {
@@ -75,8 +55,7 @@ body {
 }
 
 .container-fluid {
-    color: white;
-    padding-top: 62px;
+    color:#595c3f;
 }
 
 #backdrop-container {
@@ -85,7 +64,7 @@ body {
 }
 
 #text-container {
-    background-color: #A0A66F;
+    background-color: #F0F7F1;
     text-align: center;
     padding-top: 10rem;
 }
