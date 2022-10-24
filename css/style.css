@@ -1,3 +1,5 @@
+/* shared elements across all pages */
+
 * {
     box-sizing: border-box;
 }
@@ -5,8 +7,6 @@
 html {
     height: 100%;
 }
-
-/* shared elements across all pages */
 
 footer a {
     color: white;
@@ -57,6 +57,10 @@ nav a:hover {
     margin-left: auto;
 }
 
+button {
+    margin-right: .25rem;
+}
+
 /* home page */
 
 .home-body {
@@ -93,15 +97,13 @@ nav a:hover {
     padding-bottom: 2.5rem;
 }
 
-.home-body button {
-    margin-right: .25rem;
-}
-
 .home-body .btn-default{
     background-color: #595c3f; 
     color:#FFF;
     border-color: #595c3f;
 }
+
+/* about page */
 
 #about {
     padding-top: 2rem;
