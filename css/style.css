@@ -2,14 +2,6 @@
     box-sizing: border-box;
 }
 
-/* body {
-    font-family: 'Nunito Sans', Arial, sans-serif;
-    font-size: 16px;
-    background-image: url('../img/bg-home.jpg');
-    background-size: cover;
-    color: white;
-} */
-
 h1, h2, h3 {
     font-family: 'Raleway', Helvetica, sans-serif;
     font-weight: 300;
@@ -30,40 +22,16 @@ h3 {
     font-size: 1rem;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: white;
+ nav {
     background-color: #787C53;
-    padding-bottom: 0.6rem;
-}
-
-ul, p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-nav ul {
-    margin: 1rem;
-}
-
-nav li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
+    padding: 0.5rem;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
 }
+
 
 nav a:hover {
     color: #f0f0f0;
@@ -71,16 +39,44 @@ nav a:hover {
     transition: .25s ease-in-out;
 }
 
-.body-container {
+.button-right {
+    margin-left: auto;
+}
+
+footer a {
     color: white;
-    padding-top: 6rem;
-    padding-bottom: 28rem;
-    padding-left: 6rem;
+    text-decoration: none;
+}
+
+body {
     font-family: 'Nunito Sans', Arial, sans-serif;
     font-size: 16px;
+    height: 100vh;
+}
+
+.container-fluid {
+    color:#595c3f;
+}
+
+#backdrop-container {
     background-image: url('../img/bg-home.jpg');
-    background-size: cover;
-    color: white;
+    background-size: cover; 
+}
+
+#text-container {
+    background-color: #F0F7F1;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+#text-container h2 {
+    margin-top: 2rem;
+    font-weight:lighter;
+}
+
+#text-container :first-child {
+    padding-bottom: 3rem;
+    font-weight:bolder;
 }
 
 dt {
@@ -90,13 +86,15 @@ dt {
 }
 
 button {
-    margin: .25rem;
-    float: right;
+    margin-right: .25rem;
 }
 
 #about {
     padding-top: 6rem;
 }
 
+html {
+    height: 100%;
+}
 
   
