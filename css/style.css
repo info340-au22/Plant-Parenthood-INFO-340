@@ -36,6 +36,13 @@ h3 {
     font-size: 1rem;
 }
 
+.btn-default{
+    background-color: #595c3f;
+    color:#FFF;
+    border-color: #595c3f;
+    margin-top: 2rem;
+}
+
 /* Nav bar styling */
 nav {
     background-color: #787C53;
@@ -100,13 +107,6 @@ button {
 
 .home-body #text-container :nth-child(5) {
     padding-bottom: 1.5rem;
-}
-
-.home-body .btn-default{
-    background-color: #595c3f;
-    color:#FFF;
-    border-color: #595c3f;
-    margin-top: 2rem;
 }
 
 /* about page */
@@ -218,7 +218,7 @@ button {
 
   .explore-item {
     width: 32%;
-    padding-bottom: 18%;
+    padding-bottom: 2rem;
   }
 
 .plant-img img {
@@ -296,7 +296,7 @@ th, td {
 
 @media (min-width: 768px) {
     .explore-heading {
-        padding-top: 8rem;
+        padding-top: 4rem;
         padding-left: 4rem;
         margin: 2rem;
     }
