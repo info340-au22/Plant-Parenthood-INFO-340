@@ -1,41 +1,55 @@
-* {
+/* * {
     box-sizing: border-box;
-  }
+}
 
-body {
-    font-family: 'Nunito Sans', Arial, sans-serif;
-    font-size: 16px;
+html {
+    height: 100%;
+} */
+
+.calendar-body {
+    /* font-family: 'Nunito Sans', Helvetica, sans-serif;
+    font-size: 16px; */
     background-color: #A0A66F;
 }
 
-nav {
-    position: fixed;
+/* nav {
+    background-color: #787C53;
+    padding: 0.5rem; */
+    /* /* position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     color: white;
-    background-color: #787C53;
-}
+    background-color: #787C53; */
+/* } */
 
-nav ul {
+/* nav ul {
     margin: 1rem;
 }
 
 nav li {
     display: inline;
     margin: 0 1rem;
-}
+} */
 
-nav a {
+/* nav a {
     color: white;
     text-decoration: none;
-}
+} */
 
-nav a:hover {
+/* nav a:hover {
     color: #f0f0f0;
     border-bottom: .2rem dotted #f0f0f0; 
     transition: .25s ease-in-out;
+} */
+
+/* button {
+    float: right;
 }
+
+.button-right {
+    margin-left: auto;
+} */
 
 .month-name {
     text-align: center;
@@ -50,6 +64,7 @@ table {
     border: 1px black solid;
     background-color: white;
 }
+
 td {
     border: 1px solid black;
     vertical-align: text-top;
@@ -58,10 +73,6 @@ td {
 
 th, td {
     text-align: center;
-}
-
-button {
-    float: right;
 }
 
 .new-event {
