@@ -80,7 +80,7 @@ button {
 .home-body #text-container {
     background-color: #F0F7F1;
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 8rem;
 }
 
 .home-body #text-container h2 {
@@ -89,24 +89,34 @@ button {
 }
 
 .home-body #text-container :first-child {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     font-weight:bolder;
 }
 
 .home-body #text-container :nth-child(4) {
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .home-body .btn-default{
     background-color: #595c3f;
     color:#FFF;
     border-color: #595c3f;
+    margin-top: 2rem;
 }
 
 /* about page */
 
 #about {
     padding-top: 2rem;
+}
+
+.contact-form {
+    margin-left: 3.5rem;
+    padding-top: 1rem;
+}
+
+.contact-form .form-item{
+    margin: 1rem;
 }
 
 /* quiz page */
@@ -191,7 +201,6 @@ button {
     left: 50%;
     transform: translate(-50%,-50%);
   }
-
 
   /* Explore Page */
 
@@ -298,5 +307,31 @@ th, td {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    table {
+        width: 60rem;
+        height: 45rem;
+    }
+
+    th, td, .water-text, .soil, .fertilizer {
+        font-size: 1rem;
+    }
+
+    .new-event {
+        position: fixed;
+        top: 190px;
+        right: 170px;
+        font-size: 2rem;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+
+    .button-text {
+        position: fixed;
+        top: 200px;
+        right: 50px;
+        font-size: 1rem;
     }
 }
