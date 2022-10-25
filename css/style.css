@@ -111,8 +111,7 @@ button {
 
 /* quiz page */
 
-.quiz-body {
-    font-family: 'Nunito Sans', Arial, sans-serif;
+.quiz-body, .calendar-body {
     background-color: #A0A66F;
 }
 
@@ -211,6 +210,54 @@ button {
 .plant-img img {
     max-width: 100%;
     height: auto;
+}
+
+/* Calendar Page */
+.month-name {
+    text-align: center;
+    padding-top: .5rem;
+}
+table {
+    margin-right: auto;
+    margin-left: auto;
+    table-layout: fixed;
+    width: 60rem;
+    height: 45rem;
+    border: 1px black solid;
+    background-color: white;
+}
+
+td {
+    border: 1px solid black;
+    vertical-align: text-top;
+    padding: .5rem;
+}
+
+th, td {
+    text-align: center;
+}
+
+.new-event {
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 140px;
+}
+
+.button-text {
+    position:fixed;
+    bottom: 10px;
+    right: 20px;
+}
+
+.water-text {
+    background-color:  #A0A66F;
+}
+
+.soil, .fertilizer {
+    background-color: #A98467;
 }
 
 @media (min-width: 768px) {
