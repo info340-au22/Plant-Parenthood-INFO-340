@@ -308,4 +308,30 @@ th, td {
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
+    table {
+        width: 60rem;
+        height: 45rem;
+    }
+
+    th, td, .water-text, .soil, .fertilizer {
+        font-size: 1rem;
+    }
+
+    .new-event {
+        position: fixed;
+        top: 190px;
+        right: 170px;
+        font-size: 2rem;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+
+    .button-text {
+        position: fixed;
+        top: 200px;
+        right: 50px;
+        font-size: 1rem;
+    }
 }
