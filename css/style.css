@@ -77,7 +77,6 @@ button {
 
 .home-body {
     margin-top: 0;
-    margin-bottom: .5rem;
 }
 
 .home-body .container-fluid {
@@ -92,7 +91,7 @@ button {
 .home-body #text-container {
     background-color: #F0F7F1;
     text-align: center;
-    padding-top: 8rem;
+    padding-top: 5rem;
 }
 
 .home-body #text-container h2 {
@@ -122,6 +121,10 @@ button {
 
 .contact-form .form-item{
     margin: 1rem;
+}
+
+.about-body {
+    background-color:#F0F7F1;
 }
 
 /* quiz page */
@@ -207,7 +210,15 @@ button {
     transform: translate(-50%,-50%);
   }
 
+  .quiz-template-body {
+    background-color: #F0F7F1;
+  }
+
   /* Explore Page */
+
+  .explore-body {
+    background-color: #F0F7F1;
+  }
 
   .explore-container {
     padding: 6%;
@@ -361,6 +372,4 @@ th, td {
         margin: 1rem;
         padding: 3rem;
     }
-    
-
 }
