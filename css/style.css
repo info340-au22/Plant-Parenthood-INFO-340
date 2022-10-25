@@ -264,7 +264,10 @@ th, td {
 .card-container {
     float: left;
     width: 50%;
-    padding: 10px 10px;
+    padding: 10px;
+    position: absolute;
+    top: 23%;
+    left: 25%;
 }
 
 .card-title {
@@ -275,7 +278,6 @@ th, td {
     float: right;
     background: white;
 }
-
 
 
 @media (min-width: 768px) {
