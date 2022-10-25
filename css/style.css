@@ -111,7 +111,7 @@ button {
 
 /* quiz page */
 
-.quiz-body, .calendar-body {
+.quiz-body, .calendar-body, .calendar-event-body {
     background-color: #A0A66F;
 }
 
@@ -259,6 +259,26 @@ th, td {
 .soil, .fertilizer {
     background-color: #A98467;
 }
+
+/* Calendar Event */
+.card-container {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 23%;
+    left: 25%;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-nav:last-child {
+    float: right;
+    background: white;
+}
+
 
 @media (min-width: 768px) {
     .explore-heading {
