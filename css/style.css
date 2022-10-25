@@ -49,7 +49,7 @@ nav a {
 
 nav a:hover {
     color: #f0f0f0;
-    border-bottom: .2rem dotted #f0f0f0; 
+    border-bottom: .2rem dotted #f0f0f0;
     transition: .25s ease-in-out;
 }
 
@@ -74,7 +74,7 @@ button {
 
 .home-body #backdrop-container {
     background-image: url('../img/bg-home.jpg');
-    background-size: cover; 
+    background-size: cover;
 }
 
 .home-body #text-container {
@@ -98,7 +98,7 @@ button {
 }
 
 .home-body .btn-default{
-    background-color: #595c3f; 
+    background-color: #595c3f;
     color:#FFF;
     border-color: #595c3f;
 }
@@ -115,7 +115,7 @@ button {
     background-color: #A0A66F;
 }
 
-.quiz-body-container {
+.quiz-question-container {
     max-width: 960px;
     margin-right: auto;
     padding-left: 1rem;
@@ -128,7 +128,7 @@ button {
     transform: translate(-50%,-50%);
     color: white;
   }
-  
+
   .quiz-button {
     background-color: white; /* Green */
     border: none;
@@ -138,7 +138,7 @@ button {
     font-size: 18px;
     font-weight: bold;
   }
-  
+
   .quiz-contain {
     position: absolute;
     top: 60%;
@@ -148,21 +148,21 @@ button {
 
   /* quiz template page */
 
-  .quiz-body-container {
+  .quiz-question-container {
     max-width: 960px;
     margin-right: auto;
     padding-left: 1rem;
 }
 
-  .quiz-container h2 {
+  .quiz-question-container h2 {
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: white;
+    color: black;
     font-size: 40px;
   }
-  
+
   .quiz-button-choice {
     background-color: white;
     border: 1px solid rgba(27, 31, 35, 0.15);
@@ -178,20 +178,20 @@ button {
     padding: 18px 40px;
     position: relative;
   }
-  
+
   .quiz-button-choice:hover {
     background-color: #F3F4F6;
     text-decoration: none;
     transition-duration: 0.1s;
   }
-  
+
   .quiz-options {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
   }
-  
+
 
   /* Explore Page */
 
@@ -201,10 +201,10 @@ button {
     flex-direction: column;
     justify-content: space-around;
   }
-  
+
   .explore-item {
     width: 32%;
-    padding-bottom: 18%; 
+    padding-bottom: 18%;
   }
 
 .plant-img img {
@@ -286,7 +286,7 @@ th, td {
         padding-left: 4rem;
         margin: 2rem;
     }
-    
+
     .explore-subheading {
         padding-left: 4rem;
         margin: 2rem;
