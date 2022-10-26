@@ -2,52 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Kriti Vajjhula, Ishita Saxena, Archita Singh, Saimanasvi Charugundla">
-    <meta name="description" content="This is the quiz question page to our website">
-    
-    <title>Quiz</title>
-  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-  
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Raleway:wght@300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+  <meta charset="UTF-8">
+  <meta name="author" content="Kriti Vajjhula, Ishita Saxena, Archita Singh, Saimanasvi Charugundla">
+  <meta name="description" content="This is the quiz question page to our website">
+
+  <title>Quiz</title>
+
+  <!-- link font -->
+  <link href="https://fonts.googleapis.com">
+  <link href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900" rel="stylesheet">
+
+  <!-- link bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+ 
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body>
-    <div class="quiz-body-container">
-      <nav class="navbar-expand">
-        <div>
-          <ul class="nav">
+<body class="quiz-template-body">
+    <nav class="navbar-expand">
+      <div>
+        <ul class="nav">
           <li class="nav-link"><a href="index.html">Home</a></li>
           <li class="nav-link"><a href="quiz.html">Quiz</a></li>
           <li class="nav-link"><a href="calendar.html">Calendar</a></li>
           <li class="nav-link"><a href="explore.html">Explore</a></li>
           <li class="nav-link"><a href="about.html">About</a></li>
           <div class="button-right">
-          <button class="btn btn-light" style="color:#595c3f">Login</button>
-          <button class="btn btn-light" style="color:#595c3f">Sign Up</button>
-          </ul>
-        </div>
-        </div>
-      </nav>
+            <button class="btn btn-light" style="color:#595c3f">Login</button>
+            <button class="btn btn-light" style="color:#595c3f">Sign Up</button>
+          </div>
+        </ul>
       </div>
+    </nav>
+  
 
-    <div class="quiz-question-container">
-        <section id=question class=questions-part>
-            <div class=question>
-                <h2 class=question>Have you owned a plant before?</h2>
-            </div>
-            <div class="quiz-options">
-                <button class="quiz-button-choice" role="button">Yes</button>
-                <button class="quiz-button-choice" role="button">No</button>
-            </div>
-        </section>
-    </div>
-
-    <footer>
-      <cite>&copy; Alp Duran https://unsplash.com/photos/5MrddkW_Cbg</cite>
-    </footer>  
+  <div class="quiz-question-container">
+    <section id=question class=questions-part>
+      <div class=question>
+        <h2 class=question>Have you owned a plant before?</h2>
+      </div>
+      <div class="quiz-options">
+        <button class="btn btn-default">Yes</button>
+        <button class="btn btn-default">No</button>
+      </div>
+    </section>
+  </div>
+  
 </body>
+
+</html>

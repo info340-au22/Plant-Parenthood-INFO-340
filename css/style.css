@@ -36,6 +36,13 @@ h3 {
     font-size: 1rem;
 }
 
+.btn-default{
+    background-color: #595c3f;
+    color:#FFF;
+    border-color: #595c3f;
+    margin-top: 2rem;
+}
+
 /* Nav bar styling */
 nav {
     background-color: #787C53;
@@ -70,7 +77,6 @@ button {
 
 .home-body {
     margin-top: 0;
-    margin-bottom: .5rem;
 }
 
 .home-body .container-fluid {
@@ -85,7 +91,7 @@ button {
 .home-body #text-container {
     background-color: #F0F7F1;
     text-align: center;
-    padding-top: 8rem;
+    padding-top: 5rem;
 }
 
 .home-body #text-container h2 {
@@ -98,15 +104,8 @@ button {
     font-weight:bolder;
 }
 
-.home-body #text-container :nth-child(4) {
+.home-body #text-container :nth-child(5) {
     padding-bottom: 1.5rem;
-}
-
-.home-body .btn-default{
-    background-color: #595c3f;
-    color:#FFF;
-    border-color: #595c3f;
-    margin-top: 2rem;
 }
 
 /* about page */
@@ -122,6 +121,10 @@ button {
 
 .contact-form .form-item{
     margin: 1rem;
+}
+
+.about-body {
+    background-color:#F0F7F1;
 }
 
 /* quiz page */
@@ -161,6 +164,12 @@ button {
     transform: translate(-50%,-50%);
   }
 
+  .quiz-contain a {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
   /* quiz template page */
 
   .quiz-question-container {
@@ -178,28 +187,6 @@ button {
     font-size: 40px;
   }
 
-  .quiz-button-choice {
-    background-color: white;
-    border: 1px solid rgba(27, 31, 35, 0.15);
-    border-radius: 6px;
-    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-    box-sizing: border-box;
-    color: black;
-    cursor: pointer;
-    display: inline-block;
-    font-family: 'Nunito Sans', Arial, sans-serif;
-    font-weight: 500;
-    line-height: 20px;
-    padding: 18px 40px;
-    position: relative;
-  }
-
-  .quiz-button-choice:hover {
-    background-color: #F3F4F6;
-    text-decoration: none;
-    transition-duration: 0.1s;
-  }
-
   .quiz-options {
     position: absolute;
     top: 60%;
@@ -207,7 +194,15 @@ button {
     transform: translate(-50%,-50%);
   }
 
+  .quiz-template-body {
+    background-color: #F0F7F1;
+  }
+
   /* Explore Page */
+
+  .explore-body {
+    background-color: #F0F7F1;
+  }
 
   .explore-container {
     padding: 6%;
@@ -218,7 +213,7 @@ button {
 
   .explore-item {
     width: 32%;
-    padding-bottom: 18%;
+    padding-bottom: 2rem;
   }
 
 .plant-img img {
@@ -275,6 +270,7 @@ th, td {
 }
 
 /* Calendar Event */
+
 .card-container {
     float: left;
     width: 50%;
@@ -282,6 +278,10 @@ th, td {
     position: absolute;
     top: 23%;
     left: 25%;
+}
+
+.card {
+    background-color: #F0F7F1;
 }
 
 .card-title {
@@ -296,7 +296,7 @@ th, td {
 
 @media (min-width: 768px) {
     .explore-heading {
-        padding-top: 8rem;
+        padding-top: 4rem;
         padding-left: 4rem;
         margin: 2rem;
     }
@@ -361,6 +361,4 @@ th, td {
         margin: 1rem;
         padding: 3rem;
     }
-    
-
 }
