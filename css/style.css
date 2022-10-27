@@ -133,12 +133,6 @@ button {
     background-color: #A0A66F;
 }
 
-.quiz-question-container {
-    max-width: 960px;
-    margin-right: auto;
-    padding-left: 1rem;
-}
-
 .quiz-container {
     position: absolute;
     top: 50%;
@@ -147,27 +141,23 @@ button {
     color: white;
   }
 
-  .quiz-button {
-    background-color: white; /* Green */
-    border: none;
-    color: black;
-    padding: 20px 35px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-  }
-
   .quiz-contain {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
+    padding: 20px 35px;
   }
 
   .quiz-contain a {
-    color: green;
+    color: #787C53 ;
     background-color: transparent;
     text-decoration: none;
+  }
+
+  .quiz-contain button {
+    padding: 23px 29px;
+    font-size: 20px;
   }
 
   /* quiz template page */
