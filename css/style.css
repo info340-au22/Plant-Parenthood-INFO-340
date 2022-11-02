@@ -139,12 +139,6 @@ header {
     background-color: #A0A66F;
 }
 
-.quiz-question-container {
-    max-width: 960px;
-    margin-right: auto;
-    padding-left: 1rem;
-}
-
 .quiz-container {
     position: absolute;
     top: 50%;
@@ -168,10 +162,12 @@ header {
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
+    padding: 20px 35px;
   }
 
   .quiz-contain a {
     color: #595c3f;
+    color: #787C53 ;
     background-color: transparent;
     text-decoration: none;
   }
@@ -179,6 +175,10 @@ header {
   .quiz-template-body .btn-light {
       color: #595c3f;
   } 
+  .quiz-contain button {
+    padding: 23px 29px;
+    font-size: 20px;
+  }
 
   /* quiz template page */
 
