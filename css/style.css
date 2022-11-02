@@ -90,6 +90,7 @@ button {
 }
 
 /* id selector */
+
 #backdrop-container {
     background-image: url('../img/bg-home.jpg');
     background-size: cover;
@@ -100,6 +101,11 @@ button {
     text-align: center;
 }
 
+.row :nth-child(2) h1 {
+    margin-bottom: 4rem;
+}
+
+
 .row :nth-child(2) h2 {
     margin-top: 2.2rem;
     font-weight: lighter;
@@ -107,11 +113,6 @@ button {
 
 .row :nth-child(2) .btn-default {
     margin-top: 4.2rem;
-}
-
-header {
-    font-weight: bolder;
-    margin-bottom: 4rem;
 }
 
 /* about page */
