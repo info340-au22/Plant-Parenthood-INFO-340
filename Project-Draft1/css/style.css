@@ -70,9 +70,11 @@ button {
 
 /* home page */
 
-#plant {
-    max-width: 70px;
-    max-height: 70px;
+.plant {
+    max-width: 35px;
+    max-height: 35px;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
 }
 
 .home-body {
@@ -83,34 +85,39 @@ button {
     color:#595c3f;
 }
 
-.home-body #backdrop-container {
+.nav .btn-light {
+    color:#595c3f
+}
+
+/* id selector */
+
+#backdrop-container {
     background-image: url('../img/bg-home.jpg');
     background-size: cover;
 }
 
-.home-body #text-container {
+.row :nth-child(2) {
     background-color: #F0F7F1;
     text-align: center;
-    padding-top: 5rem;
 }
 
-.home-body #text-container h2 {
-    margin-top: 2rem;
-    font-weight:lighter;
+.row :nth-child(2) h1 {
+    margin-bottom: 4rem;
 }
 
-.home-body #text-container :first-child {
-    padding-bottom: 2rem;
-    font-weight:bolder;
+
+.row :nth-child(2) h2 {
+    margin-top: 2.2rem;
+    font-weight: lighter;
 }
 
-.home-body #text-container :nth-child(5) {
-    padding-bottom: 1.5rem;
+.row :nth-child(2) .btn-default {
+    margin-top: 4.2rem;
 }
 
 /* about page */
 
-#about {
+.about-text {
     padding-top: 2rem;
 }
 
@@ -133,12 +140,6 @@ button {
     background-color: #A0A66F;
 }
 
-.quiz-question-container {
-    max-width: 960px;
-    margin-right: auto;
-    padding-left: 1rem;
-}
-
 .quiz-container {
     position: absolute;
     top: 50%;
@@ -148,7 +149,7 @@ button {
   }
 
   .quiz-button {
-    background-color: white; /* Green */
+    background-color: white; 
     border: none;
     color: black;
     padding: 20px 35px;
@@ -162,12 +163,22 @@ button {
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
+    padding: 20px 35px;
   }
 
   .quiz-contain a {
-    color: green;
+    color: #595c3f;
+    color: #787C53 ;
     background-color: transparent;
     text-decoration: none;
+  }
+
+  .quiz-template-body .btn-light {
+      color: #595c3f;
+  } 
+  .quiz-contain button {
+    padding: 23px 29px;
+    font-size: 20px;
   }
 
   /* quiz template page */
