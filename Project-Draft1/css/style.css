@@ -209,6 +209,19 @@ button {
     background-color: #F0F7F1;
   }
 
+  /* Quiz Result Page */
+  .plant-picture img {
+    max-width: 45%;
+    height: auto;
+    margin-top: 350px;
+    margin-left: 570px;
+  }
+
+  .result-container {
+    text-align: justify;
+    max-width: 45%;
+  }
+
   /* Explore Page */
 
   .explore-body {
