@@ -137,8 +137,40 @@
         </table>
     </div>
     <div class="add-event">
-        <button class="new-event" aria-label="add event"><a href="calendarevent.html">+</a></button>
+        <button class="new-event" aria-label="add event"><a href="calendar.html">+</a></button>
         <p class="button-text">Add New Event</p> -->
     </div>
+
+    <div class="calendar-Event">
+        <div class="card-container">
+            <nav>
+                <h2 class="form-title">Add an Event</h2>
+                <form>
+                    <div class="form-item">
+                        <label for="event-input">Event Name:</label>
+                        <input id="event-input" type="text" name="eventname">
+                    </div>
+                    <div class="form-item">
+                        <label for="date-input">Date:</label>
+                        <input id="date-input" type="date" name="date">
+                    </div>
+                    <div class="form-item">
+                        <label for="notes-input">Add Notes:</label>
+                        <input id="notes-input" type="text" name="addnotes">
+                    </div>
+                    <div class="form-item">
+                        <label for="attachment-input">Add Attachments:</label>
+                        <input id="attachment-input" type="file" name="addattachment">
+                    </div>
+                    <div>
+                        <button class = form-btn type="submit" aria-label="submit">Submit</button>
+                        <button class = form-btn type="cancel" aria-label="cancel">Cancel</button>
+                      </div>
+
+                </form>
+            </nav>
+        </div>
+    </div>
+    
 </body>
 </html>

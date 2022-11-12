@@ -305,6 +305,14 @@ th, td, .water-text, .soil, .fertilizer {
 
 /* Calendar Event */
 
+.calendar-Event  {
+    display: none;
+}
+
+.add-event:visited ~ .calendar-Event {
+    display: inline-block;
+}
+
 .card-container {
     float: left;
     width: 50%;
