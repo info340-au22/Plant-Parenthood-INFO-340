@@ -89,15 +89,17 @@ button {
     color:#595c3f
 }
 
-/* id selector */
-
-#backdrop-container {
-    background-image: url('../img/bg-home.jpg');
-    background-size: cover;
+.container-fluid {
+    background-color: #F0F7F1;
 }
 
+/* id selector */
+/* #backdrop-container {
+    background-image: url('../img/bg-home.jpg');
+    background-size: cover;
+} */
+
 .row :nth-child(2) {
-    background-color: #F0F7F1;
     text-align: center;
 }
 
@@ -319,6 +321,11 @@ th, td {
 
 
 @media (min-width: 768px) {
+    id selector
+    #backdrop-container {
+    background-image: url('../img/bg-home.jpg');
+    background-size: cover;
+}
     .explore-heading {
         padding-top: 4rem;
         padding-left: 4rem;
