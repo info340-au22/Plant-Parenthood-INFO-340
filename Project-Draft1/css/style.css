@@ -141,7 +141,7 @@ footer {
     background-color: #787C53;
     padding-top: 0.75rem;
     padding-left: 1rem;
-    margin-top: 17.75rem;
+    margin-top: 16rem;
 }
 
 
@@ -162,6 +162,10 @@ footer p:last-child {
 .material-icons {
     position: relative; 
     top: 7px;
+}
+
+.contact-text {
+    font-size: 1.5rem;
 }
 /* quiz page */
 
