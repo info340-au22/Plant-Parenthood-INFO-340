@@ -136,6 +136,33 @@ button {
     background-color:#F0F7F1;
 }
 
+footer {
+    color: white;
+    background-color: #787C53;
+    padding-top: 0.75rem;
+    padding-left: 1rem;
+    margin-top: 17.75rem;
+}
+
+
+footer p {
+    margin: 0;
+    line-height: 1.25;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+footer p:last-child {
+    padding-top: 10px;
+}
+
+.material-icons {
+    position: relative; 
+    top: 7px;
+}
 /* quiz page */
 
 .quiz-body, .calendar-body, .calendar-event-body {
