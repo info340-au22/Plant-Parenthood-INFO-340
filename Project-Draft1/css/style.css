@@ -257,25 +257,42 @@ footer p:last-child {
 
   /* Explore Page */
 
+  .explore-heading {
+    font-size: 3em;
+  }
+
   .explore-body {
     background-color: #F0F7F1;
   }
 
   .explore-container {
-    padding: 6%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
 
   .explore-item {
-    width: 32%;
-    padding-bottom: 2rem;
+    width: 32%;     
+  }
+
+  .explore-item h3 {
+    font-size: 2rem;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
   }
 
 .plant-img img {
-    max-width: 100%;
-    height: auto;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+
+}
+
+cite {
+    font-size: x-small;
+    padding-left: 64px;
 }
 
 /* Calendar Page */
