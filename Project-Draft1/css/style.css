@@ -243,17 +243,19 @@ footer p:last-child {
   }
 
   /* Quiz Result Page */
-  .plant-picture img {
+
+  .result-container {
+    text-align: center;
     max-width: 45%;
-    height: auto;
+  }
+
+  .plant-picture img {
+    text-align: center;
+    max-width: 45%;
     margin-top: 350px;
     margin-left: 570px;
   }
 
-  .result-container {
-    text-align: justify;
-    max-width: 45%;
-  }
 
   /* Explore Page */
 
