@@ -1,0 +1,477 @@
+/* General Formatting (shared across all pages) */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Nunito Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Nunito Sans', Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.btn-default{
+    background-color: #595c3f;
+    color:#FFF;
+    border-color: #595c3f;
+    margin-top: 2rem;
+}
+
+/* Nav bar styling */
+nav {
+    background-color: #787C53;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f0f0f0;
+    border-bottom: .2rem dotted #f0f0f0;
+    transition: .25s ease-in-out;
+}
+
+.button-right {
+    margin-left: auto;
+}
+
+button {
+    margin-right: .25rem;
+}
+
+/* home page */
+
+.plant {
+    max-width: 2rem;
+    max-height: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+
+.home-body {
+    margin-top: 0;
+}
+
+.home-body .container-fluid {
+    color:#595c3f;
+}
+
+.nav .btn-light {
+    color:#595c3f
+}
+
+.container-fluid {
+    background-color: #F0F7F1;
+}
+
+.row :nth-child(2) {
+    text-align: center;
+}
+
+.row :nth-child(2) h1 {
+    margin-bottom: 4rem;
+}
+
+.row :nth-child(2) h2 {
+    margin-top: 2.2rem;
+    font-weight: lighter;
+}
+
+.row :nth-child(2) .btn-default {
+    margin-top: 4.2rem;
+}
+
+.col .btn-light {
+    background-color:#595c3f;
+    color: #F0F7F1;
+    margin-top: 4rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+/* about page */
+
+.about-text {
+    padding-top: 2rem;
+}
+
+.contact-form {
+    margin-left: 3.5rem;
+    padding-top: 1rem;
+}
+
+.contact-form .form-item{
+    margin: 1rem;
+}
+
+.about-body {
+    background-color:#F0F7F1;
+}
+
+footer {
+    color: white;
+    background-color: #787C53;
+    padding-left: 1rem;
+    display: block;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.25;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+footer p:last-child {
+    padding-top: 10px;
+}
+
+.material-icons {
+    position: relative; 
+    top: 7px;
+}
+
+.contact-text {
+    font-size: 1.5rem;
+}
+/* quiz page */
+
+.quiz-body, .calendar-body, .calendar-event-body {
+    background-color: #A0A66F;
+}
+
+.quiz-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+}
+
+.quiz-template-body .btn-light {
+    color: #595c3f;
+} 
+
+  .quiz-contain {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 35px;
+  }
+
+  .quiz-contain .mobile-start {
+      display: none;
+   }   
+
+  .quiz-contain .big-start {
+    color: #595c3f;
+    color: #787C53 ;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .quiz-contain button {
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+
+  /* quiz template page */
+
+  .quiz-question-container {
+    max-width: 960px;
+    margin-right: auto;
+    padding-left: 1rem;
+}
+
+  .quiz-question-container h2 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .quiz-options {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .quiz-template-body {
+    background-color: #F0F7F1;
+  }
+
+  /* Quiz Result Page */
+
+  .result-container {
+    text-align: center;
+    max-width: 45%;
+  }
+
+  .plant-picture img {
+    text-align: center;
+    max-width: 45%;
+    margin-top: 350px;
+    margin-left: 570px;
+  }
+
+  /* Explore Page */
+
+  .explore-heading {
+    font-size: 3em;
+  }
+
+  .explore-body {
+    background-color: #F0F7F1;
+  }
+
+  .explore-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .explore-item {
+    width: 32%;     
+  }
+
+  .explore-item h3 {
+    font-size: 2rem;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+.plant-img img {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+
+}
+
+cite {
+    font-size: x-small;
+    padding-left: 64px;
+}
+
+/* Calendar Page */
+.month-name {
+    text-align: center;
+    padding-top: .5rem;
+}
+table {
+    margin-right: auto;
+    margin-left: auto;
+    table-layout: fixed;
+    width: 40rem;
+    height: 20rem;
+    border: 1px black solid;
+    background-color: white;
+}
+
+td {
+    border: 1px solid black;
+    vertical-align: text-top;
+    padding: .5rem;
+}
+
+th, td {
+    text-align: center;
+}
+
+.new-event {
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -40px;
+    right: 120px;
+}
+
+.button-text {
+    position: absolute;
+    bottom: -45px;
+    right: 5px;
+}
+
+
+th, td, .water-text, .soil, .fertilizer {
+    font-size: .8rem;
+}
+
+.water-text {
+    background-color:  #A0A66F;
+}
+
+.soil, .fertilizer {
+    background-color: #A98467;
+}
+
+/* Calendar Event */
+
+.calendar-Event  {
+    display: none;
+}
+
+.add-event:visited ~ .calendar-Event {
+    display: inline-block;
+}
+
+.card-container {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 23%;
+    left: 25%;
+}
+
+.card {
+    background-color: #F0F7F1;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-nav:last-child {
+    float: right;
+    background: white;
+}
+
+.form-title {
+    text-align: center;
+}
+
+.card-container .form-item {
+    padding-bottom: 10px;
+}
+
+.form-btn:hover {
+    background-color: #A9A9A9;
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+    .plant-picture img {
+        display: none;
+    }
+
+    .quiz-contain {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      padding: 20px 35px;
+  } 
+
+  .quiz-contain button {
+      padding: 10px 15px;
+      font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+    /* id selector */
+    #backdrop-container {
+    /* background-image: url('../img/bg-home.jpg'); */
+    background-size: cover;
+}
+    .explore-heading {
+        padding-top: 4rem;
+        padding-left: 4rem;
+        margin: 2rem;
+    }
+
+    .explore-subheading {
+        padding-left: 4rem;
+        margin: 2rem;
+    }
+
+    .explore-container {
+        padding: 6%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    table {
+        width: 60rem;
+        height: 45rem;
+    }
+
+    th, td, .water-text, .soil, .fertilizer {
+        font-size: 1rem;
+    }
+
+    .new-event {
+        bottom: -115px;
+        right: 130px;
+    }
+    
+    .button-text {
+        position: absolute;
+        bottom: -120px;
+        right: 10px;
+    }
+
+    /* Plant Info Page */
+    .plant-info-heading {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        padding: 3rem;
+    }
+    
+    .plant-img img {
+        width: 100%;
+        height: auto;
+        max-width: 700px;
+        max-height: 700px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 3rem;
+    }
+    
+    .care-info {
+        margin: 1rem;
+        padding: 3rem;
+    }
+}
