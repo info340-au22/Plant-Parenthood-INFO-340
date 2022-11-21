@@ -3,35 +3,6 @@ import React from 'react';
 export function Home() {
     return (
         <>
-            <head>
-                <meta charSet="UTF-8" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-                />
-                <meta
-                    name="author"
-                    content="Kriti Vajjhula, Ishita Saxena, Archita Singh, Manu Charu"
-                />
-                <meta name="description" content="This is the homepage to our website" />
-                <title>Plant Parenthood</title>
-                <link rel="icon" type="image/png" href="./img/plant-icon-white.png" />
-                {/* link font */}
-                <link href="https://fonts.googleapis.com" />
-                <link href="https://fonts.gstatic.com" crossOrigin="" />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900"
-                    rel="stylesheet"
-                />
-                {/* link bootstrap */}
-                <link
-                    rel="stylesheet"
-                    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-                />
-                <link rel="stylesheet" href="css/style.css" />
-                {/* Linking Pages */}
-            </head>
-
             <div className="container-fluid h-100">
                 <div className="row h-100">
                     <div id="backdrop-container" className="col"></div>
