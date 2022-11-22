@@ -35,6 +35,11 @@ h3 {
     font-size: 1rem;
 }
 
+.color-Nav {
+    color: #595c3f;
+    /* color: white; */
+}
+
 .btn-default{
     background-color: #595c3f;
     color:#FFF;
@@ -127,6 +132,13 @@ button {
 
 .about-text {
     padding-top: 2rem;
+    height: 100vh;
+    font-size: 1.5rem;
+}
+
+.about-text h2 {
+    padding-top: 4rem;
+    font-weight: bold;
 }
 
 .contact-form {
