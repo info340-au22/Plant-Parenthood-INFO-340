@@ -18,7 +18,11 @@ export function PlantCard(props) {
 } 
 
 export function PlantList(props) {
-    const plants = props.plants.map((plant) => 
+    // const plants = props.plants.map((plant) => 
+    //     <PlantCard key={plant.name} plants={plant} />
+    // );
+
+    const plants = props.plants.filter(plant=>plant.name.toLowerCase().includes(query)).map((plant) => 
         <PlantCard key={plant.name} plants={plant} />
     );
 
@@ -29,6 +33,16 @@ export function PlantList(props) {
             <div className="explore-container">
                 {plants}
             </div>
+        </div>
+    )
+}
+
+export function Search() {
+    const [query, setQuery] = useState("");
+    return (
+        <div>
+            <input type="text" placeHolder="Search..." onChange={e=> setQuery(e.target.value)}/>
+            <PLantList></PLantList>
         </div>
     )
 }
