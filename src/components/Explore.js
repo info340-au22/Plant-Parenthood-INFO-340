@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 // import nav bar
 import { NavBar } from './NavBar.js'
