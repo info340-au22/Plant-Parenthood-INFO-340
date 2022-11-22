@@ -1,4 +1,12 @@
 import React from 'react';
+<<<<<<< HEAD
+import axios from 'axios';
+
+// import nav bar
+import { NavBar } from './NavBar.js'
+
+=======
+>>>>>>> 099b668e6bc3a352ec1a14c29099ab828619d1a1
 export function Explore(props) {
 
     return(
