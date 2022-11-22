@@ -3,8 +3,8 @@ import React from 'react';
 export function Home() {
     return (
         <>
-            <div className="container-fluid h-100">
-                <div className="row h-100">
+            <div className="container-fluid">
+                <div className="row">
                     <div id="backdrop-container" className="col"></div>
                     <div className="col">
                         <img

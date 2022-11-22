@@ -15,7 +15,6 @@ footer a {
 body {
     font-family: 'Nunito Sans', Helvetica, sans-serif;
     font-size: 16px;
-    height: 100vh;
 }
 
 h1, h2, h3 {
@@ -85,12 +84,17 @@ button {
     color:#595c3f;
 }
 
+#backdrop-container {
+    display:none;
+}
+
 .nav .btn-light {
-    color:#595c3f
+    color:#595c3f;
 }
 
 .container-fluid {
     background-color: #F0F7F1;
+    height: 100vh;
 }
 
 .row :nth-child(2) {
@@ -411,9 +415,12 @@ th, td, .water-text, .soil, .fertilizer {
 @media (min-width: 768px) {
     /* id selector */
     #backdrop-container {
-    background-image: url('../public/img/bg-image.jpg');
-    background-size: cover;
-}
+        background-image: url('../public/img/bg-image.jpg');
+        background-size: cover;
+        height:100vh;
+        display:flex;
+    }
+
     .explore-heading {
         padding-top: 4rem;
         padding-left: 4rem;
