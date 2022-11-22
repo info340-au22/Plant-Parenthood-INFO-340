@@ -1,8 +1,4 @@
 import React from 'react';
-
-// import nav bar
-import { NavBar } from './NavBar.js'
-
 export function Explore(props) {
 
     return(
