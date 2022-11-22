@@ -4,21 +4,18 @@ import axios from 'axios';
 export function PlantCard(props) {
     console.log(props.plants.name);
 
-    return(
-        //<div>
-            
-                <div className="explore-item">
-                    <h3>{props.plants.name}</h3>
-                    <div className="plant-img">
-                        <img src={props.plants.img} alt={props.plants.alt}></img>
-                    </div>
-                </div>
-        //</div>
+    return (
+        <div className="explore-item">
+            <h3>{props.plants.name}</h3>
+            <div className="plant-img">
+                <img src={props.plants.img} alt={props.plants.alt}></img>
+            </div>
+        </div>
     )
-} 
+}
 
 export function PlantList(props) {
-    const plants = props.plants.map((plant) => 
+    const plants = props.plants.map((plant) =>
         <PlantCard key={plant.name} plants={plant} />
     );
 
