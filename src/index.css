@@ -35,6 +35,11 @@ h3 {
     font-size: 1rem;
 }
 
+.color-Nav {
+    color: #595c3f;
+    /* color: white; */
+}
+
 .btn-default{
     background-color: #595c3f;
     color:#FFF;
@@ -72,16 +77,12 @@ button {
 .plant {
     max-width: 2rem;
     max-height: 2rem;
-    margin-top: 6rem;
+    margin-top: 15rem;
     margin-bottom: 1rem;
 }
 
 .home-body {
     margin-top: 0;
-}
-
-.home-body .container-fluid {
-    color:#595c3f;
 }
 
 #backdrop-container {
@@ -95,6 +96,11 @@ button {
 .container-fluid {
     background-color: #F0F7F1;
     height: 100vh;
+    color:#595c3f;
+}
+
+.container-fluid h1 {
+    color:#595c3f;
 }
 
 .row :nth-child(2) {
@@ -106,7 +112,7 @@ button {
 }
 
 .row :nth-child(2) h2 {
-    margin-top: 2.2rem;
+    margin-top: 3.2rem;
     font-weight: lighter;
 }
 
@@ -126,6 +132,13 @@ button {
 
 .about-text {
     padding-top: 2rem;
+    height: 100vh;
+    font-size: 1.5rem;
+}
+
+.about-text h2 {
+    padding-top: 4rem;
+    font-weight: bold;
 }
 
 .contact-form {

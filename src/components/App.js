@@ -12,15 +12,16 @@ import { About } from "./About.js"
 
 
 export default function App(props) {
+    console.log(props.plants);
     return (
         <BrowserRouter>
         <div>
         <>
-            <Navbar bg="light" variant="light">
+            <Navbar className="color-Nav" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">Plant Parenthood</Navbar.Brand>
+                    <Navbar.Brand href="/">Plant Parenthood</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to='/'>Home</Nav.Link>
+                        {/* <Nav.Link as={Link} to='/'>Home</Nav.Link> */}
                         <Nav.Link as={Link} to='/Quiz.js'>Quiz</Nav.Link>
                         <Nav.Link as={Link} to='/Calendar.js'>Calendar</Nav.Link>
                         <Nav.Link as={Link} to='/Explore.js'>Explore</Nav.Link>
@@ -33,12 +34,12 @@ export default function App(props) {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/Quiz.js" element={<Quiz/>}/>
-                <Route path="/Caledar.js" element={<Calendar/>}/>
-                <Route path="/Explore.js" element={<Explore/>}/>
+                <Route path="/Calendar.js" element={<Calendar/>}/>
+                <Route path="/Explore.js" element={<Explore  plants={props.plants}/>}/>
                 <Route path="/About.js" element={<About/>}/>
             </Routes>
         </div>
-        
+
         </div>
         </BrowserRouter>
     )
