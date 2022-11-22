@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import {Routes, Route, Link} from "react-router-dom";
 import { Home } from "./Home.js";
 import { Quiz } from "./Quiz.js";
 import { Calendar } from "./Calendar.js";
@@ -13,7 +13,6 @@ import { About } from "./About.js"
 
 export default function App(props) {
     return (
-        <BrowserRouter>
         <div>
         <>
             <Navbar className="color-Nav" variant="dark">
@@ -40,6 +39,5 @@ export default function App(props) {
         </div>
 
         </div>
-        </BrowserRouter>
     )
 }

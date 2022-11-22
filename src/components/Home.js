@@ -30,6 +30,5 @@ export function Home() {
                 <cite>© Alp Duran https://unsplash.com/photos/5MrddkW_Cbg</cite>
             </footer>
         </>
-
     );
 }
