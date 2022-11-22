@@ -2,7 +2,7 @@ import React from 'react';
 
 export function Quiz() {
     return (
-            <body className="quiz-body">
+            <div className="quiz-body">
                 <div className="body-container">
 
                     <section id="quiz-start">
@@ -22,6 +22,6 @@ export function Quiz() {
                         </div>
                     </section>
                 </div>
-            </body>
+            </div>
     )
 }
