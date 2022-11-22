@@ -187,6 +187,7 @@ footer p:last-child {
 
 .quiz-body, .calendar-body, .calendar-event-body {
     background-color: #A0A66F;
+    height: 100vh;
 }
 
 .quiz-container {

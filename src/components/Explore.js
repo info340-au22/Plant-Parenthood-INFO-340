@@ -20,13 +20,15 @@ export function PlantList(props) {
     );
 
     return (
-        <div>
-            <h1 className="explore-heading">Find your perfect plant!</h1>
-            <h2 className="explore-subheading">Search for different species of houseplants in our houseplant index.</h2>
-            <div className="explore-container">
-                {plants}
+        <>
+            <div>
+                <h1 className="explore-heading">Find your perfect plant!</h1>
+                <h2 className="explore-subheading">Search for different species of houseplants in our houseplant index.</h2>
+                <div className="explore-container">
+                    {plants}
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 

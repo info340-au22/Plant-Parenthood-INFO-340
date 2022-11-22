@@ -126,7 +126,6 @@ export function Calendar() {
                                 <button type="submit" aria-label="submit">Submit</button>
                                 <button type="cancel" aria-label="cancel">Cancel</button>
                             </div>
-
                         </form>
                     </nav>
                 </div>
