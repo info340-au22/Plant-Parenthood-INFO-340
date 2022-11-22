@@ -1,11 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-// import nav bar
-import { NavBar } from './NavBar.js'
-import { PetCard } from '../../../problem-07-smcharu-2176857/problem-b/src/components/PetList.js';
-
-export function plantCard(props) {
+export function PlantCard(props) {
     console.log(props.plants.name);
 
     return(
@@ -14,9 +10,9 @@ export function plantCard(props) {
                 <div className="explore-item">
                     <h3>{props.plants.name}</h3>
                     <div className="plant-img">
-                        <a href="plantinfo.html">
+
                             <img src={props.plants.img} alt={props.plants.alt}></img>
-                         </a>
+
                     </div>
                 </div>
             </div>
@@ -24,9 +20,9 @@ export function plantCard(props) {
     )
 } 
 
-export function plantList(props) {
+export function PlantList(props) {
     const plants = props.plants.map((plant) => 
-        <PlanctCard key={plant.name} plants={plant} />
+        <PlantCard key={plant.name} plants={plant} />
     );
 
     return (

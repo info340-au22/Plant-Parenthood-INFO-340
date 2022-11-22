@@ -6,13 +6,12 @@ import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import { Home } from "./Home.js";
 import { Quiz } from "./Quiz.js";
 import { Calendar } from "./Calendar.js";
-import { Explore } from "./Explore.js";
+import { Explore, PlantList } from "./Explore.js";
 import { About } from "./About.js"
 
 
 
 export default function App(props) {
-    console.log(props.plants);
     return (
         <BrowserRouter>
         <div>
@@ -35,7 +34,7 @@ export default function App(props) {
                 <Route path="/" element={<Home/>}/>
                 <Route path="/Quiz.js" element={<Quiz/>}/>
                 <Route path="/Calendar.js" element={<Calendar/>}/>
-                <Route path="/Explore.js" element={<Explore  plants={props.plants}/>}/>
+                <Route path="/Explore.js" element={<PlantList  plants={props.plants}/>}/>
                 <Route path="/About.js" element={<About/>}/>
             </Routes>
         </div>
