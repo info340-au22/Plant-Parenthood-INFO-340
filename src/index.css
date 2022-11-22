@@ -1,15 +1,11 @@
 /* General Formatting (shared across all pages) */
+
 * {
     box-sizing: border-box;
 }
 
 html {
     height: 100%;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
 }
 
 body {
@@ -35,27 +31,18 @@ h3 {
     font-size: 1rem;
 }
 
-.color-Nav {
-    color: #595c3f;
-    /* color: white; */
-}
-
-.btn-default{
+.btn-default {
     background-color: #595c3f;
     color:#FFF;
     border-color: #595c3f;
     margin-top: 2rem;
 }
 
-/* Nav bar styling */
+/* Nav Bar Styling */
+
 nav {
     background-color: #787C53;
     padding: 0.5rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
 }
 
 nav a:hover {
@@ -64,15 +51,7 @@ nav a:hover {
     transition: .25s ease-in-out;
 }
 
-.button-right {
-    margin-left: auto;
-}
-
-button {
-    margin-right: .25rem;
-}
-
-/* home page */
+/* Home Page */
 
 .plant {
     max-width: 2rem;
@@ -89,13 +68,8 @@ button {
     display:none;
 }
 
-.nav .btn-light {
-    color:#595c3f;
-}
-
 .container-fluid {
     background-color: #F0F7F1;
-    height: 100vh;
     color:#595c3f;
 }
 
@@ -128,7 +102,11 @@ button {
     font-weight: 200;
 }
 
-/* about page */
+.col .btn-light:hover{
+    background-color:#A0A66F;
+}
+
+/* About Page */
 
 .about-text {
     padding-top: 2rem;
@@ -141,15 +119,6 @@ button {
     font-weight: bold;
 }
 
-.contact-form {
-    margin-left: 3.5rem;
-    padding-top: 1rem;
-}
-
-.contact-form .form-item{
-    margin: 1rem;
-}
-
 .about-body {
     background-color:#F0F7F1;
 }
@@ -158,13 +127,15 @@ footer {
     color: white;
     background-color: #787C53;
     padding-left: 1rem;
-    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
 }
 
-footer p {
-    margin: 0;
-    line-height: 1.25;
+footer a {
+    color: white;
+    text-decoration: none;
 }
 
 footer a:hover {
@@ -172,19 +143,12 @@ footer a:hover {
     text-decoration: underline;
 }
 
-footer p:last-child {
-    padding-top: 10px;
-}
-
-.material-icons {
-    position: relative; 
-    top: 7px;
-}
-
 .contact-text {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    padding-top: 1.25rem;
 }
-/* quiz page */
+
+/* Quiz Page */
 
 .quiz-body, .calendar-body, .calendar-event-body {
     background-color: #A0A66F;
@@ -204,39 +168,39 @@ footer p:last-child {
     color: #595c3f;
 } 
 
-  .quiz-contain {
+.quiz-contain {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 20px 35px;
-  }
+}
 
-  .quiz-contain .mobile-start {
-      display: none;
-   }   
+.quiz-contain .mobile-start {
+    display: none;
+}   
 
-  .quiz-contain .big-start {
+.quiz-contain .big-start {
     color: #595c3f;
     color: #787C53 ;
     background-color: transparent;
     text-decoration: none;
-  }
+}
 
-  .quiz-contain button {
+.quiz-contain button {
     padding: 15px 20px;
     font-size: 18px;
-  }
+}
 
-  /* quiz template page */
+/* Quiz Template Page */
 
-  .quiz-question-container {
+.quiz-question-container {
     max-width: 960px;
     margin-right: auto;
     padding-left: 1rem;
 }
 
-  .quiz-question-container h2 {
+.quiz-question-container h2 {
     position: absolute;
     top: 45%;
     left: 50%;
@@ -244,65 +208,65 @@ footer p:last-child {
     color: black;
     font-size: 40px;
     text-align: center;
-  }
+}
 
-  .quiz-options {
+.quiz-options {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
-  }
+}
 
-  .quiz-template-body {
+.quiz-template-body {
     background-color: #F0F7F1;
-  }
+}
 
-  /* Quiz Result Page */
+/* Quiz Result Page */
 
-  .result-container {
+.result-container {
     text-align: center;
     max-width: 45%;
-  }
+}
 
-  .plant-picture img {
+.plant-picture img {
     text-align: center;
     max-width: 45%;
     margin-top: 350px;
     margin-left: 570px;
-  }
+}
 
-  /* Explore Page */
+/* Explore Page */
 
-  .explore-heading {
+.explore-heading {
     font-size: 3em;
-  }
+}
 
-  .explore-body {
+.explore-body {
     background-color: #F0F7F1;
-  }
+}
 
-  .explore-container {
+.explore-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-  }
+}
 
-  .explore-item {
+.explore-item {
     width: 32%;     
-  }
+}
 
-  .explore-item h3 {
+.explore-item h3 {
     font-size: 1.5rem;
     padding-left: 64px;
     padding-right: 64px;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-  }
+}
 
 .plant-img img {
-    padding-bottom: 0 !important;
-    padding-top: 0 !important;
+    padding-bottom: 0;
+    padding-top: 0;
 
 }
 
@@ -312,6 +276,7 @@ cite {
 }
 
 /* Calendar Page */
+
 .month-name {
     text-align: center;
     padding-top: .5rem;
@@ -408,10 +373,15 @@ th, td, .water-text, .soil, .fertilizer {
     background-color: #A9A9A9;
 }
 
-@media (min-width: 320px) and (max-width: 992px) {
+@media (min-width: 320px) {
+
+    /* Quiz Result Page */
+
     .plant-picture img {
         display: none;
     }
+
+    /* Quiz Page */
 
     .quiz-contain {
       position: absolute;
@@ -428,13 +398,16 @@ th, td, .water-text, .soil, .fertilizer {
 }
 
 @media (min-width: 768px) {
-    /* id selector */
+
+    /* Home Page */
+
     #backdrop-container {
         background-image: url('../public/img/bg-image.jpg');
         background-size: cover;
-        height:100vh;
-        display:flex;
+        display: flex;
     }
+
+    /* Explore Page */
 
     .explore-heading {
         padding-top: 4rem;
@@ -454,6 +427,8 @@ th, td, .water-text, .soil, .fertilizer {
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
+    /* Calendar Page */
 
     table {
         width: 60rem;
@@ -476,6 +451,7 @@ th, td, .water-text, .soil, .fertilizer {
     }
 
     /* Plant Info Page */
+
     .plant-info-heading {
         margin-top: 1rem;
         margin-left: 1rem;
@@ -495,5 +471,34 @@ th, td, .water-text, .soil, .fertilizer {
     .care-info {
         margin: 1rem;
         padding: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* Home Page */
+
+    .plant {
+        max-width: 4rem;
+        max-height: 4rem;
+        margin-top: 8.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .col .btn-light {
+        font-size: 2rem;
+    }
+
+    .col .btn-light:last-child {
+        margin-left: 1rem;
+    }
+
+    .row :nth-child(2) h1 {
+        font-size: 3rem;
+    }
+
+    .row :nth-child(2) h2 {
+        font-size: 2rem;
+        margin-top: 6rem;
     }
 }
