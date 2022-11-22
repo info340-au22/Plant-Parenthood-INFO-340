@@ -3,7 +3,7 @@ import React from 'react';
 export function Quiz() {
     return (
         <div>
-            <body class="quiz-body">
+            <body className="quiz-body">
                 <div className="body-container">
                     
                     <section id="quiz-start"> 
@@ -16,8 +16,8 @@ export function Quiz() {
                         <div className="quiz-contain">
                             <button className="btn btn-light" aria-label="start quiz"><a href="./questionTemplate.html">Start Quiz</a></button>
                         </div>
-                    <div class="quiz-contain">
-                    <button class="btn btn-light" aria-label="start quiz">
+                    <div className="quiz-contain">
+                    <button className="btn btn-light" aria-label="start quiz">
                         <a href="./questionTemplate.html" className="big-start">Start Quiz</a>
                     </button>
                     </div>

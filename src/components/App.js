@@ -18,7 +18,7 @@ export default function App(props) {
         <>
             <Navbar bg="light" variant="light">
                 <Container>
-                    <Navbar.Brand href="#home">Plant Parenthood</Navbar.Brand>
+                    <Navbar.Brand href="/">Plant Parenthood</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to='/'>Home</Nav.Link>
                         <Nav.Link as={Link} to='/Quiz.js'>Quiz</Nav.Link>
@@ -33,8 +33,8 @@ export default function App(props) {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/Quiz.js" element={<Quiz/>}/>
-                <Route path="/Caledar.js" element={<Calendar/>}/>
-                <Route path="/Explore.js" element={<Explore/>}/>
+                <Route path="/Calendar.js" element={<Calendar/>}/>
+                <Route path="/Explore.js" element={<Explore />}/>
                 <Route path="/About.js" element={<About/>}/>
             </Routes>
         </div>

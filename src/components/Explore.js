@@ -8,10 +8,10 @@ export function Explore(props) {
 
             <div className="explore-container">
                 <div className="explore-item">
-                    <h3>{props.plants.name}</h3>
+                    {/* <h3>{props.plants.name}</h3> */}
                     <div className="plant-img">
                         {/* <a href="plantinfo.html"> LINK THIS LATER*/}
-                            <img src={props.plants.img} alt={props.plants.alt}></img>
+                            {/* <img src={props.plants.img} alt={props.plants.alt}></img> */}
                         {/* </a> */}
                     </div>
                 </div>
