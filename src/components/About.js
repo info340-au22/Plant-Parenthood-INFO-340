@@ -35,7 +35,7 @@ export function About() {
                     <p className="contact-text">Contact Us!</p>
                     <p>
                         <a href="mailto:plant@plantparenthood.com">
-                            <span className="material-icons">email</span>plant@plantparenthood.com
+                            <span className="material-icons">plant@plantparenthood.com</span>
                         </a>
                     </p>
                     <p>© Plant Parenthood 2022</p>
