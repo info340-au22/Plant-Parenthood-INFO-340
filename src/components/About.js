@@ -3,69 +3,7 @@ import React from 'react';
 export function About() {
     return (
         <>
-            <head>
-                <meta charSet="UTF-8" />
-                <meta charSet="UTF-8" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-                />
-                <meta
-                    name="author"
-                    content="Kriti Vajjhula, Ishita Saxena, Archita Singh, Manu Charu"
-                />
-                <meta name="description" content="This is the about page for our website" />
-                <title>About</title>
-                <link rel="icon" type="image/png" href="img/plant-icon-white.png" />
-                {/* link font */}
-                <link href="https://fonts.googleapis.com" />
-                <link href="https://fonts.gstatic.com" crossOrigin="" />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900"
-                    rel="stylesheet"
-                />
-            </head>
-            {/* link Bootstrap */}
-            <link
-                rel="stylesheet"
-                href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-            />
-            <link rel="stylesheet" href="css/style.css" />
-            {/* link Material Icons */}
-            <link
-                href="https://fonts.googleapis.com/icon?family=Material+Icons"
-                rel="stylesheet"
-            />
             <main>
-                <nav className="navbar-expand">
-                    <div>
-                        <ul className="nav">
-                            <li className="nav-link">
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li className="nav-link">
-                                <a href="quiz.html">Quiz</a>
-                            </li>
-                            <li className="nav-link">
-                                <a href="calendar.html">Calendar</a>
-                            </li>
-                            <li className="nav-link">
-                                <a href="explore.html">Explore</a>
-                            </li>
-                            <li className="nav-link">
-                                <a href="about.html">About</a>
-                            </li>
-                            <div className="button-right">
-                                <button className="btn btn-light" aria-label="login">
-                                    Login
-                                </button>
-                                <button className="btn btn-light" aria-label="sign up">
-                                    Sign Up
-                                </button>
-                            </div>
-                        </ul>
-                    </div>
-                </nav>
                 <section className="about-text">
                     <div className="container">
                         <h1>About Us</h1>

@@ -4,6 +4,6 @@ import { Home } from './Home.js';
 
 export default function App(props) {
     return (
-        <Home></Home>
+        <Home />
     );
 }
