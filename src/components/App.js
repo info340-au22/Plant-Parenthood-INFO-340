@@ -12,6 +12,7 @@ import { About } from "./About.js"
 
 
 export default function App(props) {
+    console.log(props.plants);
     return (
         <BrowserRouter>
         <div>
@@ -34,11 +35,11 @@ export default function App(props) {
                 <Route path="/" element={<Home/>}/>
                 <Route path="/Quiz.js" element={<Quiz/>}/>
                 <Route path="/Calendar.js" element={<Calendar/>}/>
-                <Route path="/Explore.js" element={<Explore />}/>
+                <Route path="/Explore.js" element={<Explore  plants={props.plants}/>}/>
                 <Route path="/About.js" element={<About/>}/>
             </Routes>
         </div>
-        
+
         </div>
         </BrowserRouter>
     )
