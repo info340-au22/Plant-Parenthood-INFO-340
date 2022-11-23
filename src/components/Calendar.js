@@ -1,5 +1,30 @@
 import React from 'react';
 
+export function popupForm() {
+    const modal = document.getElementsByClassName('content')[0];
+    const modalBtn = document.getElementsByClassName('new-event')[0];
+    const overlay = document.getElementsByClassName('overlay')[0];
+    const closeBtn = document.getElementsByClassName('close-btn')[0];
+
+    // Create Event Listener to open and close modal
+    modalBtn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+
+    // function to open the modal
+    function openModal() {
+        modal.style.display = 'block';
+        overlay.style.display = 'block'
+
+    }
+
+    // function to close the modal
+    function closeModal() {
+        modal.style.display = 'none';
+        overlay.style.display = 'none'
+    }
+}
+
+
 export function Calendar() {
     return (
         <>
@@ -96,38 +121,35 @@ export function Calendar() {
                     </tbody>
                 </table>
             </div>
-            <div className="add-event">
-                <button className="new-event" aria-label="add event"><a href="calendar.html">+</a></button>
+            <div className='popup'>
+                <button className="new-event" aria-label="add event">+</button>
                 <p className="button-text">Add New Event</p>
-            </div>
-
-            <div className="calendar-Event">
-                <div className="card-container">
-                    <nav>
-                        <h2 className="form-title">Add an Event</h2>
-                        <form>
-                            <div className="form-item">
-                                <label htmlFor="event-input">Event Name:</label>
-                                <input id="event-input" type="text" name="eventname" />
-                            </div>
-                            <div className="form-item">
-                                <label htmlFor="date-input">Date:</label>
-                                <input id="date-input" type="date" name="date" />
-                            </div>
-                            <div className="form-item">
-                                <label htmlFor="notes-input">Add Notes:</label>
-                                <input id="notes-input" type="text" name="addnotes" />
-                            </div>
-                            <div className="form-item">
-                                <label htmlFor="attachment-input">Add Attachments:</label>
-                                <input id="attachment-input" type="file" name="addattachment" />
-                            </div>
-                            <div className='form-btn type'>
-                                <button type="submit" aria-label="submit">Submit</button>
-                                <button type="cancel" aria-label="cancel">Cancel</button>
-                            </div>
-                        </form>
-                    </nav>
+                <div className='overlay'></div>
+                <div className='content'>
+                    <div className='close-btn'>&times;</div>
+                    <h2 className="form-title">Add an Event</h2>
+                    <form>
+                        <div className="form-item">
+                            <label htmlFor="event-input">Event Name:</label>
+                            <input id="event-input" type="text" name="eventname" />
+                        </div>
+                        <div className="form-item">
+                            <label htmlFor="date-input">Date:</label>
+                            <input id="date-input" type="date" name="date" />
+                        </div>
+                        <div className="form-item">
+                            <label htmlFor="notes-input">Add Notes:</label>
+                            <input id="notes-input" type="text" name="addnotes" />
+                        </div>
+                        <div className="form-item">
+                            <label htmlFor="attachment-input">Add Attachments:</label>
+                            <input id="attachment-input" type="file" name="addattachment" />
+                        </div>
+                        <div className='form-btn-type'>
+                            <button type="submit" aria-label="submit">Submit</button>
+                            <button type="cancel" aria-label="cancel">Cancel</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </>

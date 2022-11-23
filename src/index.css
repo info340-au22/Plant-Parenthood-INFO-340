@@ -119,7 +119,7 @@ nav a:hover {
 .about-text {
     padding-top: 2rem;
     height: 100vh;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .about-text h2 {
@@ -358,7 +358,7 @@ th, td, .water-text, .soil, .fertilizer {
 
 /* Calendar Event */
 
-.calendar-Event  {
+.content {
     display: none;
 }
 
@@ -366,29 +366,9 @@ th, td, .water-text, .soil, .fertilizer {
     display: inline-block;
 }
 
-.card-container {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    position: absolute;
-    top: 23%;
-    left: 25%;
-}
-
-.card {
-    background-color: #F0F7F1;
-}
-
-.card-title {
-    text-align: center;
-}
-
-.card-nav:last-child {
-    float: right;
-    background: white;
-}
 
 .form-title {
+    padding: 0.75rem;
     text-align: center;
 }
 
@@ -396,9 +376,65 @@ th, td, .water-text, .soil, .fertilizer {
     padding-bottom: 10px;
 }
 
-.form-btn:hover {
-    background-color: #A9A9A9;
+.card-container {
+    background-color: #787C53;
 }
+
+.form-item {
+    padding-bottom: 0.75rem;
+}
+
+.popup .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 550px;
+    height: 275px;
+    z-index: 2;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    background-color: #787C53;
+}
+
+.popup .close-btn {
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup .close-btn:hover {
+    color: black
+}
+
+.form-btn-type button:hover {
+    background-color: #9c9898;
+}
+
+.form-btn-type button:last-child {
+    margin-left: 1rem;
+}
+
 
 @media (min-width: 320px) {
 
@@ -479,6 +515,7 @@ th, td, .water-text, .soil, .fertilizer {
         bottom: -120px;
         right: 10px;
     }
+
 
     /* Plant Info Page */
 
