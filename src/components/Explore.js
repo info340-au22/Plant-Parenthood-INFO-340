@@ -16,31 +16,48 @@ export function PlantCard(props) {
 }
 
 export function PlantList(props) {
-    const [query, setQuery] = useState("");
+    
+    // creating dom elements for filter
+    const maintenanceArray = ['Low', 'Medium', 'High'];
+    const [selectedMaintenance, isSelectedMaintenanceType] = useState('');
 
-    const plants = props.plants.filter(plant=>plant.name.toLowerCase().includes(query)).map((plant) => 
+    const optionElems = maintenanceArray.map((level) => {
+        return <option key={level} value={level}>{level}</option>
+    })
+
+    // search bar
+    const [query, setQuery] = useState("");
+    const plants = props.plants.filter(plant => plant.name.toLowerCase().includes(query)).map((plant) =>
         <PlantCard key={plant.name} plants={plant} />
     );
 
-    const [selectedMaintenance, isSelectedMaintenanceType] = useState('');
+    function changeSelectedElem(event) {
+        isSelectedMaintenanceType(event.target.value);
+    }
+
+    function handleClick() {
+        props.applyFilterCallback(selectedMaintenance);
+    }
 
     return (
         <div className="explore-body">
             <h1 className="explore-heading">Find your perfect plant!</h1>
             <h2 className="explore-subheading">Search for different species of houseplants in our houseplant index.</h2>
-            <input type="text" placeholder="Search..." onChange={(e)=> setQuery(e.target.value)}/>
-            
+            {/* Search Bar */}
+            <input className="search-bar" type="text" placeholder="Search..." onChange={(e) => setQuery(e.target.value)} />
+            {/* Filter By */}
             <div className="row align-items-center mb-3">
                 <div className="col-auto">
-                    <select id="teamSelect" className="form-select" value={selectedMaintenance}>
-                        <option value="">Show all teams</option>
-                            {/* {optionElems} */}
+                    <select id="maintenanceSelect" className="form-select" value={selectedMaintenance} onChange={changeSelectedElem}>
+                        <option value="">Select maintenance level</option>
+                        {optionElems}
                     </select>
-                <div className="col-auto">
-                    <button id="submitButton" type="submit" className="btn btn-warning">Apply Filter</button>
-                </div> 
+                    <div className="col-auto">
+                        <button onClick={handleClick} id="submitButton" type="submit" className="btn btn-secondary">Apply Filter</button>
+                    </div>
+                </div>
             </div>
-        </div>
+            {/* Plant Cards */}
             <div className="explore-container">
                 {plants}
             </div>
