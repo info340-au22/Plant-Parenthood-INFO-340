@@ -23,10 +23,10 @@ export function PlantList(props) {
     );
 
     return (
-        <div>
+        <div className="explore-body">
             <h1 className="explore-heading">Find your perfect plant!</h1>
             <h2 className="explore-subheading">Search for different species of houseplants in our houseplant index.</h2>
-            <input type="text" placeholder="Search..." onChange={(e)=> setQuery(e.target.value)}/>
+            <input className="search-bar" type="text" placeholder="Search..." onChange={(e)=> setQuery(e.target.value)}/>
             <div className="explore-container">
                 {plants}
             </div>
