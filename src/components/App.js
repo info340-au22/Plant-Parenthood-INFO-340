@@ -11,6 +11,7 @@ import { Quiz } from "./Quiz.js";
 import { Calendar } from "./Calendar.js";
 import { PlantList } from "./Explore.js";
 import { About } from "./About.js"
+import { Question } from './QuestionTemplate.js';
 import Modal from "./Calendar.js"
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
-import { QuizResult } from './QuizResult.js';
+import { Question } from './QuestionTemplate.js';
 import {BrowserRouter as Router} from 'react-router-dom';
 
 export function Quiz() {
