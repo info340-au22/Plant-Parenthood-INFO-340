@@ -363,10 +363,6 @@ th, td, .water-text, .soil, .fertilizer {
 
 /* Calendar Event */
 
-/* .content {
-    display: none;
-} */
-
 .modal {
     position: fixed;
     right: 0;
@@ -385,11 +381,9 @@ th, td, .water-text, .soil, .fertilizer {
 }
 
 .modal-header {
-    padding: 10px
-}
-
-.modal-header h2{
-    text-align: center;
+    padding-top: 10px;
+    position: fixed;
+    top: 220px;
 }
 
 .modal-header button {
@@ -398,22 +392,20 @@ th, td, .water-text, .soil, .fertilizer {
 
 .modal-body {
     padding: 10px;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
 }
 
-/* .close-btn {
+.close-btn {
     cursor: pointer;
     position: absolute;
     right: 1.5rem;
     top: 1rem;
     width: 30px;
     height: 30px;
-    color: black);
+    color: black;
     font-size: 25px;
     line-height: 30px;
     text-align: center;
-} */
+}
 
 .add-event:visited ~ .calendar-Event {
     display: inline-block;
@@ -422,7 +414,6 @@ th, td, .water-text, .soil, .fertilizer {
 .form-title {
     margin: 0;
     padding: 0.75rem;
-    text-align: center;
 }
 
 .card-container .form-item {

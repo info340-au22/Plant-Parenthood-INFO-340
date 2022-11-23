@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 
 const Modal = props => {
     if (!props.show) {
@@ -46,6 +47,7 @@ export default Modal
 
 
 export function Calendar() {
+    const[show, setShow] = useState(false);
     return (
         <>
             <div className="calendar">
@@ -140,6 +142,11 @@ export function Calendar() {
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <div>
+                <button className="new-event" aria-label="add event" onClick={() => setShow(true) }>+</button>
+                <p className="button-text">Add New Event</p>
+                <Modal onClose={() =>setShow(false)} show = {show} /> 
             </div>
 
 
