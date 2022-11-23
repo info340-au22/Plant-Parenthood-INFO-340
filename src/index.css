@@ -246,7 +246,11 @@ footer a:hover {
 /* Explore Page */
 
 .explore-heading {
-    font-size: 3em;
+    font-size: 2rem;
+}
+
+.explore-subheading {
+    font-size: 1rem;
 }
 
 .explore-body {
@@ -262,20 +266,14 @@ footer a:hover {
     gap: 2rem;
 }
 
-.explore-item {
-    width: 32%;     
-}
-
 .explore-item img {
-    max-width: auto;
+    width: 10rem;
+    height: 10rem;
 }
 
 .explore-item h3 {
     font-size: 1.5rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
     padding-top: 1.8rem;
-    padding-bottom: 1.8rem;
     text-align: center;
 }
 
@@ -285,22 +283,27 @@ cite {
 }
 
 .search-bar {
-    margin-left: 6rem;
     font-size: 1.5rem;
     align-self: center;
 }
 
 .explore-body {
-    padding: 3rem;
+    padding: 4rem;
 }
 
-/* #maintenanceSelect {
-    margin: 3rem;
+.form-select {
+    margin-top: 2rem;
+    margin-right: 2rem;
 }
 
-#submitButton {
-    margin-left: auto;
-} */
+.btn-secondary {
+    margin-top: 2rem;
+}
+
+.mb-3 .col-auto {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* Calendar Page */
 
@@ -496,23 +499,23 @@ th, td, .water-text, .soil, .fertilizer {
       left: 50%;
       transform: translate(-50%,-50%);
       padding: 20px 35px;
-  } 
+    } 
 
-  .quiz-contain button {
+    .quiz-contain button {
       padding: 10px 15px;
       font-size: 15px;
-  }
+    }
 
-  .new-event {
-    bottom: -160px;
-    right: -180px;
-}
+    .new-event {
+        bottom: -160px;
+        right: -180px;
+    }
 
-.button-text {
-    position: absolute;
-    bottom: -169px;
-    right: -300px;
-}
+    .button-text {
+        position: absolute;
+        bottom: -169px;
+        right: -300px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -527,19 +530,7 @@ th, td, .water-text, .soil, .fertilizer {
 
     /* Explore Page */
 
-    .explore-heading {
-        padding-top: 4rem;
-        padding-left: 4rem;
-        margin: 2rem;
-    }
-
-    .explore-subheading {
-        padding-left: 4rem;
-        margin: 2rem;
-    }
-
     .explore-container {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -547,6 +538,10 @@ th, td, .water-text, .soil, .fertilizer {
 
     .search-bar {
         padding-right: 10rem;
+    }
+
+    .explore-item {
+        width: 26%;     
     }
 
     /* Calendar Page */
@@ -618,30 +613,36 @@ th, td, .water-text, .soil, .fertilizer {
     .search-bar {
         padding-right: 28rem;
     }
+    .explore-heading {
+        font-size: 2.4rem;
+    }
+    
+    .explore-subheading {
+        font-size: 1.5rem;
+    }
 
-    /*Home Page
+    /* Home Page */
 
     .plant {
-        max-width: 4rem;
-        max-height: 4rem;
-        margin-top: 8.2rem;
+        max-width: 3.2rem;
+        max-height: 3.2rem;
         margin-bottom: 1.5rem;
     }
 
     .col .btn-light {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     .col .btn-light:last-child {
         margin-left: 1rem;
     }
 
-    .row :nth-child(2) h1 {
-        font-size: 3rem;
+    .right-col-container h1 {
+        font-size: 2.4rem;
     }
 
-    .row :nth-child(2) h2 {
-        font-size: 2rem;
-        margin-top: 6rem;
-    } */
+    .right-col-container h2 {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    } 
 } 
