@@ -1,28 +1,48 @@
 import React from 'react';
 
-export function popupForm() {
-    const modal = document.getElementsByClassName('content')[0];
-    const modalBtn = document.getElementsByClassName('new-event')[0];
-    const overlay = document.getElementsByClassName('overlay')[0];
-    const closeBtn = document.getElementsByClassName('close-btn')[0];
-
-    // Create Event Listener to open and close modal
-    modalBtn.addEventListener('click', openModal);
-    closeBtn.addEventListener('click', closeModal);
-
-    // function to open the modal
-    function openModal() {
-        modal.style.display = 'block';
-        overlay.style.display = 'block';
-
+const Modal = props => {
+    if (!props.show) {
+        return null
     }
-
-    // function to close the modal
-    function closeModal() {
-        modal.style.display = 'none';
-        overlay.style.display = 'none';
-    }
+    return (
+        <div className='modal' onClick={props.onClose}>
+            <div className='modal-content' onClick={e => e.stopPropagation()}>
+                <div className='modal-header'>
+                    <h2 className="form-title">Add an Event</h2>
+                </div>
+                <div className='close-modal'>
+                    <div className='close-btn' onClick = {props.onClose}>&times;</div>
+                </div>
+                <div className='modal-body'>
+                    <form>
+                        <div className="form-item">
+                            <label htmlFor="event-input">Event Name:</label>
+                            <input id="event-input" type="text" name="eventname" />
+                        </div>
+                        <div className="form-item">
+                            <label htmlFor="date-input">Date:</label>
+                            <input id="date-input" type="date" name="date" />
+                        </div>
+                        <div className="form-item">
+                            <label htmlFor="notes-input">Add Notes:</label>
+                            <input id="notes-input" type="text" name="addnotes" />
+                        </div>
+                        <div className="form-item">
+                            <label htmlFor="attachment-input">Add Attachments:</label>
+                            <input id="attachment-input" type="file" name="addattachment" />
+                        </div>
+                        <div className='form-btn-type'>
+                            <button type="submit" aria-label="submit">Submit</button>
+                            <button onClick = {props.onClose} className='cancel-btn' type="cancel" aria-label="cancel">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    )
 }
+
+export default Modal
 
 
 export function Calendar() {
@@ -121,7 +141,9 @@ export function Calendar() {
                     </tbody>
                 </table>
             </div>
-            <div className='popup'>
+
+
+            {/* <div className='popup'>
                 <button className="new-event" aria-label="add event">+</button>
                 <p className="button-text">Add New Event</p>
                 <div className='overlay'></div>
@@ -151,7 +173,7 @@ export function Calendar() {
                         </div>
                     </form>
                 </div>
-            </div>
+            </div> */}
         </>
     );
 }

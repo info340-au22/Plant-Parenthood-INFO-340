@@ -363,15 +363,64 @@ th, td, .water-text, .soil, .fertilizer {
 
 /* Calendar Event */
 
-.content {
+/* .content {
     display: none;
+} */
+
+.modal {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.modal-content {
+    width: 500px;
+    background-color: #fff;
+}
+
+.modal-header {
+    padding: 10px
+}
+
+.modal-header h2{
+    text-align: center;
+}
+
+.modal-header button {
+    float: right;
+}
+
+.modal-body {
+    padding: 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+/* .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    width: 30px;
+    height: 30px;
+    color: black);
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+} */
 
 .add-event:visited ~ .calendar-Event {
     display: inline-block;
 }
 
 .form-title {
+    margin: 0;
     padding: 0.75rem;
     text-align: center;
 }
@@ -388,7 +437,7 @@ th, td, .water-text, .soil, .fertilizer {
     padding-bottom: 0.75rem;
 }
 
-.popup .overlay {
+/* .popup .overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -425,10 +474,10 @@ th, td, .water-text, .soil, .fertilizer {
     line-height: 30px;
     text-align: center;
     border-radius: 50%;
-}
+} */
 
-.popup .close-btn:hover {
-    color: black
+.modal .close-btn:hover {
+    color: rgb(143, 0, 0)
 }
 
 .form-btn-type button:hover {
