@@ -1,6 +1,13 @@
 import React from 'react';
+import { Routes, Route, Link, useNavigate } from "react-router-dom";
+import { QuizResult } from './QuizResult';
 
 export function Quiz() {
+    // const navigate = useNavigate();
+
+    // const navigateToQuestion = () => {
+    //     navigate('./QuizResult.js');
+    // }
 
     return (
             <div className="quiz-body">
@@ -14,12 +21,13 @@ export function Quiz() {
                         </header>
 
                         <div className="quiz-contain">
-                            <button className="btn btn-light" aria-label="start quiz"><a href="./questionTemplate.html">Start Quiz</a></button>
-                        </div>
-                        <div className="quiz-contain">
-                            <button className="btn btn-light" aria-label="start quiz">
-                                <a href="./questionTemplate.html" className="big-start">Start Quiz</a>
+                            <button className="btn btn-light" aria-label="start quiz" as={Link} to='/QuizResult.js'>
+                                <a className="big-start">Start Quiz</a>
                             </button>
+
+                            <Routes>
+                                <Route as={Link} to='/QuizResult.js' element={<QuizResult />} />
+                            </Routes>
                         </div>
                     </section>
                 </div>
