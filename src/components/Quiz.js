@@ -1,6 +1,7 @@
 import React from 'react';
 
 export function Quiz() {
+
     return (
             <div className="quiz-body">
                 <div className="body-container">
