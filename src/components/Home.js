@@ -3,6 +3,7 @@ import React from 'react';
 export function Home() {
     return (
         <>
+        <div className="home-body">
             <div className="container-fluid">
                 <div className="row">
                     <div id="backdrop-container" className="col"></div>
@@ -29,6 +30,7 @@ export function Home() {
             <footer>
                 <cite>© Alp Duran https://unsplash.com/photos/5MrddkW_Cbg</cite>
             </footer>
+        </div>
         </>
     );
 }

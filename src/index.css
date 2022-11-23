@@ -40,9 +40,14 @@ h3 {
 
 /* Nav Bar Styling */
 
-nav {
+.color-Nav {
     background-color: #787C53;
-    padding: 0.5rem;
+    padding: 0.75rem;
+}
+
+.color-Nav .container {
+    padding-left: 0rem;
+    margin-left: 1.5rem;
 }
 
 nav a:hover {
@@ -62,15 +67,18 @@ nav a:hover {
 
 .home-body {
     margin-top: 0;
+    height: 100vh;
 }
 
 #backdrop-container {
     display:none;
+    height: 100vh;
 }
 
 .container-fluid {
     background-color: #F0F7F1;
     color:#595c3f;
+    height: 100vh;
 }
 
 .container-fluid h1 {
@@ -248,31 +256,42 @@ footer a:hover {
 .explore-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    gap: 2rem;
 }
 
 .explore-item {
     width: 32%;     
 }
 
-.explore-item h3 {
-    font-size: 1.5rem;
-    padding-left: 64px;
-    padding-right: 64px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
+.explore-item img {
+    max-width: auto;
 }
 
-.plant-img img {
-    padding-bottom: 0;
-    padding-top: 0;
-
+.explore-item h3 {
+    font-size: 1.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    text-align: center;
 }
 
 cite {
     font-size: x-small;
-    padding-left: 64px;
+    padding-left: 4rem;
+}
+
+.search-bar {
+    margin-left: 6rem;
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+.explore-body {
+    padding: 3rem;
 }
 
 /* Calendar Page */
@@ -421,11 +440,14 @@ th, td, .water-text, .soil, .fertilizer {
     }
 
     .explore-container {
-        padding: 6%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    .search-bar {
+        padding-right: 10rem;
     }
 
     /* Calendar Page */
@@ -465,7 +487,7 @@ th, td, .water-text, .soil, .fertilizer {
         max-height: 700px;
         margin-left: 1rem;
         margin-right: 1rem;
-        padding: 3rem;
+        /* padding: 1.5rem; */
     }
     
     .care-info {
@@ -474,9 +496,15 @@ th, td, .water-text, .soil, .fertilizer {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
 
-    /* Home Page */
+    /* Explore Page */
+    
+    .search-bar {
+        padding-right: 28rem;
+    }
+
+    /*Home Page
 
     .plant {
         max-width: 4rem;
@@ -500,5 +528,5 @@ th, td, .water-text, .soil, .fertilizer {
     .row :nth-child(2) h2 {
         font-size: 2rem;
         margin-top: 6rem;
-    }
-}
+    } */
+} 

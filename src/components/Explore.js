@@ -22,11 +22,25 @@ export function PlantList(props) {
         <PlantCard key={plant.name} plants={plant} />
     );
 
+    const [selectedMaintenance, isSelectedMaintenanceType] = useState('');
+
     return (
-        <div>
+        <div className="explore-body">
             <h1 className="explore-heading">Find your perfect plant!</h1>
             <h2 className="explore-subheading">Search for different species of houseplants in our houseplant index.</h2>
             <input type="text" placeholder="Search..." onChange={(e)=> setQuery(e.target.value)}/>
+            
+            <div className="row align-items-center mb-3">
+                <div className="col-auto">
+                    <select id="teamSelect" className="form-select" value={selectedMaintenance}>
+                        <option value="">Show all teams</option>
+                            {/* {optionElems} */}
+                    </select>
+                <div className="col-auto">
+                    <button id="submitButton" type="submit" className="btn btn-warning">Apply Filter</button>
+                </div> 
+            </div>
+        </div>
             <div className="explore-container">
                 {plants}
             </div>
