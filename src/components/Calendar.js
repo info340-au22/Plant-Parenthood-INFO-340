@@ -12,7 +12,7 @@ const Modal = props => {
                     <h2 className="form-title">Add an Event</h2>
                 </div>
                 <div className='close-modal'>
-                    <div className='close-btn' onClick = {props.onClose}>&times;</div>
+                    <div className='close-btn' onClick={props.onClose}>&times;</div>
                 </div>
                 <div className='modal-body'>
                     <form>
@@ -34,7 +34,7 @@ const Modal = props => {
                         </div>
                         <div className='form-btn-type'>
                             <button type="submit" aria-label="submit">Submit</button>
-                            <button onClick = {props.onClose} className='cancel-btn' type="cancel" aria-label="cancel">Cancel</button>
+                            <button onClick={props.onClose} className='cancel-btn' type="cancel" aria-label="cancel">Cancel</button>
                         </div>
                     </form>
                 </div>
@@ -47,7 +47,7 @@ export default Modal
 
 
 export function Calendar() {
-    const[show, setShow] = useState(false);
+    const [show, setShow] = useState(false);
     return (
         <>
             <div className="calendar">
@@ -142,12 +142,13 @@ export function Calendar() {
                         </tr>
                     </tbody>
                 </table>
-            </div>
-            <div>
-                <button className="new-event" aria-label="add event" onClick={() => setShow(true) }>+</button>
+
+                <button className="new-event" aria-label="add event" onClick={() => setShow(true)}>+</button>
                 <p className="button-text">Add New Event</p>
-                <Modal onClose={() =>setShow(false)} show = {show} /> 
+                <Modal onClose={() => setShow(false)} show={show} />
+
             </div>
+            
 
 
             {/* <div className='popup'>

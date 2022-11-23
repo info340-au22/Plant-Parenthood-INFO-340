@@ -5,7 +5,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 
 import { Routes, Route, Link, useNavigate, Redirect } from "react-router-dom";
 import { Home } from "./Home.js";
@@ -60,7 +59,6 @@ export default function App(props) {
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
-
             </>
             <div>
                 <Routes>
@@ -77,5 +75,4 @@ export default function App(props) {
             </div>
         </div>
     );
-
 }
