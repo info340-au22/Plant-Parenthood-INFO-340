@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
-import { QuizResult } from './QuizResult';
+import { QuizResult } from './QuizResult.js';
 import {BrowserRouter as Router} from 'react-router-dom';
 
 export function Quiz() {
@@ -17,13 +17,13 @@ export function Quiz() {
                     <section id="quiz-start">
                         <header className="quiz-header">
                             <div className="quiz-container">
-                                <h1>Discover the plant that will fit you!</h1>
+                                <h1>Discover the plant that fits you best!</h1>
                             </div>
                         </header>
 
                         <div className="quiz-contain">
 
-                            <Link to='./QuizResult.js'>
+                            <Link to='../QuizResult.js'>
                             {/* <button className="btn btn-light" aria-label="start quiz" as={Link} to='/QuizResult.js'> */}
                                 <button className="btn btn-light" aria-label="start quiz">
                                     <div className="big-start">Start Quiz</div>
