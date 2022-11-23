@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 import { Routes, Route, Link, useNavigate, Redirect } from "react-router-dom";
 import { Home } from "./Home.js";
@@ -31,9 +33,9 @@ export default function App(props) {
             }));
         }
     }
-    
+
     // show modal for calendar popup
-    const[show, setShow] = useState(false)
+    const [show, setShow] = useState(false)
 
     return (
         <div>
@@ -52,17 +54,20 @@ export default function App(props) {
                                 <Nav.Link as={Link} to='/Calendar.js'>Calendar</Nav.Link>
                                 <Nav.Link as={Link} to='/Explore.js'>Explore</Nav.Link>
                                 <Nav.Link as={Link} to='/About.js'>About</Nav.Link>
-                            </Nav>
+                            </Nav>  
+                                <Button variant="light">Login</Button>
+                                <Button variant="light">Sign Up</Button>     
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
+
             </>
             <div>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/Quiz.js" element={<Quiz />} />
                     {/* Route for Question Template */}
-                    <Route path="/QuestionTemplate.js" element={<Question />} /> 
+                    <Route path="/QuestionTemplate.js" element={<Question />} />
                     {/* Route for Quiz Result */}
                     <Route path="/QuizResult.js" element={<QuizResult />} />
                     <Route path="/Calendar.js" element={<Calendar />} />
