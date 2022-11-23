@@ -11,6 +11,7 @@ import { Quiz } from "./Quiz.js";
 import { Calendar } from "./Calendar.js";
 import { PlantList } from "./Explore.js";
 import { About } from "./About.js"
+import Modal from "./Calendar.js"
 
 
 
@@ -29,6 +30,9 @@ export default function App(props) {
             }));
         }
     }
+    
+    // show modal for calendar popup
+    const[show, setShow] = useState(false)
 
     return (
         <div>
@@ -56,6 +60,11 @@ export default function App(props) {
                     <Route path="/Explore.js" element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants} />} />
                     <Route path="/About.js" element={<About />} />
                 </Routes>
+            </div>
+            <div>
+                <button className="new-event" aria-label="add event" onClick={() => setShow(true) }>+</button>
+                <p className="button-text">Add New Event</p>
+                <Modal onClose={() =>setShow(false)} show = {show} />
             </div>
         </div>
     );
