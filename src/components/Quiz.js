@@ -23,8 +23,7 @@ export function Quiz() {
 
                         <div className="quiz-contain">
 
-                            
-
+                    
                             {/* <Navigate replace to='./QuizResult.js'> */}
                                 <button className="btn btn-light" aria-label="start quiz">
                                     <div className="big-start">Start Quiz</div>
