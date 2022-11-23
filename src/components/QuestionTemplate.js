@@ -2,7 +2,7 @@ import React from 'react';
 
 export function Question() {
     return (
-        <>
+        // <>
             <div className="quiz-question-container">
                 <section id="question" className="questions-part">
                     <div className="question">
@@ -14,6 +14,6 @@ export function Question() {
                     </div>
                 </section>
             </div>
-        </>
+        // </>
     );
 }

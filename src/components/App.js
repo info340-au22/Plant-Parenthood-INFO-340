@@ -5,13 +5,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-import { Routes, Route, Link, useNavigate } from "react-router-dom";
+import { Routes, Route, Link, useNavigate, Redirect } from "react-router-dom";
 import { Home } from "./Home.js";
 import { Quiz } from "./Quiz.js";
 import { Calendar } from "./Calendar.js";
 import { PlantList } from "./Explore.js";
 import { About } from "./About.js"
 import { Question } from './QuestionTemplate.js';
+import { QuizResult } from './QuizResult.js'
 
 
 
@@ -44,6 +45,10 @@ export default function App(props) {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
                                 <Nav.Link as={Link} to='/Quiz.js'>Quiz</Nav.Link>
+                                {/* Link for QuestionTemplate */}
+                                {/* <Nav.Link as={Link} to='/QuestionTemplate.js'>Quiz</Nav.Link> */}
+                                {/* Link for Quiz Result */}
+                                {/* <Nav.Link as={Link} to='/QuizResult.js'>Quiz</Nav.Link> */}
                                 <Nav.Link as={Link} to='/Calendar.js'>Calendar</Nav.Link>
                                 <Nav.Link as={Link} to='/Explore.js'>Explore</Nav.Link>
                                 <Nav.Link as={Link} to='/About.js'>About</Nav.Link>
@@ -56,6 +61,10 @@ export default function App(props) {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/Quiz.js" element={<Quiz />} />
+                    {/* Route for Question Template */}
+                    <Route path="/QuestionTemplate.js" element={<Question />} /> 
+                    {/* Route for Quiz Result */}
+                    <Route path="/QuizResult.js" element={<QuizResult />} />
                     <Route path="/Calendar.js" element={<Calendar />} />
                     <Route path="/Explore.js" element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants} />} />
                     <Route path="/About.js" element={<About />} />

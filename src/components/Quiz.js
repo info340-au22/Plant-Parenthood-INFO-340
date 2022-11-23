@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import { Question } from './QuestionTemplate.js';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 export function Quiz() {
     // const navigate = useNavigate();
@@ -23,13 +23,13 @@ export function Quiz() {
 
                         <div className="quiz-contain">
 
-                            <Link to='../QuizResult.js'>
-                            {/* <button className="btn btn-light" aria-label="start quiz" as={Link} to='/QuizResult.js'> */}
+                    
+                            {/* <Navigate replace to='./QuizResult.js'> */}
                                 <button className="btn btn-light" aria-label="start quiz">
                                     <div className="big-start">Start Quiz</div>
                                 </button>
                                 {/* <Route path="/QuizResult.js" component={QuizResult}></Route> */}
-                            </Link>
+                            {/* </Navigate> */}
 
                             {/* <Router>
                                 <Route path="/QuizResult.js" component={QuizResult} />
