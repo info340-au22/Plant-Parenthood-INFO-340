@@ -8,6 +8,7 @@ export function Home() {
                 <div className="row">
                     <div id="backdrop-container" className="col"></div>
                     <div className="col">
+                        <div className="right-col-container">
                         <img
                             className="plant"
                             src="img/plant-icon-green.png"
@@ -24,6 +25,7 @@ export function Home() {
                         <button className="btn btn-light" aria-label="sign up">
                             Sign Up
                         </button>
+                    </div>
                     </div>
                 </div>
             </div>
