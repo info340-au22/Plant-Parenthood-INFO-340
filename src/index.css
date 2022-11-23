@@ -331,16 +331,21 @@ th, td {
 .new-event {
     text-align: center;
     font-size: 2rem;
+    line-height: 30px;
     border-radius: 50%;
     position: absolute;
     bottom: -40px;
     right: 120px;
 }
 
+.new-event:hover {
+    background-color: #757575;
+}
+
 .button-text {
     position: absolute;
-    bottom: -45px;
-    right: 5px;
+    bottom: -50px;
+    right: 3px;
 }
 
 
@@ -366,14 +371,13 @@ th, td, .water-text, .soil, .fertilizer {
     display: inline-block;
 }
 
-
 .form-title {
     padding: 0.75rem;
     text-align: center;
 }
 
 .card-container .form-item {
-    padding-bottom: 10px;
+    padding-bottom: 0.5rem;
 }
 
 .card-container {
@@ -458,6 +462,17 @@ th, td, .water-text, .soil, .fertilizer {
       padding: 10px 15px;
       font-size: 15px;
   }
+
+  .new-event {
+    bottom: -160px;
+    right: -180px;
+}
+
+.button-text {
+    position: absolute;
+    bottom: -169px;
+    right: -300px;
+}
 }
 
 @media (min-width: 768px) {
@@ -506,14 +521,14 @@ th, td, .water-text, .soil, .fertilizer {
     }
 
     .new-event {
-        bottom: -115px;
-        right: 130px;
+        bottom: -270px;
+        right: 75px;
     }
     
     .button-text {
         position: absolute;
-        bottom: -120px;
-        right: 10px;
+        bottom: -280px;
+        right: -50px;
     }
 
 
@@ -539,6 +554,21 @@ th, td, .water-text, .soil, .fertilizer {
         margin: 1rem;
         padding: 3rem;
     }
+}
+
+@media (min-width: 960px) {
+    /* Calendar Page */
+    .new-event {
+        bottom: -305px;
+        right: 130px;
+    }
+    
+    .button-text {
+        position: absolute;
+        bottom: -315px;
+        right: 10px;
+    }
+
 }
 
 @media (min-width: 1200px) {

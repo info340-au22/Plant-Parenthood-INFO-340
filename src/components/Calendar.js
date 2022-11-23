@@ -13,14 +13,14 @@ export function popupForm() {
     // function to open the modal
     function openModal() {
         modal.style.display = 'block';
-        overlay.style.display = 'block'
+        overlay.style.display = 'block';
 
     }
 
     // function to close the modal
     function closeModal() {
         modal.style.display = 'none';
-        overlay.style.display = 'none'
+        overlay.style.display = 'none';
     }
 }
 
@@ -147,7 +147,7 @@ export function Calendar() {
                         </div>
                         <div className='form-btn-type'>
                             <button type="submit" aria-label="submit">Submit</button>
-                            <button type="cancel" aria-label="cancel">Cancel</button>
+                            <button className='cancel-btn' type="cancel" aria-label="cancel">Cancel</button>
                         </div>
                     </form>
                 </div>
