@@ -56,12 +56,16 @@ nav a:hover {
     transition: .25s ease-in-out;
 }
 
+.color-Nav Button {
+    margin-right: .4rem;
+    color:#595c3f;
+}
+
 /* Home Page */
 
 .plant {
     max-width: 2rem;
     max-height: 2rem;
-    margin-top: 6rem;
     margin-bottom: 1rem;
 }
 
@@ -85,21 +89,19 @@ nav a:hover {
     color:#595c3f;
 }
 
-.row :nth-child(2) {
+.right-col-container {
     text-align: center;
+    padding: 50px 0;
 }
 
-.row :nth-child(2) h1 {
-    margin-bottom: 4rem;
+.right-col-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 3.2rem;
 }
 
-.row :nth-child(2) h2 {
-    margin-top: 2.6rem;
+.right-col-container h2 {
+    margin-top: 2rem;
     font-weight: lighter;
-}
-
-.row :nth-child(2) .btn-default {
-    margin-top: 4.2rem;
 }
 
 .col .btn-light {
