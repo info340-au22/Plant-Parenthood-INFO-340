@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 export function Question() {
-    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [currQuestion, setCurrQuestion] = useState(0);
 
     let questions = [
         {
@@ -80,28 +80,30 @@ export function Question() {
     ];
 
     const handleAnswerButtonClick = (answerOption) => {
-        const nextQuestion = currentQuestion + 1;
-		if (nextQuestion < questions.length) {
-			setCurrentQuestion(nextQuestion);
-		} else {
-			alert('you reached the end of the quiz');
-		}
+        const nextQuestion = currQuestion + 1;
+        if (nextQuestion < questions.length) {
+            setCurrQuestion(nextQuestion);
+        } else {
+            alert('you reached the end of the quiz');
+        }
     };
 
     return (
-        // <>
+        // add  prev/next button if time
         <div className="quiz-question-container">
-                <div className="question">
-                    <div className="questionText">
-                        {questions[currentQuestion].questionText}
-                    </div>
+            <div className='question-count'>
+                Question {currQuestion + 1}/{questions.length}
+            </div>
+            <div className="question">
+                <div className="questionText">
+                    {questions[currQuestion].questionText}
                 </div>
-                <div className="answers">
-                    {questions[currentQuestion].ansOptions.map((ansOption, index) => (
-                        <button className="btn btn-default" onClick={() => handleAnswerButtonClick()}>{ansOption.text}</button>
-                    ))}
-                </div>
+            </div>
+            <div className="answers">
+                {questions[currQuestion].ansOptions.map((ansOption, index) => (
+                    <button className="btn btn-default" onClick={() => handleAnswerButtonClick()}>{ansOption.text}</button>
+                ))}
+            </div>
         </div>
-        // </>
     );
 }
