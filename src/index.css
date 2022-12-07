@@ -207,7 +207,7 @@ footer a:hover {
 .quiz-question-container {
     /* Center the div  */
     margin: 0 auto;
-    margin-top: 20rem;
+    margin-top: 4rem;
 
     /* Dimensions  */
     width: 70%; /* Can be in percentage also. */
@@ -227,6 +227,10 @@ footer a:hover {
 
 .quiz-question-container .btn:last-child {
     margin-right: 0rem;
+}
+
+.quiz-question-container .btn:hover {
+    background-color:#bcbfa3;
 }
 
 .questionText {
@@ -630,7 +634,7 @@ th, td, .water-text, .soil, .fertilizer {
 
     .right-col-container h2 {
         font-size: 1.5rem;
-        margin-top: 3rem;
+        margin-top: 2rem;
     } 
 
     /* Calendar Page */
