@@ -205,26 +205,44 @@ footer a:hover {
 /* Quiz Template Page */
 
 .quiz-question-container {
-    max-width: 960px;
-    margin-right: auto;
-    padding-left: 1rem;
+    /* Center the div  */
+    margin: 0 auto;
+    margin-top: 20rem;
+
+    /* Dimensions  */
+    width: 70%; /* Can be in percentage also. */
+    padding: 4rem;
+    background-color: #A0A66F;
+    padding: 10rem;
+    border-radius: 16px;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
-.quiz-question-container h2 {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: black;
-    font-size: 40px;
+.quiz-question-container .btn {
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.quiz-question-container .btn:last-child {
+    margin-right: 0rem;
+}
+
+.questionText {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
     text-align: center;
 }
 
-.quiz-options {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.answers {
+    text-align: center;
+}
+
+.question {
+    width: 100%;
+    position: relative;
 }
 
 .quiz-template-body {

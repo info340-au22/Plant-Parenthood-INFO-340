@@ -45,9 +45,9 @@ export default function App(props) {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
-                                <Nav.Link as={Link} to='/Quiz.js'>Quiz</Nav.Link>
+                                {/* <Nav.Link as={Link} to='/Quiz.js'>Quiz</Nav.Link> */}
                                 {/* Link for QuestionTemplate */}
-                                {/* <Nav.Link as={Link} to='/QuestionTemplate.js'>Quiz</Nav.Link> */}
+                                <Nav.Link as={Link} to='/QuestionTemplate.js'>Quiz</Nav.Link>
                                 {/* Link for Quiz Result */}
                                 {/* <Nav.Link as={Link} to='/QuizResult.js'>Quiz</Nav.Link> */}
                                 <Nav.Link as={Link} to='/Calendar.js'>Calendar</Nav.Link>
