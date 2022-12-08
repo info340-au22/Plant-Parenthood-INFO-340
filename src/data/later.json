@@ -1,481 +1,695 @@
 [
-{"name":"Norfolk Island Pine", "img":"", "alt": "Norfolk Island Pine", "Source": "Gardening Know How"},
-{"name":"Pachypodium", "img":"", "alt": "Pachypodium", "Source": "OurHouseplants"},
-{"name":"Parlour Palm<", "img":"", "alt": "Parlour Palm<", "Source": "Nouveau Raw"},
-{"name":"Peace Lily", "img":"", "alt": "Peace Lily", "Source": "MyDomaine"},
-{"name":"Peperomia", "img":"", "alt": "Peperomia", "Source": "Sunset Magazine"},
-{"name":"Philodendron Micans", "img":"", "alt": "Philodendron Micans", "Source": "Art Terrarium"},
-{"name":"Pilea Peperomioides", "img":"", "alt": "Pilea Peperomioides", "Source": "plants.com"},
-{"name":"Pitcher Plant", "img":"", "alt": "Pitcher Plant", "Source": "OurHouseplants"},
-{"name":"Poinsettia", "img":"", "alt": "Poinsettia", "Source": "Pinterest"},
-{"name":"Pot Mum", "img":"", "alt": "Pot Mum", "Source": "My Garden Life"},
-{"name":"Pothos", "img":"", "alt": "Pothos", "Source": "Swansons Nursery"},
-{"name":"Purple Shamrock", "img":"", "alt": "Purple Shamrock", "Source": "ukhouseplants"},
-{"name":"Rabbit’s Foot Fern", "img":"", "alt": "Rabbit’s Foot Fern", "Source": "Hearth and Vine"},
-{"name":"Rubber Plant", "img":"", "alt": "Rubber Plant", "Source": "OurHousePlants"},
-{"name":"Sago Palm", "img":"", "alt": "Sago Palm", "Source": "HGTV"},
-{"name":"Sansevieria", "img":"", "alt": "Sansevieria", "Source": "Vintage Revivals"},
-{"name":"Satin Pothos", "img":"", "alt": "Satin Pothos", "Source": "Greg app"},
-{"name":"Schefflera", "img":"", "alt": "Schefflera", "Source": "Apartment Therapy"},
-{"name":"Senecio", "img":"", "alt": "Senecio", "Source": "Gardening Know How"},
-{"name":"Snake Plant", "img":"", "alt": "Snake Plant", "Source": "Swansons Nursery"},
-{"name":"Spider Plant", "img":"", "alt": "Spider Plant", "Source": "Amazon.com"},
-{"name":"Staghorn Fern", "img":"", "alt": "Staghorn Fern", "Source": "Pinterest"},
-{"name":"Stephanotis", "img":"", "alt": "Stephanotis", "Source": "OurHouseplants"},
-{"name":"String of Hearts", "img":"", "alt": "String of Hearts", "Source": "Pottery Barn"},
-{"name":"String of Turtles", "img":"", "alt": "String of Turtles", "Source": "Pottery Barn"},
-{"name":"Syngonium", "img":"", "alt": "Syngonium", "Source": "OurHousePlants"},
-{"name":"Tradescantia", "img":"", "alt": "Tradescantia", "Source": "OurHouseplants"},
-{"name":"Tillandsia", "img":"", "alt": "Tillandsia", "Source": "Gardener's Path"},
-{"name":"Urn Plant", "img":"", "alt": "Urn Plant", "Source": "OurHouseplants"},
-{"name":"Venus Flytrap", "img":"", "alt": "Venus Flytrap", "Source": "Pinterest"},
-{"name":"Vuylstekeara", "img":"", "alt": "Vuylstekeara", "Source": "OurHouseplants"},
-{"name":"Wandering Dude Plant", "img":"", "alt": "Wandering Dude Plant", "Source": "Amazon.com"},
-{"name":"Weeping Fig", "img":"", "alt": "Weeping Fig", "Source": "PlantVine"},
-{"name":"Yucca", "img":"", "alt": "Yucca", "Source": "OurHouseplants"},
-{"name":"ZZ Plant", "img":"", "alt": "ZZ Plant", "Source": "The Sill"},
-
-
-{
-    "name": "Bird's Nest Fern",
-    "img": "./img/birdsnestfern.png",
-    "MAINTENANCE": "Low",
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Bird's Nest Fern",
-    "Source": "Linda's Flowers"
-},
-{
-    "name": "Bird of Paradise",
-    "img": "./img/birdofparadise.png",
-    "MAINTENANCE": "Medium",
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Bird of Paradise",
-    "Source": "Spacejoy"
-},
-{
-    "name": "Blue Star Fern",
-    "img": "./img/bluestarfern.png",
-    "MAINTENANCE": "Medium",
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Blue Star Fern",
-    "Source": "Gardening Zeal"
-},
-{
-    "name": "Bonsai",
-    "img": "./img/bonsai.png",
-    "MAINTENANCE": "High",
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Bonsai",
-    "Source": "OurHousePlants"
-},
-{
-    "name": "Boston Fern",
-    "img": "./img/bostonFern.png",
-    "MAINTENANCE": "High",
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Boston Fern",
-    "Source": "Wayside Garden",
-},
-{
-    "name": "Cacti",
-    "img": "./img/cacti.png",
-    "MAINTENANCE": "Low",
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Cacti",
-    "Source": "House Beautiful"
-},
-{
-    "name": "Calathea",
-    "img": "./img/Calathea.png",
-    "MAINTENANCE": "High",
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Calathea",
-    "Source": "Hirt's Gardens"
-},
-{
-    "name": "Christmas Cactus",
-    "img": "./img/ChristmasCactus.png",
-    "MAINTENANCE": "Low",
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Christmas Cactus",
-    "Source": "1800Flowers"
-},
-{
-    "name": "Coleus",
-    "img": "./img/Coleus.png",
-    "MAINTENANCE": "Low",
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Coleus",
-    "Source": "Smart Garden Guide"
-},
-{
-    "name": "Corn Plant",
-    "img": "./img/CornPlant.png",
-    "MAINTENANCE": "Low",
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Corn Plant",
-    "Source": "House Plants Experts"
-},
-{
-    "name": "Croton",
-    "img": "./img/Croton.png",
-    "MAINTENANCE": "High",
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Croton",
-    "Source": "Jackson & Perkins"
-},
-{
-    "name": "Crown of Thorns",
-    "img": "./img/CrownOfThorns.png",
-    "MAINTENANCE": "Low",
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Crown of Thorns",
-    "Source": "Plant Care Today"
-},
-{
-    "name": "Curly Spider",
-    "img": "./img/CurlySpider.png",
-    "MAINTENANCE": "Medium",
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Curly Spider",
-    "Source": "Amazon.com"
-},
-{
-    "name": "Cyclamen",
-    "img": "./img/Cyclamen.png",
-    "MAINTENANCE": "Medium",
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Cyclamen",
-    "Source": "Plant Care Today"
-},
-{
-    "name": "Cyperus",
-    "img": "./img/Cyperus.png",
-    "MAINTENANCE": "Low",
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Cyperus",
-    "Source": "House Beautiful"
-
-},
-{
-    "name": "Devil's Ivy",
-    "img": "./img/DevilsIvy.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Devil's Ivy",
-    "Source": "Newsweek"
-},
-{
-    "name": "Dieffenbachia",
-    "img": "./img/Dieffenbachia.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Dieffenbachia",
-    "Source": "Bloomscape"
-},
-{
-    "name": "Donkey Tail Succulent",
-    "img": "./img/DonkeyTail.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Donkey Tail Succulent",
-    "Source": "Red Square Flowers"
-},
-{
-    "name": "Dragon Tree",
-    "img": "./img/DragonTree.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Dragon Tree",
-    "Source": "Indoor Home Garden"
-},
-{
-    "name": "Dumb Cane",
-    "img": "./img/DumbCane.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Dumb Cane",
-    "Source": "House Plants Expert"
-},
-{
-    "name": "Easter Cactus",
-    "img": "./img/EasterCactus.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Easter Cactus",
-    "Source": "The Spruce"
-},
-{
-    "name": "Echeveria",
-    "img": "./img/Echeveria.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Echeveria",
-    "Source": "Pixabay"
-},
-{
-    "name": "Euphorbia Trigona",
-    "img": "./img/EuphorbiaTrigona.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Euphorbia Trigona",
-    "Source": "Magic Valley Gardens"
-},
-{
-    "name": "Fiddle-Leaf Fig",
-    "img": "./img/FiddleLeafFig.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Fiddle-Leaf Fig",
-    "Source": "LeonAndGeorge"
-},
-{
-    "name": "Fittonia",
-    "img": "./img/Fittonia.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Fittonia",
-    "Source": "Laidback Gardener"
-},
-{
-    "name": "Gasteria",
-    "img": "./img/Gasteria.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Gasteria",
-    "Source": "Little Prince Plants"
-},
-{
-    "name": "Gerbera",
-    "img": "./img/Gerbera.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Gerbera",
-    "Source": "My Garden Life"
-},
-{
-    "name": "Haworthia",
-    "img": "./img/Haworthia.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Haworthia",
-    "Source": "Hirt's Garden"
-},
-{
-    "name": "Hedgehog Aloe Plant",
-    "img": "./img/HedgehogAloePlant.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Hedgehog Aloe Plant",
-    "Source": "Planetrina"
-},
-{
-    "name": "Hibiscus",
-    "img": "./img/Hibiscus.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Hibiscus",
-    "Source": "Laidback Gardener"
-},
-{
-    "name": "Hippeastrum",
-    "img": "./img/Hippeastrum.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Hippeastrum",
-    "Source": "Blue Buddha Farm"
-},
-{
-    "name": "Howea Palms",
-    "img": "./img/HoweaPalms.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Howea Palms",
-    "Source": "Gardening Know How"
-},
-{
-    "name": "Hoya Kerrii",
-    "img": "./img/HoyaKerrii.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Hoya Kerrii",
-    "Source": "plants.com"
-},
-{
-    "name": "Hyacinth",
-    "img": "./img/Hyacinth.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Hyacinth",
-    "Source": "Gardening Know How"
-},
-{
-    "name": "Ivy",
-    "img": "./img/Ivy.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Ivy",
-    "Source": "House Beautiful"
-},
-{
-    "name": "Jade Plant",
-    "img": "./img/JadePlant.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Jade Plant",
-    "Source": "OurHousePlants"
-},
-{
-    "name": "Jasmine",
-    "img": "./img/Jasmine.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Jasmine",
-    "Source": "OurHousePlants"
-},
-{
-    "name": "Jewel Orchid",
-    "img": "./img/JewelOrchid.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Jewel Orchid",
-    "Source": "Amazon.com"
-},
-{
-    "name": "Kalanchoe",
-    "img": "./img/Kalanchoe.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Kalanchoe",
-    "Source": "Houseplant Central"
-},
-{
-    "name": "Kangaroo Paw Fern",
-    "img": "./img/KangarooPawFern.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Kangaroo Paw Fern",
-    "Source": "Bloomscape"
-},
-{
-    "name": "Lady Palm",
-    "img": "./img/LadyPalm.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Lady Palm",
-    "Source": "The Spruce"
-},
-{
-    "name": "Lemon Lime Prayer Plant",
-    "img": "./img/LemonLimePrayerPlant.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Lemon Lime Prayer Plant",
-    "Source": "Pinterest"
-},
-{
-    "name": "Lipstick Plant",
-    "img": "./img/LipstickPlant.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Lipstick Plant",
-    "Source": "The Spruce"
-},
-{
-    "name": "Lucky Bamboo",
-    "img": "./img/LuckyBamboo.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Lucky Bamboo",
-    "Source": "Joy Us Garden"
-},
-{
-    "name": "Marimo",
-    "img": "./img/Marimo.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Marimo",
-    "Source": "HGTV"
-},
-{
-    "name": "Mini Monstera",
-    "img": "./img/MiniMonstera.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Mini Monstera",
-    "Source": "Pottery Barn"
-},
-{
-    "name": "Monstera Adansonii",
-    "img": "./img/MonsteraAdansonii.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Monstera Adansonii",
-    "Source": "Plant Vine"
-},
-{
-    "name": "Monstera Deliciosa",
-    "img": "./img/MonsteraDeliciosa.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Monstera Deliciosa",
-    "Source": "The Sill"
-},
-{
-    "name": "Moth Orchid",
-    "img": "./img/MothOrchid.png",
-    "MAINTENANCE": ,
-    "LIGHTING": ,
-    "HUMIDITY": ,
-    "alt": "Moth Orchid",
-    "Source": "The Sill"
-}
+    {
+        "name": "Norfolk Island Pine",
+        "img": "",
+        "alt": "Norfolk Island Pine",
+        "Source": "Gardening Know How"
+    },
+    {
+        "name": "Pachypodium",
+        "img": "",
+        "alt": "Pachypodium",
+        "Source": "OurHouseplants"
+    },
+    {
+        "name": "Parlour Palm<",
+        "img": "",
+        "alt": "Parlour Palm<",
+        "Source": "Nouveau Raw"
+    },
+    {
+        "name": "Peace Lily",
+        "img": "",
+        "alt": "Peace Lily",
+        "Source": "MyDomaine"
+    },
+    {
+        "name": "Peperomia",
+        "img": "",
+        "alt": "Peperomia",
+        "Source": "Sunset Magazine"
+    },
+    {
+        "name": "Philodendron Micans",
+        "img": "",
+        "alt": "Philodendron Micans",
+        "Source": "Art Terrarium"
+    },
+    {
+        "name": "Pilea Peperomioides",
+        "img": "",
+        "alt": "Pilea Peperomioides",
+        "Source": "plants.com"
+    },
+    {
+        "name": "Pitcher Plant",
+        "img": "",
+        "alt": "Pitcher Plant",
+        "Source": "OurHouseplants"
+    },
+    {
+        "name": "Poinsettia",
+        "img": "",
+        "alt": "Poinsettia",
+        "Source": "Pinterest"
+    },
+    {
+        "name": "Pot Mum",
+        "img": "",
+        "alt": "Pot Mum",
+        "Source": "My Garden Life"
+    },
+    {
+        "name": "Pothos",
+        "img": "",
+        "alt": "Pothos",
+        "Source": "Swansons Nursery"
+    },
+    {
+        "name": "Purple Shamrock",
+        "img": "",
+        "alt": "Purple Shamrock",
+        "Source": "ukhouseplants"
+    },
+    {
+        "name": "Rabbit’s Foot Fern",
+        "img": "",
+        "alt": "Rabbit’s Foot Fern",
+        "Source": "Hearth and Vine"
+    },
+    {
+        "name": "Rubber Plant",
+        "img": "",
+        "alt": "Rubber Plant",
+        "Source": "OurHousePlants"
+    },
+    {
+        "name": "Sago Palm",
+        "img": "",
+        "alt": "Sago Palm",
+        "Source": "HGTV"
+    },
+    {
+        "name": "Sansevieria",
+        "img": "",
+        "alt": "Sansevieria",
+        "Source": "Vintage Revivals"
+    },
+    {
+        "name": "Satin Pothos",
+        "img": "",
+        "alt": "Satin Pothos",
+        "Source": "Greg app"
+    },
+    {
+        "name": "Schefflera",
+        "img": "",
+        "alt": "Schefflera",
+        "Source": "Apartment Therapy"
+    },
+    {
+        "name": "Senecio",
+        "img": "",
+        "alt": "Senecio",
+        "Source": "Gardening Know How"
+    },
+    {
+        "name": "Snake Plant",
+        "img": "",
+        "alt": "Snake Plant",
+        "Source": "Swansons Nursery"
+    },
+    {
+        "name": "Spider Plant",
+        "img": "",
+        "alt": "Spider Plant",
+        "Source": "Amazon.com"
+    },
+    {
+        "name": "Staghorn Fern",
+        "img": "",
+        "alt": "Staghorn Fern",
+        "Source": "Pinterest"
+    },
+    {
+        "name": "Stephanotis",
+        "img": "",
+        "alt": "Stephanotis",
+        "Source": "OurHouseplants"
+    },
+    {
+        "name": "String of Hearts",
+        "img": "",
+        "alt": "String of Hearts",
+        "Source": "Pottery Barn"
+    },
+    {
+        "name": "String of Turtles",
+        "img": "",
+        "alt": "String of Turtles",
+        "Source": "Pottery Barn"
+    },
+    {
+        "name": "Syngonium",
+        "img": "",
+        "alt": "Syngonium",
+        "Source": "OurHousePlants"
+    },
+    {
+        "name": "Tradescantia",
+        "img": "",
+        "alt": "Tradescantia",
+        "Source": "OurHouseplants"
+    },
+    {
+        "name": "Tillandsia",
+        "img": "",
+        "alt": "Tillandsia",
+        "Source": "Gardener's Path"
+    },
+    {
+        "name": "Urn Plant",
+        "img": "",
+        "alt": "Urn Plant",
+        "Source": "OurHouseplants"
+    },
+    {
+        "name": "Venus Flytrap",
+        "img": "",
+        "alt": "Venus Flytrap",
+        "Source": "Pinterest"
+    },
+    {
+        "name": "Vuylstekeara",
+        "img": "",
+        "alt": "Vuylstekeara",
+        "Source": "OurHouseplants"
+    },
+    {
+        "name": "Wandering Dude Plant",
+        "img": "",
+        "alt": "Wandering Dude Plant",
+        "Source": "Amazon.com"
+    },
+    {
+        "name": "Weeping Fig",
+        "img": "",
+        "alt": "Weeping Fig",
+        "Source": "PlantVine"
+    },
+    {
+        "name": "Yucca",
+        "img": "",
+        "alt": "Yucca",
+        "Source": "OurHouseplants"
+    },
+    {
+        "name": "ZZ Plant",
+        "img": "",
+        "alt": "ZZ Plant",
+        "Source": "The Sill"
+    },
+    {
+        "name": "Bird's Nest Fern",
+        "img": "./img/birdsnestfern.png",
+        "MAINTENANCE": "Low",
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Bird's Nest Fern",
+        "Source": "Linda's Flowers"
+    },
+    {
+        "name": "Bird of Paradise",
+        "img": "./img/birdofparadise.png",
+        "MAINTENANCE": "Medium",
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Bird of Paradise",
+        "Source": "Spacejoy"
+    },
+    {
+        "name": "Blue Star Fern",
+        "img": "./img/bluestarfern.png",
+        "MAINTENANCE": "Medium",
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Blue Star Fern",
+        "Source": "Gardening Zeal"
+    },
+    {
+        "name": "Bonsai",
+        "img": "./img/bonsai.png",
+        "MAINTENANCE": "High",
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Bonsai",
+        "Source": "OurHousePlants"
+    },
+    {
+        "name": "Boston Fern",
+        "img": "./img/bostonFern.png",
+        "MAINTENANCE": "High",
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Boston Fern",
+        "Source": "Wayside Garden",
+    },
+    {
+        "name": "Cacti (Desert Cactus)",
+        "img": "./img/cacti.png",
+        "MAINTENANCE": "Low",
+        "LIGHTING": "Indirect",
+        "LIGHTING_DESCRIPTION": "Cacti require four to six hours of bright sunlight daily. Some species, however, can burn in direct sunlight. Place your cactus by a sunny window, and choose a spot that gets filtered bright light in the summer and direct light in the winter. You can move your cactus outdoors in the summer, but only when night temperatures are 50 degrees Fahrenheit or above.",
+        "HUMIDITY": "Medium",
+        "WATERING": "In the spring and summer, water it every ten days and allow the water to drain fully. During winter, water once every four weeks (every six weeks for some desert species).",
+        "TEMPERATURE": "70-80 degrees",
+        "alt": "Cacti",
+        "Source": "House Beautiful"
+    },
+    {
+        "name": "Calathea",
+        "img": "./img/Calathea.png",
+        "MAINTENANCE": "High",
+        "LIGHTING": "Indirect",
+        "LIGHTING_DESCRIPTION": "The Calathea plant should not receive any direct sunlight, otherwise the markings will disappear. Any location where you can provide shielding from direct sunlight would work well. Markings can become more vivid or completely lost if the lighting is off. Closely observe your plant and move it if it appears less vibrant.",
+        "HUMIDITY": "High",
+        "WATERING": "This plant should be kept slightly moist almost always but never wet. This entails watering in small amounts during the growing seasons as soon as the surface dries up. The plant will accept less water when winter gets closer. A free draining potting mix, with at least one drainage hole will help in preventing root rot from excessive overwatering.",
+        "TEMPERATURE": "60-74 degrees F",
+        "alt": "Calathea",
+        "Source": "Hirt's Gardens"
+    },
+    {
+        "name": "Christmas Cactus",
+        "img": "./img/ChristmasCactus.png",
+        "MAINTENANCE": "Low",
+        "LIGHTING": "Indirect",
+        "LIGHTING_DESCRIPTION": "Direct harsh sunlight should be avoided otherwise the leaves will take on an almost damaged looking hue. The Christmas Cactus needs a well lit spot, but darker locations can work if they’re given brighter light for at least a few months of the year.",
+        "HUMIDITY": "Medium",
+        "WATERING": "You should water the Christmas Cactus as you would a normal houseplant – when the soil becomes dry. Water the plant well and wait until the top inch or so of the soil has fully dried out before watering again.",
+        "TEMPERATURE": "45 - 61 degrees F",
+        "alt": "Christmas Cactus",
+        "Source": "1800Flowers"
+    },
+    {
+        "name": "Coleus",
+        "img": "./img/Coleus.png",
+        "MAINTENANCE": "Medium",
+        "LIGHTING": "Direct",
+        "LIGHTING_DESCRIPTION": "Coleus plants need a good light source without scorching sun to retain their markings. Sitting directly in a North, East or West facing window is ideal, filtered sunlight through a South facing window could work as well.",
+        "HUMIDITY": "Medium",
+        "WATERING": "If the plant is placed in a bright spot as recommended, you will need to keep the soil moist at all times. This potentially entails watering your Coleus once or twice a week. Reduce watering in winter and allow the soil to dry out a bit. If the plant is placed somewhere darker you'll still need to keep the soil moist, but you will need to water much less frequently to prevent the plant from becoming too wet.",
+        "TEMPERATURE": "> 50 degrees F",
+        "alt": "Coleus",
+        "Source": "Smart Garden Guide"
+    },
+    {
+        "name": "Corn Plant",
+        "img": "./img/CornPlant.png",
+        "MAINTENANCE": "Low",
+        "LIGHTING": "Indirect",
+        "LIGHTING_DESCRIPTION": "The Corn Plant does best in light shade or filtered sunlight. If the lighting is too bright, the leaves will scorch. If the lighting is too dark, the new leaves will be small and the stripe(s) may look quite different to those on older leaves.",
+        "HUMIDITY": "High",
+        "WATERING": "These plants benefit from some drying time between waterings. Water the plant well and wait for the top inch of the soil to dry out before you water again. If the Corn Plant is in a good spot with reasonable light and a warm temperature, you can keep the soil moist constantly. In winter, reduce watering, but the soil shouldn't be allowed to dry out completely.",
+        "TEMPERATURE": "60 to 75 degrees F",
+        "alt": "Corn Plant",
+        "Source": "House Plants Experts"
+    },
+    {
+        "name": "Croton",
+        "img": "./img/Croton.png",
+        "MAINTENANCE": "High",
+        "LIGHTING": "Direct",
+        "LIGHTING_DESCRIPTION": "Make sure you place your Croton in bright light. They can cope with fairly low light, but after a few months, you will notice that the leaf colors and markings have diminished or become completely dull. Getting direct sun on the leaves is ideal, especially ub early mornings and late afternoons. Avoid intense midday sunlight to prevent leaf scorching.",
+        "HUMIDITY": "High",
+        "WATERING": "If you give the Croton too little water, the leaves will fall. Too much water will create a similar effect. During growth, the soil should be evenly moist most of the time. It should be moist, not soggy or wet. If you can pour water out of the pot, or there is wetness in the drip tray an hour after watering you're giving the plant too much water. If you're letting the soil dry out completely before watering again, you 're not watering it enough. In winter you need to water your plant much less often – let the top inch dry out fully between waterings. This will prevent overwatering.",
+        "TEMPERATURE": "68 degrees F on average",
+        "alt": "Croton",
+        "Source": "Jackson & Perkins"
+    },
+    {
+        "name": "Crown of Thorns",
+        "img": "./img/CrownOfThorns.png",
+        "MAINTENANCE": "Low",
+        "LIGHTING": "Direct",
+        "LIGHTING_DESCRIPTION": "The Crown of Thorns thrives in full sunshine and will struggle in shade. A few hours of sunlight as a minimum will give you a healthy plant. If direct sun can't be provided, they'll require the brightest spot you have. If grown in low light they end up looking ugly and ragged, small leaves, minimal to no blooms and lots of visible stem.",
+        "HUMIDITY": "Low/Medium",
+        "WATERING": "In the late spring, summer and early fall, water the Crown of Thorns well. Make sure you have drainage holes in the pot so excess water can drain. Some drying is needed as root rot and damage to stems in contact with the soil can occur if the potting mix is kept wet at all times. Make sure you let the plant dry out even more in the winter, and don’t water as much.",
+        "TEMPERATURE": "Above 50 degrees F",
+        "alt": "Crown of Thorns",
+        "Source": "Plant Care Today"
+    },
+    {
+        "name": "Curly Spider",
+        "img": "./img/CurlySpider.png",
+        "MAINTENANCE": "Medium",
+        "LIGHTING": "Indirect",
+        "LIGHTING_DESCRIPTION": "The Curly Spider plant grows best in bright indirect light but can tolerate low light well. It grows slightly slower in less light, but there’s no significant difference in the leaf color. More than three hours of full sun can affect the leaves, causing them to develop brown tips and spots. It’s ideal to give the plant partial to full shade when treated as an outdoor plant.",
+        "HUMIDITY": "Medium",
+        "WATERING": "Even watering your plant is low maintenance. The plant is drought-tolerant, and overwatering the spider plants is the biggest concern. You can let the soil dry out between watering by testing the soil with your finger. Then you can drench the root ball and allow the excess water to run out from the drainage holes in the pot. Still, if you notice brown tips on the leaves, check the chemicals in the water you provide. Your plant is sensitive to the minerals in tap water like chlorine and fluoride. Some municipalities have a lot of these in the water. If the leaf tips turn brown, we recommend leaving the water standing overnight for the chemicals to evaporate. Or you can use distilled water or rainwater where possible.",
+        "TEMPERATURE": "60 to 80 degrees F",
+        "alt": "Curly Spider",
+        "Source": "Amazon.com"
+    },
+    {
+        "name": "Cyclamen",
+        "img": "./img/Cyclamen.png",
+        "MAINTENANCE": "Medium",
+        "LIGHTING": "Indirect",
+        "LIGHTING_DESCRIPTION": "The Cyclamen thrives in bright light away from direct sunlight. If conditions are too dark, the blooms become more sporadic. If the light is too bright, the flowers and leaves can fade in color.",
+        "HUMIDITY": "High",
+        "WATERING": "While your plant is growing, aim for consistently moist soil. However, don’t overwater your Cyclamen, as that can cause the tuber to rot. It’s okay to let the soil dry a bit, but you should never let it dry out completely while it’s growing.",
+        "TEMPERATURE": "60 degrees F",
+        "alt": "Cyclamen",
+        "Source": "Plant Care Today"
+    },
+    {
+        "name": "Cyperus",
+        "img": "./img/Cyperus.png",
+        "MAINTENANCE": "Low",
+        "LIGHTING": "Direct/Indirect",
+        "LIGHTING_DESCRIPTION": "​​The Cyperus plant can be grown equally well in full sun, bright light, light shade or medium shade. If it’s too dark the plant will indicate that to you by producing very little new shoots or stems.",
+        "HUMIDITY": "Medium",
+        "WATERING": "You must provide your Cyperus with a high level of water saturation at all times to keep it healthy. Try to keep the drip tray topped up at all times. Attempting to negotiate on the water requirement will quickly cause brown splotches on the leaves or yellow/brown stems. You can cut back on watering only if temperatures go very low. Additionally, don’t immerse the whole pot in water at any point for the same reason.",
+        "TEMPERATURE": "50 to 72 degrees F",
+        "alt": "Cyperus",
+        "Source": "House Beautiful"
+    },
+    {
+        "name": "Devil's Ivy",
+        "img": "./img/DevilsIvy.png",
+        "MAINTENANCE": "Low",
+        "LIGHTING": "Indirect",
+        "LIGHTING_DESCRIPTION": "Devil’s Ivy is a very low-light tolerant plant. If the room you are thinking of using has a window, then you most likely have enough light. In a darker space, the plant will grow slower and need less water, but it will adapt. It’s best not to move the plant into a brighter space to give it extra light for a short time, as the sudden extra sunlight can burn its leaves. Some minimal direct sun is fine, but these plants easily thrive without it and grow quickly in any well-lit space.",
+        "HUMIDITY": "Low",
+        "WATERING": "Generally, you can water your Ivy when half the soil is dry in the warmer months, and when the soil is dry in the colder months. Time between watering will vary but it can be as often as once a week in the peak of summer or once a month in the dead of winter. The plant will very visibly wilt when it desperately needs water. Essentially, no damage will occur from under-watering your plant, so it is always better to err on the side of too dry than too wet. To fully hydrate the soil, be sure to soak your plant.",
+        "TEMPERATURE": "70 to 90 degrees F",
+        "alt": "Devil's Ivy",
+        "Source": "Newsweek"
+    },
+    {
+        "name": "Dieffenbachia",
+        "img": "./img/Dieffenbachia.png",
+        "MAINTENANCE": "Low",
+        "LIGHTING": "Indirect",
+        "LIGHTING_DESCRIPTION": "Light shade is acceptable but nothing darker. To maintain a healthy plant you should be giving indirect bright light. Keep it away from direct sunlight during the middle of the day and early afternoon when the sun is at its hottest. If the light levels are too bright, the leaves will scorch. If it’s too dark, you will be left with a sickly looking plant.",
+        "HUMIDITY": "High",
+        "WATERING": "The Dieffenbachia like a very good watering then to be left alone to dry out for a bit. Adjust watering according to the season and to the needs of your plant, expect in very warm months to water more often and in winter less regularly.",
+        "TEMPERATURE": "60 to 80 degrees F",
+        "alt": "Dieffenbachia",
+        "Source": "Bloomscape"
+    },
+    {
+        "name": "Donkey Tail Succulent",
+        "img": "./img/DonkeyTail.png",
+        "MAINTENANCE": "Low",
+        "LIGHTING": "Indirect",
+        "LIGHTING_DESCRIPTION": "As with many succulents, Donkey's Tail thrives best with lots of warm sunlight, though it will tolerate a partial shade location. If you’re keeping your plant indoors, opt for a sunny windowsill that provides several hours of daily light. If you're growing your succulent outdoors, put it somewhere that gets plenty of morning sunlight but is partially shaded during more aggressive afternoon hours to avoid scorching its leaves.",
+        "HUMIDITY": "Medium",
+        "WATERING": "When it comes to watering, less is more. Donkey's tail is drought resistant once established, so you should water it more frequently during the spring and summer growing season, and taper off in the fall and winter months. Generally, opt for a single heavy watering each month if your plant is indoors, increasing to once every two or three weeks if it’s outdoors. Check the soil with your finger to make sure the soil is dry at least an inch down before watering the plant. To aid in drainage, choose a pot with holes at its base; a terracotta or clay material can also help wick water from the soil.",
+        "TEMPERATURE": "65 to 75 degrees",
+        "alt": "Donkey Tail Succulent",
+        "Source": "Red Square Flowers"
+    },
+    {
+        "name": "Dragon Tree",
+        "img": "./img/DragonTree.png",
+        "MAINTENANCE": "Low",
+        "LIGHTING": "Indirect",
+        "LIGHTING_DESCRIPTION": "Light shade is best for your Dragon Tree plant. Sitting on a North facing window ledge, close to an East or West facing window or some distance away from a South facing one are all good locations. The leaves will scorch if it's too bright. If it's too dark, newer leaves will be small and limp looking.",
+        "HUMIDITY": "Medium",
+        "WATERING": "Try to keep the soil moist but not wet. A little dryness at the roots is better than overwatering. Cut back on watering in winter – this is the prime time for plants to get the dreaded mushy soft stems.",
+        "TEMPERATURE": "60 to 75 degrees F",
+        "alt": "Dragon Tree",
+        "Source": "Indoor Home Garden"
+    },
+    {
+        "name": "Dumb Cane",
+        "img": "./img/DumbCane.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Dumb Cane",
+        "Source": "House Plants Expert"
+    },
+    {
+        "name": "Easter Cactus",
+        "img": "./img/EasterCactus.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Easter Cactus",
+        "Source": "The Spruce"
+    },
+    {
+        "name": "Echeveria",
+        "img": "./img/Echeveria.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Echeveria",
+        "Source": "Pixabay"
+    },
+    {
+        "name": "Euphorbia Trigona",
+        "img": "./img/EuphorbiaTrigona.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Euphorbia Trigona",
+        "Source": "Magic Valley Gardens"
+    },
+    {
+        "name": "Fiddle-Leaf Fig",
+        "img": "./img/FiddleLeafFig.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Fiddle-Leaf Fig",
+        "Source": "LeonAndGeorge"
+    },
+    {
+        "name": "Fittonia",
+        "img": "./img/Fittonia.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Fittonia",
+        "Source": "Laidback Gardener"
+    },
+    {
+        "name": "Gasteria",
+        "img": "./img/Gasteria.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Gasteria",
+        "Source": "Little Prince Plants"
+    },
+    {
+        "name": "Gerbera",
+        "img": "./img/Gerbera.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Gerbera",
+        "Source": "My Garden Life"
+    },
+    {
+        "name": "Haworthia",
+        "img": "./img/Haworthia.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Haworthia",
+        "Source": "Hirt's Garden"
+    },
+    {
+        "name": "Hedgehog Aloe Plant",
+        "img": "./img/HedgehogAloePlant.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Hedgehog Aloe Plant",
+        "Source": "Planetrina"
+    },
+    {
+        "name": "Hibiscus",
+        "img": "./img/Hibiscus.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Hibiscus",
+        "Source": "Laidback Gardener"
+    },
+    {
+        "name": "Hippeastrum",
+        "img": "./img/Hippeastrum.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Hippeastrum",
+        "Source": "Blue Buddha Farm"
+    },
+    {
+        "name": "Howea Palms",
+        "img": "./img/HoweaPalms.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Howea Palms",
+        "Source": "Gardening Know How"
+    },
+    {
+        "name": "Hoya Kerrii",
+        "img": "./img/HoyaKerrii.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Hoya Kerrii",
+        "Source": "plants.com"
+    },
+    {
+        "name": "Hyacinth",
+        "img": "./img/Hyacinth.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Hyacinth",
+        "Source": "Gardening Know How"
+    },
+    {
+        "name": "Ivy",
+        "img": "./img/Ivy.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Ivy",
+        "Source": "House Beautiful"
+    },
+    {
+        "name": "Jade Plant",
+        "img": "./img/JadePlant.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Jade Plant",
+        "Source": "OurHousePlants"
+    },
+    {
+        "name": "Jasmine",
+        "img": "./img/Jasmine.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Jasmine",
+        "Source": "OurHousePlants"
+    },
+    {
+        "name": "Jewel Orchid",
+        "img": "./img/JewelOrchid.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Jewel Orchid",
+        "Source": "Amazon.com"
+    },
+    {
+        "name": "Kalanchoe",
+        "img": "./img/Kalanchoe.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Kalanchoe",
+        "Source": "Houseplant Central"
+    },
+    {
+        "name": "Kangaroo Paw Fern",
+        "img": "./img/KangarooPawFern.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Kangaroo Paw Fern",
+        "Source": "Bloomscape"
+    },
+    {
+        "name": "Lady Palm",
+        "img": "./img/LadyPalm.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Lady Palm",
+        "Source": "The Spruce"
+    },
+    {
+        "name": "Lemon Lime Prayer Plant",
+        "img": "./img/LemonLimePrayerPlant.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Lemon Lime Prayer Plant",
+        "Source": "Pinterest"
+    },
+    {
+        "name": "Lipstick Plant",
+        "img": "./img/LipstickPlant.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Lipstick Plant",
+        "Source": "The Spruce"
+    },
+    {
+        "name": "Lucky Bamboo",
+        "img": "./img/LuckyBamboo.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Lucky Bamboo",
+        "Source": "Joy Us Garden"
+    },
+    {
+        "name": "Marimo",
+        "img": "./img/Marimo.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Marimo",
+        "Source": "HGTV"
+    },
+    {
+        "name": "Mini Monstera",
+        "img": "./img/MiniMonstera.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Mini Monstera",
+        "Source": "Pottery Barn"
+    },
+    {
+        "name": "Monstera Adansonii",
+        "img": "./img/MonsteraAdansonii.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Monstera Adansonii",
+        "Source": "Plant Vine"
+    },
+    {
+        "name": "Monstera Deliciosa",
+        "img": "./img/MonsteraDeliciosa.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Monstera Deliciosa",
+        "Source": "The Sill"
+    },
+    {
+        "name": "Moth Orchid",
+        "img": "./img/MothOrchid.png",
+        "MAINTENANCE": ,
+        "LIGHTING": ,
+        "HUMIDITY": ,
+        "alt": "Moth Orchid",
+        "Source": "The Sill"
+    }
 ]
