@@ -33,5 +33,449 @@
 {"name":"Wandering Dude Plant", "img":"", "alt": "Wandering Dude Plant", "Source": "Amazon.com"},
 {"name":"Weeping Fig", "img":"", "alt": "Weeping Fig", "Source": "PlantVine"},
 {"name":"Yucca", "img":"", "alt": "Yucca", "Source": "OurHouseplants"},
-{"name":"ZZ Plant", "img":"", "alt": "ZZ Plant", "Source": "The Sill"}
+{"name":"ZZ Plant", "img":"", "alt": "ZZ Plant", "Source": "The Sill"},
+
+
+{
+    "name": "Bird's Nest Fern",
+    "img": "./img/birdsnestfern.png",
+    "MAINTENANCE": "Low",
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Bird's Nest Fern",
+    "Source": "Linda's Flowers"
+},
+{
+    "name": "Bird of Paradise",
+    "img": "./img/birdofparadise.png",
+    "MAINTENANCE": "Medium",
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Bird of Paradise",
+    "Source": "Spacejoy"
+},
+{
+    "name": "Blue Star Fern",
+    "img": "./img/bluestarfern.png",
+    "MAINTENANCE": "Medium",
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Blue Star Fern",
+    "Source": "Gardening Zeal"
+},
+{
+    "name": "Bonsai",
+    "img": "./img/bonsai.png",
+    "MAINTENANCE": "High",
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Bonsai",
+    "Source": "OurHousePlants"
+},
+{
+    "name": "Boston Fern",
+    "img": "./img/bostonFern.png",
+    "MAINTENANCE": "High",
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Boston Fern",
+    "Source": "Wayside Garden",
+},
+{
+    "name": "Cacti",
+    "img": "./img/cacti.png",
+    "MAINTENANCE": "Low",
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Cacti",
+    "Source": "House Beautiful"
+},
+{
+    "name": "Calathea",
+    "img": "./img/Calathea.png",
+    "MAINTENANCE": "High",
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Calathea",
+    "Source": "Hirt's Gardens"
+},
+{
+    "name": "Christmas Cactus",
+    "img": "./img/ChristmasCactus.png",
+    "MAINTENANCE": "Low",
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Christmas Cactus",
+    "Source": "1800Flowers"
+},
+{
+    "name": "Coleus",
+    "img": "./img/Coleus.png",
+    "MAINTENANCE": "Low",
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Coleus",
+    "Source": "Smart Garden Guide"
+},
+{
+    "name": "Corn Plant",
+    "img": "./img/CornPlant.png",
+    "MAINTENANCE": "Low",
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Corn Plant",
+    "Source": "House Plants Experts"
+},
+{
+    "name": "Croton",
+    "img": "./img/Croton.png",
+    "MAINTENANCE": "High",
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Croton",
+    "Source": "Jackson & Perkins"
+},
+{
+    "name": "Crown of Thorns",
+    "img": "./img/CrownOfThorns.png",
+    "MAINTENANCE": "Low",
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Crown of Thorns",
+    "Source": "Plant Care Today"
+},
+{
+    "name": "Curly Spider",
+    "img": "./img/CurlySpider.png",
+    "MAINTENANCE": "Medium",
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Curly Spider",
+    "Source": "Amazon.com"
+},
+{
+    "name": "Cyclamen",
+    "img": "./img/Cyclamen.png",
+    "MAINTENANCE": "Medium",
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Cyclamen",
+    "Source": "Plant Care Today"
+},
+{
+    "name": "Cyperus",
+    "img": "./img/Cyperus.png",
+    "MAINTENANCE": "Low",
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Cyperus",
+    "Source": "House Beautiful"
+
+},
+{
+    "name": "Devil's Ivy",
+    "img": "./img/DevilsIvy.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Devil's Ivy",
+    "Source": "Newsweek"
+},
+{
+    "name": "Dieffenbachia",
+    "img": "./img/Dieffenbachia.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Dieffenbachia",
+    "Source": "Bloomscape"
+},
+{
+    "name": "Donkey Tail Succulent",
+    "img": "./img/DonkeyTail.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Donkey Tail Succulent",
+    "Source": "Red Square Flowers"
+},
+{
+    "name": "Dragon Tree",
+    "img": "./img/DragonTree.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Dragon Tree",
+    "Source": "Indoor Home Garden"
+},
+{
+    "name": "Dumb Cane",
+    "img": "./img/DumbCane.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Dumb Cane",
+    "Source": "House Plants Expert"
+},
+{
+    "name": "Easter Cactus",
+    "img": "./img/EasterCactus.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Easter Cactus",
+    "Source": "The Spruce"
+},
+{
+    "name": "Echeveria",
+    "img": "./img/Echeveria.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Echeveria",
+    "Source": "Pixabay"
+},
+{
+    "name": "Euphorbia Trigona",
+    "img": "./img/EuphorbiaTrigona.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Euphorbia Trigona",
+    "Source": "Magic Valley Gardens"
+},
+{
+    "name": "Fiddle-Leaf Fig",
+    "img": "./img/FiddleLeafFig.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Fiddle-Leaf Fig",
+    "Source": "LeonAndGeorge"
+},
+{
+    "name": "Fittonia",
+    "img": "./img/Fittonia.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Fittonia",
+    "Source": "Laidback Gardener"
+},
+{
+    "name": "Gasteria",
+    "img": "./img/Gasteria.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Gasteria",
+    "Source": "Little Prince Plants"
+},
+{
+    "name": "Gerbera",
+    "img": "./img/Gerbera.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Gerbera",
+    "Source": "My Garden Life"
+},
+{
+    "name": "Haworthia",
+    "img": "./img/Haworthia.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Haworthia",
+    "Source": "Hirt's Garden"
+},
+{
+    "name": "Hedgehog Aloe Plant",
+    "img": "./img/HedgehogAloePlant.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Hedgehog Aloe Plant",
+    "Source": "Planetrina"
+},
+{
+    "name": "Hibiscus",
+    "img": "./img/Hibiscus.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Hibiscus",
+    "Source": "Laidback Gardener"
+},
+{
+    "name": "Hippeastrum",
+    "img": "./img/Hippeastrum.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Hippeastrum",
+    "Source": "Blue Buddha Farm"
+},
+{
+    "name": "Howea Palms",
+    "img": "./img/HoweaPalms.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Howea Palms",
+    "Source": "Gardening Know How"
+},
+{
+    "name": "Hoya Kerrii",
+    "img": "./img/HoyaKerrii.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Hoya Kerrii",
+    "Source": "plants.com"
+},
+{
+    "name": "Hyacinth",
+    "img": "./img/Hyacinth.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Hyacinth",
+    "Source": "Gardening Know How"
+},
+{
+    "name": "Ivy",
+    "img": "./img/Ivy.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Ivy",
+    "Source": "House Beautiful"
+},
+{
+    "name": "Jade Plant",
+    "img": "./img/JadePlant.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Jade Plant",
+    "Source": "OurHousePlants"
+},
+{
+    "name": "Jasmine",
+    "img": "./img/Jasmine.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Jasmine",
+    "Source": "OurHousePlants"
+},
+{
+    "name": "Jewel Orchid",
+    "img": "./img/JewelOrchid.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Jewel Orchid",
+    "Source": "Amazon.com"
+},
+{
+    "name": "Kalanchoe",
+    "img": "./img/Kalanchoe.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Kalanchoe",
+    "Source": "Houseplant Central"
+},
+{
+    "name": "Kangaroo Paw Fern",
+    "img": "./img/KangarooPawFern.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Kangaroo Paw Fern",
+    "Source": "Bloomscape"
+},
+{
+    "name": "Lady Palm",
+    "img": "./img/LadyPalm.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Lady Palm",
+    "Source": "The Spruce"
+},
+{
+    "name": "Lemon Lime Prayer Plant",
+    "img": "./img/LemonLimePrayerPlant.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Lemon Lime Prayer Plant",
+    "Source": "Pinterest"
+},
+{
+    "name": "Lipstick Plant",
+    "img": "./img/LipstickPlant.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Lipstick Plant",
+    "Source": "The Spruce"
+},
+{
+    "name": "Lucky Bamboo",
+    "img": "./img/LuckyBamboo.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Lucky Bamboo",
+    "Source": "Joy Us Garden"
+},
+{
+    "name": "Marimo",
+    "img": "./img/Marimo.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Marimo",
+    "Source": "HGTV"
+},
+{
+    "name": "Mini Monstera",
+    "img": "./img/MiniMonstera.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Mini Monstera",
+    "Source": "Pottery Barn"
+},
+{
+    "name": "Monstera Adansonii",
+    "img": "./img/MonsteraAdansonii.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Monstera Adansonii",
+    "Source": "Plant Vine"
+},
+{
+    "name": "Monstera Deliciosa",
+    "img": "./img/MonsteraDeliciosa.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Monstera Deliciosa",
+    "Source": "The Sill"
+},
+{
+    "name": "Moth Orchid",
+    "img": "./img/MothOrchid.png",
+    "MAINTENANCE": ,
+    "LIGHTING": ,
+    "HUMIDITY": ,
+    "alt": "Moth Orchid",
+    "Source": "The Sill"
+}
 ]
