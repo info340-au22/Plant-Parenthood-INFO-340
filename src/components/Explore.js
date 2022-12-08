@@ -1,17 +1,83 @@
 import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
+import ReactCardFlip from "react-card-flip";
 
 
 export function PlantCard(props) {
+    const [flip, setFlip] = useState(false);
 
     return (
-        <div className="explore-item">
-            <h3>{props.plants.name}</h3>
-            <div className="plant-img">
-                <img src={props.plants.img} alt={props.plants.alt}></img>
+        <ReactCardFlip isFlipped= {flip} flipDirection="vertical">
+            {/* yarn add react-card-flip */}
+
+            <div className="explore-item">
+                <h3>{props.plants.name}</h3>
+                <div className="plant-img">
+                    <img src={props.plants.img} alt={props.plants.alt}></img>
+                </div>
+                <button className="btn btn-default" onClick={() => setFlip(!flip)}>
+                    Flip</button>
             </div>
-        </div>
+            <div className="explore-item">
+                <div className = "card-info">
+                    <h5>
+                        Maintenace: 
+                    </h5>
+                    <p> 
+                        {props.plants.MAINTENANCE}
+                    </p>
+
+                    <h5>
+                        Lighting: 
+                    </h5>
+                    <p>
+                        {props.plants.LIGHTING}
+                    </p>
+
+                    <h5>   
+                        Humidity:
+                    </h5>
+                    <p>
+                        {props.plants.HUMIDITY}
+                    </p>
+
+                    <h5>
+                        Cost:
+                    </h5>
+                    <p>
+                        {props.plants.COST}
+                    </p>
+                </div>
+                {/* <h5>
+                    Lighting Description: 
+                </h5>
+                <p>
+                    {props.plants.LIGHTING_DESCRIPTION}
+                </p> */}
+            
+                {/* <h5>
+                    Watering:
+                </h5>
+                <p>
+                    {props.plants.WATERING}
+                </p> */}
+
+                <br />
+                <button className="btn btn-default" onClick={() => setFlip(!flip)}>
+                    Flip</button>
+            </div>
+
+            {/* <div className="explore-item">
+                <h3>{props.plants.name}</h3>
+                <div className="plant-img">
+                    <img src={props.plants.img} alt={props.plants.alt}></img>
+                </div>
+            </div> */}
+        </ReactCardFlip>
+            
+
+        //</ReactCardFlip>
     )
 }
 

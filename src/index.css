@@ -288,6 +288,7 @@ footer a:hover {
     margin-right: auto;
     max-width: 90%;
     gap: 2rem;
+    /* background: green; */
 }
 
 .explore-item img {
@@ -535,7 +536,17 @@ th, td, .water-text, .soil, .fertilizer {
     }
 
     .explore-item {
-        width: 26%;     
+        /* width: 26%; */
+        width: 16rem;
+        background-color: #C4A484;     
+    }
+
+    .expore-item:hover {
+        transform: rotateY(180deg);
+    }
+
+    .card-info {
+        padding: 2rem;
     }
 
     /* Calendar Page */
@@ -568,12 +579,13 @@ th, td, .water-text, .soil, .fertilizer {
     }
     
     .plant-img img {
-        width: 100%;
+        width: 90%;
         height: auto;
         max-width: 700px;
         max-height: 700px;
         margin-left: 1rem;
         margin-right: 1rem;
+        text-align: center;
         /* padding: 1.5rem; */
     }
     
