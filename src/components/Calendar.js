@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
+import Calendar from 'react-calendar';
+
 
 const Modal = props => {
     if (!props.show) {
@@ -46,13 +48,18 @@ const Modal = props => {
 export default Modal
 
 
-export function Calendar() {
+export function PlantCalendar() {
     const [show, setShow] = useState(false);
+    const [date, setDate] = useState(new Date())
     return (
         <>
             <div className="calendar">
-                <h1 className="month-name">October 2022</h1>
-                <table>
+                {/* <h1 className="month-name">October 2022</h1> */}
+                <div className="calendar-container">
+                    <Calendar onChange={setDate} value={date} />
+                </div>
+
+                {/* <table>
                     <thead>
                         <tr>
                             <th>Sunday</th>
@@ -141,7 +148,7 @@ export function Calendar() {
                             <td></td>
                         </tr>
                     </tbody>
-                </table>
+                </table> */}
 
                 <button className="new-event" aria-label="add event" onClick={() => setShow(true)}>+</button>
                 <p className="button-text">Add New Event</p>
@@ -149,39 +156,6 @@ export function Calendar() {
 
             </div>
             
-
-
-            {/* <div className='popup'>
-                <button className="new-event" aria-label="add event">+</button>
-                <p className="button-text">Add New Event</p>
-                <div className='overlay'></div>
-                <div className='content'>
-                    <div className='close-btn'>&times;</div>
-                    <h2 className="form-title">Add an Event</h2>
-                    <form>
-                        <div className="form-item">
-                            <label htmlFor="event-input">Event Name:</label>
-                            <input id="event-input" type="text" name="eventname" />
-                        </div>
-                        <div className="form-item">
-                            <label htmlFor="date-input">Date:</label>
-                            <input id="date-input" type="date" name="date" />
-                        </div>
-                        <div className="form-item">
-                            <label htmlFor="notes-input">Add Notes:</label>
-                            <input id="notes-input" type="text" name="addnotes" />
-                        </div>
-                        <div className="form-item">
-                            <label htmlFor="attachment-input">Add Attachments:</label>
-                            <input id="attachment-input" type="file" name="addattachment" />
-                        </div>
-                        <div className='form-btn-type'>
-                            <button type="submit" aria-label="submit">Submit</button>
-                            <button className='cancel-btn' type="cancel" aria-label="cancel">Cancel</button>
-                        </div>
-                    </form>
-                </div>
-            </div> */}
         </>
     );
 }

@@ -9,7 +9,7 @@ import Button from 'react-bootstrap/Button';
 import { Routes, Route, Link, useNavigate, Redirect } from "react-router-dom";
 import { Home } from "./Home.js";
 import { Quiz } from "./Quiz.js";
-import { Calendar } from "./Calendar.js";
+import { PlantCalendar } from "./Calendar.js";
 import { PlantList } from "./Explore.js";
 import { About } from "./About.js"
 import { Question } from './QuestionTemplate.js';
@@ -68,7 +68,7 @@ export default function App(props) {
                     <Route path="/QuestionTemplate.js" element={<Question />} />
                     {/* Route for Quiz Result */}
                     {/* <Route path="/QuizResult.js" element={<QuizResult />} /> */}
-                    <Route path="/Calendar.js" element={<Calendar />} />
+                    <Route path="/Calendar.js" element={<PlantCalendar />} />
                     <Route path="/Explore.js" element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants} />} />
                     <Route path="/About.js" element={<About />} />
                 </Routes>
