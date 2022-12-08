@@ -3,12 +3,13 @@ import { useState } from 'react';
 
 export function Question() {
     const [currQuestion, setCurrQuestion] = useState(0);
+    const [quizResult, setQuizResult] = useState("Click to see your results!");
 
     let questions = [
         {
-            questionText: "What Plant Fits you Best?",
+            questionText: "What plant fits you best?",
             ansOptions: [
-                { text: "Start", type: "start"},
+                { text: "Start", type: "start" },
             ],
         },
         {
@@ -82,48 +83,60 @@ export function Question() {
                 { text: "$20-$40", type: "medium" },
                 { text: "$50+", type: "high" },
             ],
-        }
+        },
+        {
+            questionText: "You've reached the end of the quiz!",
+            ansOptions: [
+                { text: quizResult},
+            ],
+        },
     ];
 
     const [scoreA, setScoreA] = useState(0);
     const [scoreB, setScoreB] = useState(0);
     const [scoreC, setScoreC] = useState(0);
-    //let score = 0; 
+
     const nextQuestion = currQuestion + 1;
-    //const nextQuestion = 0;
-    //console.log(score);
-    let max = 0; 
+
+    let max = 0;
     console.log("A = " + scoreA);
     console.log("B = " + scoreB);
     console.log("C = " + scoreC);
-    //console.log(max);
+
+    console.log(quizResult);
+
     const handleAnswerButtonClick = (answerOption) => {
         if (nextQuestion < questions.length) {
             setCurrQuestion(nextQuestion);
             if (answerOption.type == "low") {
                 setScoreA(scoreA + 1);
-            } else if (answerOption.type == "medium"){
+            } else if (answerOption.type == "medium") {
                 setScoreB(scoreB + 1);
-            } else if (answerOption.type == "high"){
-                setScoreC(scoreC + 1); 
+            } else if (answerOption.type == "high") {
+                setScoreC(scoreC + 1);
             } else {
-                setScoreA(scoreA + 0); 
+                setScoreA(scoreA + 0);
             }
         } else {
-            
+            max = Math.max(scoreA, scoreB, scoreC);
+
+            if (scoreA == max) {
+                setQuizResult("Low maintenance");
+            } else if (scoreB == max) {
+                setQuizResult("Medium maintenance");
+            } else {
+                setQuizResult("High maintenance");
+            }
         }
-        // else {
-        //     alert('you reached the end of the quiz');
-        //     max = Math.max(scoreA, scoreB, scoreC);
-        //     // have result page with either low, medium, high plants based on score 
-        // }
     };
 
     let questionBank = questions[currQuestion].ansOptions.map((ansOption, index) => (
-        <button key = {index} className="btn btn-default" onClick={() => handleAnswerButtonClick(ansOption)}>{ansOption.text}</button>
+        <button key={index} className="btn btn-default" onClick={() => handleAnswerButtonClick(ansOption)}>{ansOption.text}</button>
     ))
+    
+
     return (
-        // add  prev/next button if time
+        // add prev/next button if time
         <div className="quiz-question-container">
             <div className='question-count'>
                 Question {currQuestion + 1}/{questions.length}
