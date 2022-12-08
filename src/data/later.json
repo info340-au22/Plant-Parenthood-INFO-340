@@ -283,6 +283,7 @@
         "HUMIDITY": "Medium",
         "WATERING": "In the spring and summer, water it every ten days and allow the water to drain fully. During winter, water once every four weeks (every six weeks for some desert species).",
         "TEMPERATURE": "70-80 degrees",
+        "COST": "$",
         "alt": "Cacti",
         "Source": "House Beautiful"
     },
@@ -295,6 +296,7 @@
         "HUMIDITY": "High",
         "WATERING": "This plant should be kept slightly moist almost always but never wet. This entails watering in small amounts during the growing seasons as soon as the surface dries up. The plant will accept less water when winter gets closer. A free draining potting mix, with at least one drainage hole will help in preventing root rot from excessive overwatering.",
         "TEMPERATURE": "60-74 degrees F",
+        "COST": "$",
         "alt": "Calathea",
         "Source": "Hirt's Gardens"
     },
@@ -307,6 +309,7 @@
         "HUMIDITY": "Medium",
         "WATERING": "You should water the Christmas Cactus as you would a normal houseplant – when the soil becomes dry. Water the plant well and wait until the top inch or so of the soil has fully dried out before watering again.",
         "TEMPERATURE": "45 - 61 degrees F",
+        "COST": "$",
         "alt": "Christmas Cactus",
         "Source": "1800Flowers"
     },
@@ -319,6 +322,7 @@
         "HUMIDITY": "Medium",
         "WATERING": "If the plant is placed in a bright spot as recommended, you will need to keep the soil moist at all times. This potentially entails watering your Coleus once or twice a week. Reduce watering in winter and allow the soil to dry out a bit. If the plant is placed somewhere darker you'll still need to keep the soil moist, but you will need to water much less frequently to prevent the plant from becoming too wet.",
         "TEMPERATURE": "> 50 degrees F",
+        "COST": "$$",
         "alt": "Coleus",
         "Source": "Smart Garden Guide"
     },
@@ -331,6 +335,7 @@
         "HUMIDITY": "High",
         "WATERING": "These plants benefit from some drying time between waterings. Water the plant well and wait for the top inch of the soil to dry out before you water again. If the Corn Plant is in a good spot with reasonable light and a warm temperature, you can keep the soil moist constantly. In winter, reduce watering, but the soil shouldn't be allowed to dry out completely.",
         "TEMPERATURE": "60 to 75 degrees F",
+        "COST": "$$$",
         "alt": "Corn Plant",
         "Source": "House Plants Experts"
     },
@@ -343,6 +348,7 @@
         "HUMIDITY": "High",
         "WATERING": "If you give the Croton too little water, the leaves will fall. Too much water will create a similar effect. During growth, the soil should be evenly moist most of the time. It should be moist, not soggy or wet. If you can pour water out of the pot, or there is wetness in the drip tray an hour after watering you're giving the plant too much water. If you're letting the soil dry out completely before watering again, you 're not watering it enough. In winter you need to water your plant much less often – let the top inch dry out fully between waterings. This will prevent overwatering.",
         "TEMPERATURE": "68 degrees F on average",
+        "COST": "$",
         "alt": "Croton",
         "Source": "Jackson & Perkins"
     },
@@ -355,6 +361,7 @@
         "HUMIDITY": "Low/Medium",
         "WATERING": "In the late spring, summer and early fall, water the Crown of Thorns well. Make sure you have drainage holes in the pot so excess water can drain. Some drying is needed as root rot and damage to stems in contact with the soil can occur if the potting mix is kept wet at all times. Make sure you let the plant dry out even more in the winter, and don’t water as much.",
         "TEMPERATURE": "Above 50 degrees F",
+        "COST": "$",
         "alt": "Crown of Thorns",
         "Source": "Plant Care Today"
     },
@@ -367,6 +374,7 @@
         "HUMIDITY": "Medium",
         "WATERING": "Even watering your plant is low maintenance. The plant is drought-tolerant, and overwatering the spider plants is the biggest concern. You can let the soil dry out between watering by testing the soil with your finger. Then you can drench the root ball and allow the excess water to run out from the drainage holes in the pot. Still, if you notice brown tips on the leaves, check the chemicals in the water you provide. Your plant is sensitive to the minerals in tap water like chlorine and fluoride. Some municipalities have a lot of these in the water. If the leaf tips turn brown, we recommend leaving the water standing overnight for the chemicals to evaporate. Or you can use distilled water or rainwater where possible.",
         "TEMPERATURE": "60 to 80 degrees F",
+        "COST": "$",
         "alt": "Curly Spider",
         "Source": "Amazon.com"
     },
@@ -379,6 +387,7 @@
         "HUMIDITY": "High",
         "WATERING": "While your plant is growing, aim for consistently moist soil. However, don’t overwater your Cyclamen, as that can cause the tuber to rot. It’s okay to let the soil dry a bit, but you should never let it dry out completely while it’s growing.",
         "TEMPERATURE": "60 degrees F",
+        "COST": "$",
         "alt": "Cyclamen",
         "Source": "Plant Care Today"
     },
@@ -391,6 +400,7 @@
         "HUMIDITY": "Medium",
         "WATERING": "You must provide your Cyperus with a high level of water saturation at all times to keep it healthy. Try to keep the drip tray topped up at all times. Attempting to negotiate on the water requirement will quickly cause brown splotches on the leaves or yellow/brown stems. You can cut back on watering only if temperatures go very low. Additionally, don’t immerse the whole pot in water at any point for the same reason.",
         "TEMPERATURE": "50 to 72 degrees F",
+        "COST": "$",
         "alt": "Cyperus",
         "Source": "House Beautiful"
     },
@@ -403,6 +413,7 @@
         "HUMIDITY": "Low",
         "WATERING": "Generally, you can water your Ivy when half the soil is dry in the warmer months, and when the soil is dry in the colder months. Time between watering will vary but it can be as often as once a week in the peak of summer or once a month in the dead of winter. The plant will very visibly wilt when it desperately needs water. Essentially, no damage will occur from under-watering your plant, so it is always better to err on the side of too dry than too wet. To fully hydrate the soil, be sure to soak your plant.",
         "TEMPERATURE": "70 to 90 degrees F",
+        "COST": "$",
         "alt": "Devil's Ivy",
         "Source": "Newsweek"
     },
@@ -415,6 +426,7 @@
         "HUMIDITY": "High",
         "WATERING": "The Dieffenbachia like a very good watering then to be left alone to dry out for a bit. Adjust watering according to the season and to the needs of your plant, expect in very warm months to water more often and in winter less regularly.",
         "TEMPERATURE": "60 to 80 degrees F",
+        "COST": "$",
         "alt": "Dieffenbachia",
         "Source": "Bloomscape"
     },
@@ -427,6 +439,7 @@
         "HUMIDITY": "Medium",
         "WATERING": "When it comes to watering, less is more. Donkey's tail is drought resistant once established, so you should water it more frequently during the spring and summer growing season, and taper off in the fall and winter months. Generally, opt for a single heavy watering each month if your plant is indoors, increasing to once every two or three weeks if it’s outdoors. Check the soil with your finger to make sure the soil is dry at least an inch down before watering the plant. To aid in drainage, choose a pot with holes at its base; a terracotta or clay material can also help wick water from the soil.",
         "TEMPERATURE": "65 to 75 degrees",
+        "COST": "$",
         "alt": "Donkey Tail Succulent",
         "Source": "Red Square Flowers"
     },
@@ -439,6 +452,7 @@
         "HUMIDITY": "Medium",
         "WATERING": "Try to keep the soil moist but not wet. A little dryness at the roots is better than overwatering. Cut back on watering in winter – this is the prime time for plants to get the dreaded mushy soft stems.",
         "TEMPERATURE": "60 to 75 degrees F",
+        "COST": "$",
         "alt": "Dragon Tree",
         "Source": "Indoor Home Garden"
     },
