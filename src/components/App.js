@@ -63,11 +63,11 @@ export default function App(props) {
             <div>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/Quiz.js" element={<Quiz />} />
+                    {/* <Route path="/Quiz.js" element={<Quiz />} /> */}
                     {/* Route for Question Template */}
                     <Route path="/QuestionTemplate.js" element={<Question />} />
                     {/* Route for Quiz Result */}
-                    <Route path="/QuizResult.js" element={<QuizResult />} />
+                    {/* <Route path="/QuizResult.js" element={<QuizResult />} /> */}
                     <Route path="/Calendar.js" element={<Calendar />} />
                     <Route path="/Explore.js" element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants} />} />
                     <Route path="/About.js" element={<About />} />

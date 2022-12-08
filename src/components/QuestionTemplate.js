@@ -6,6 +6,12 @@ export function Question() {
 
     let questions = [
         {
+            questionText: "What Plant Fits you Best?",
+            ansOptions: [
+                { text: "Start", type: "start"},
+            ],
+        },
+        {
             questionText: "Have you owned a plant before?",
             ansOptions: [
                 { text: "No, never", type: "low" },
@@ -79,15 +85,43 @@ export function Question() {
         }
     ];
 
+    const [scoreA, setScoreA] = useState(0);
+    const [scoreB, setScoreB] = useState(0);
+    const [scoreC, setScoreC] = useState(0);
+    //let score = 0; 
+    const nextQuestion = currQuestion + 1;
+    //const nextQuestion = 0;
+    //console.log(score);
+    let max = 0; 
+    console.log("A = " + scoreA);
+    console.log("B = " + scoreB);
+    console.log("C = " + scoreC);
+    //console.log(max);
     const handleAnswerButtonClick = (answerOption) => {
-        const nextQuestion = currQuestion + 1;
         if (nextQuestion < questions.length) {
             setCurrQuestion(nextQuestion);
+            if (answerOption.type == "low") {
+                setScoreA(scoreA + 1);
+            } else if (answerOption.type == "medium"){
+                setScoreB(scoreB + 1);
+            } else if (answerOption.type == "high"){
+                setScoreC(scoreC + 1); 
+            } else {
+                setScoreA(scoreA + 0); 
+            }
         } else {
-            alert('you reached the end of the quiz');
+            
         }
+        // else {
+        //     alert('you reached the end of the quiz');
+        //     max = Math.max(scoreA, scoreB, scoreC);
+        //     // have result page with either low, medium, high plants based on score 
+        // }
     };
 
+    let questionBank = questions[currQuestion].ansOptions.map((ansOption, index) => (
+        <button key = {index} className="btn btn-default" onClick={() => handleAnswerButtonClick(ansOption)}>{ansOption.text}</button>
+    ))
     return (
         // add  prev/next button if time
         <div className="quiz-question-container">
@@ -100,9 +134,7 @@ export function Question() {
                 </div>
             </div>
             <div className="answers">
-                {questions[currQuestion].ansOptions.map((ansOption, index) => (
-                    <button className="btn btn-default" onClick={() => handleAnswerButtonClick()}>{ansOption.text}</button>
-                ))}
+                {questionBank}
             </div>
         </div>
     );
