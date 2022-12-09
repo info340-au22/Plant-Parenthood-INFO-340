@@ -16,13 +16,12 @@ export function PlantCard(props) {
                 <div className="plant-img">
                     <img src={props.plants.img} alt={props.plants.alt}></img>
                 </div>
-                <button className="btn btn-default" onClick={() => setFlip(!flip)}>
-                    Flip</button>
+                <button className="btn btn-default" onClick={() => setFlip(!flip)}>Details</button>
             </div>
             <div className="explore-item">
                 <div className = "card-info">
                     <h5>
-                        Maintenace: 
+                        Maintenance: 
                     </h5>
                     <p> 
                         {props.plants.MAINTENANCE}
@@ -64,8 +63,9 @@ export function PlantCard(props) {
                 </p> */}
 
                 <br />
-                <button className="btn btn-default" onClick={() => setFlip(!flip)}>
-                    Flip</button>
+                <button className="btn btn-default" onClick={() => setFlip(!flip)}>Plant</button>
+
+                {/* <button></button> */}
             </div>
 
             {/* <div className="explore-item">
@@ -84,10 +84,10 @@ export function PlantCard(props) {
 export function PlantList(props) {
     
     // creating dom elements for filter
-    const maintenanceArray = ['Low', 'Medium', 'High'];
-    const [selectedMaintenance, isSelectedMaintenanceType] = useState('');
+    const costArray = ['$', '$$', '$$$'];
+    const [selectedCost, isSelectedCostType] = useState('');
 
-    const optionElems = maintenanceArray.map((level) => {
+    const optionElems = costArray.map((level) => {
         return <option key={level} value={level}>{level}</option>
     })
 
@@ -98,11 +98,11 @@ export function PlantList(props) {
     );
 
     function changeSelectedElem(event) {
-        isSelectedMaintenanceType(event.target.value);
+        isSelectedCostType(event.target.value);
     }
 
     function handleClick() {
-        props.applyFilterCallback(selectedMaintenance);
+        props.applyFilterCallback(selectedCost);
     }
 
     return (
@@ -114,8 +114,8 @@ export function PlantList(props) {
             {/* Filter By */}
             <div className="row align-items-center mb-3">
                 <div className="col-auto">
-                    <select id="maintenanceSelect" className="form-select" value={selectedMaintenance} onChange={changeSelectedElem}>
-                        <option value="">Select maintenance level</option>
+                    <select id="costSelect" className="form-select" value={selectedCost} onChange={changeSelectedElem}>
+                        <option value="">Select Cost level</option>
                         {optionElems}
                     </select>
                     <div className="col-auto">

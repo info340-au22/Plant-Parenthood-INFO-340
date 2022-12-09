@@ -35,7 +35,7 @@ h3 {
     background-color: #595c3f;
     color:#FFF;
     border-color: #595c3f;
-    margin-top: 2rem;
+    margin-top: 2rem; 
 }
 
 /* Nav Bar Styling */
@@ -576,13 +576,16 @@ th, td {
 
     .explore-item {
         /* width: 26%; */
+        /* display: flex; */
         width: 16rem;
-        background-color: #C4A484;     
+        background-color: #C4A484;  
+        border-radius: 25px;   
+        max-width: 100%;
     }
 
-    .expore-item:hover {
-        transform: rotateY(180deg);
-    }
+    /* .explore-item:hover {
+        transform: rotateX(180deg);
+    } */
 
     .card-info {
         padding: 2rem;

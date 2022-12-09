@@ -21,12 +21,12 @@ export default function App(props) {
     // state data for filter
     const [displayedPlants, changeDisplayedPlants] = useState(props.plants);
 
-    function applyFilter(selectedMaintenanceLevel) {
-        if (selectedMaintenanceLevel === "") {
+    function applyFilter(selectedCostLevel) {
+        if (selectedCostLevel === "") {
             changeDisplayedPlants(props.plants);
         } else {
             changeDisplayedPlants(props.plants.filter((plant) => {
-                if (plant.MAINTENANCE === selectedMaintenanceLevel) {
+                if (plant.COST === selectedCostLevel) {
                     return plant;
                 }
             }));
