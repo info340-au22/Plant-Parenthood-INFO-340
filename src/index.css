@@ -35,7 +35,7 @@ h3 {
     background-color: #595c3f;
     color:#FFF;
     border-color: #595c3f;
-    margin-top: 2rem;
+    margin-top: 2rem; 
 }
 
 /* Nav Bar Styling */
@@ -331,12 +331,51 @@ cite {
 }
 
 /* Calendar Page */
+.calendar {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.react-calendar__navigation {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+}
 
-.month-name {
+.react-calendar__navigation button {
+    background-color: white;
+}
+
+.react-calendar__navigation button:hover {
+    background-color: #9c9898;
+}
+
+abbr[title] {
+    text-decoration: none;
+    cursor:default;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+    text-align: center;
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+
+.react-calendar__tile {
+    padding-top: 0.5rem;
+    padding-bottom: 4.75rem;
+    background-color: white;
+}
+
+.react-calendar__tile:hover {
+    background-color: #A0A66F;
+}
+/* .month-name {
     text-align: center;
     padding-top: .5rem;
-}
-table {
+} */
+
+/* table {
     margin-right: auto;
     margin-left: auto;
     table-layout: fixed;
@@ -354,7 +393,7 @@ td {
 
 th, td {
     text-align: center;
-}
+} */
 
 .new-event {
     text-align: center;
@@ -377,17 +416,17 @@ th, td {
     margin-right: 2rem;
 }
 
-th, td, .water-text, .soil, .fertilizer {
+/* th, td, .water-text, .soil, .fertilizer {
     font-size: .8rem;
-}
+} */
 
-.water-text {
+/* .water-text {
     background-color:  #A0A66F;
 }
 
 .soil, .fertilizer {
     background-color: #A98467;
-}
+} */
 
 /* Calendar Event */
 
@@ -537,13 +576,16 @@ th, td, .water-text, .soil, .fertilizer {
 
     .explore-item {
         /* width: 26%; */
+        /* display: flex; */
         width: 16rem;
-        background-color: #C4A484;     
+        background-color: #C4A484;  
+        border-radius: 25px;   
+        max-width: 100%;
     }
 
-    .expore-item:hover {
-        transform: rotateY(180deg);
-    }
+    /* .explore-item:hover {
+        transform: rotateX(180deg);
+    } */
 
     .card-info {
         padding: 2rem;
