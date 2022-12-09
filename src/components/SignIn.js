@@ -26,9 +26,9 @@ export default function SignIn(props) {
     credentialHelper: 'none'
   }
 
-  if (currentUser.userId) { //if signed in
-    return <Navigate to="/" />
-  }
+  // if (currentUser.userId) { //if signed in
+  //   return <Navigate to="/" />
+  // }
 
   return (
     <div className="card bg-light">

@@ -44,32 +44,32 @@ export default function App(props) {
     useEffect(() => {
         //log in a default user
         // loginUser(DEFAULT_USERS[1])
-    
+
         const auth = getAuth();
         //                 authenticator, a callback
         onAuthStateChanged(auth, (firebaseUser) => {
-          if(firebaseUser) {
-            console.log("signing in as", firebaseUser.displayName)
-            console.log(firebaseUser);
-            firebaseUser.userId = firebaseUser.uid;
-            firebaseUser.userName = firebaseUser.displayName;
-            firebaseUser.userImg = firebaseUser.photoURL || "/img/null.png";
-            setCurrentUser(firebaseUser);
-          }
-          else { //no user
-            console.log("signed out");
-            setCurrentUser(DEFAULT_USERS[0]); //change the null user
-          }
+            if (firebaseUser) {
+                console.log("signing in as", firebaseUser.displayName)
+                console.log(firebaseUser);
+                firebaseUser.userId = firebaseUser.uid;
+                firebaseUser.userName = firebaseUser.displayName;
+                firebaseUser.userImg = firebaseUser.photoURL || "/img/null.png";
+                setCurrentUser(firebaseUser);
+            }
+            else { //no user
+                console.log("signed out");
+                setCurrentUser(DEFAULT_USERS[0]); //change the null user
+            }
         })
-    
-    
-      }, [])
+
+
+    }, [])
 
     const loginUser = (userObj) => {
         console.log("logging in as", userObj.userName);
         setCurrentUser(userObj);
-        if(userObj.userId !== null){
-          navigateTo('/'); //go to home
+        if (userObj.userId !== null) {
+            navigateTo('/'); //go to home
         }
     }
 
@@ -84,26 +84,35 @@ export default function App(props) {
                         <Navbar.Brand href="/">Plant Parenthood</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="me-auto">
-                                <Nav.Link as={Link} to='/QuestionTemplate.js'>Quiz</Nav.Link>
-                                <Nav.Link as={Link} to='/Calendar.js'>Calendar</Nav.Link>
-                                <Nav.Link as={Link} to='/Explore.js'>Explore</Nav.Link>
-                                <Nav.Link as={Link} to='/About.js'>About</Nav.Link>
+                            <Nav>
+                                <Nav.Item>
+                                    <Nav.Link as={Link} to='/QuestionTemplate.js'>Quiz</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link as={Link} to='/Calendar.js'>Calendar</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link as={Link} to='/Explore.js'>Explore</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link as={Link} to='/About.js'>About</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Button variant="light" href='/SignIn.js'>Sign In</Button>
+                                </Nav.Item>
                             </Nav>
-                            <Button variant="light">Login</Button>
-                            <Button variant="light">Sign Up</Button>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
             </>
             <div>
                 <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/QuestionTemplate.js" element={<Question />} />
-                        <Route path="/SignIn.js" element={<SignIn currentUser={currentUser} loginCallback={loginUser} />} />
-                        <Route path="/Calendar.js" element={<PlantCalendar />} />
-                        <Route path="/Explore.js" element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants} />} />
-                        <Route path="/About.js" element={<About />} />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/QuestionTemplate.js" element={<Question />} />
+                    <Route path="/Calendar.js" element={<PlantCalendar />} />
+                    <Route path="/Explore.js" element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants} />} />
+                    <Route path="/About.js" element={<About />} />
+                    <Route path="/SignIn.js" element={<SignIn currentUser={currentUser} loginCallback={loginUser} />} />
                 </Routes>
             </div>
         </div>
