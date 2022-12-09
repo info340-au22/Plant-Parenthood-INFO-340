@@ -6,14 +6,13 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 
-import { Routes, Route, Link, useNavigate, Redirect, Navigate, Outlet } from "react-router-dom";
+import { Routes, Route, Link, useNavigate} from "react-router-dom";
 import { Home } from "./Home.js";
-import { Quiz } from "./Quiz.js";
 import { PlantCalendar } from "./Calendar.js";
 import { PlantList } from "./Explore.js";
 import { About } from "./About.js"
 import { Question } from './QuestionTemplate.js';
-import { QuizResult } from './QuizResult.js'
+import { PlantInfo } from './PlantInfo.js' 
 import SignIn from './SignIn.js'
 
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
@@ -103,6 +102,7 @@ export default function App(props) {
                         <Route path="/SignIn.js" element={<SignIn currentUser={currentUser} loginCallback={loginUser} />} />
                         <Route path="/Calendar.js" element={<PlantCalendar />} />
                         <Route path="/Explore.js" element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants} />} />
+                        <Route path="/PlantInfo.js" element={<PlantInfo plants={displayedPlants}/>}/>
                         <Route path="/About.js" element={<About />} />
                 </Routes>
             </div>

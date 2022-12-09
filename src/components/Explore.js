@@ -2,13 +2,14 @@ import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
 import ReactCardFlip from "react-card-flip";
+import { Link } from "react-router-dom";
 
 
 export function PlantCard(props) {
     const [flip, setFlip] = useState(false);
 
     return (
-        <ReactCardFlip isFlipped= {flip} flipDirection="vertical">
+        <ReactCardFlip isFlipped={flip} flipDirection="vertical">
             {/* yarn add react-card-flip */}
 
             <div className="explore-item">
@@ -19,22 +20,22 @@ export function PlantCard(props) {
                 <button className="btn btn-default" onClick={() => setFlip(!flip)}>Details</button>
             </div>
             <div className="explore-item">
-                <div className = "card-info">
+                <div className="card-info">
                     <h5>
-                        Maintenance: 
+                        Maintenance:
                     </h5>
-                    <p> 
+                    <p>
                         {props.plants.MAINTENANCE}
                     </p>
 
                     <h5>
-                        Lighting: 
+                        Lighting:
                     </h5>
                     <p>
                         {props.plants.LIGHTING}
                     </p>
 
-                    <h5>   
+                    <h5>
                         Humidity:
                     </h5>
                     <p>
@@ -47,21 +48,14 @@ export function PlantCard(props) {
                     <p>
                         {props.plants.COST}
                     </p>
-                </div>
-                {/* <h5>
-                    Lighting Description: 
-                </h5>
-                <p>
-                    {props.plants.LIGHTING_DESCRIPTION}
-                </p> */}
-            
-                {/* <h5>
-                    Watering:
-                </h5>
-                <p>
-                    {props.plants.WATERING}
-                </p> */}
 
+
+                    <Link to="/PlantInfo.js"className="plant-more-info-" >
+                        More Info...
+                    </Link>
+
+                </div>
+                
                 <br />
                 <button className="btn btn-default" onClick={() => setFlip(!flip)}>Plant</button>
 
@@ -75,14 +69,14 @@ export function PlantCard(props) {
                 </div>
             </div> */}
         </ReactCardFlip>
-            
+
 
         //</ReactCardFlip>
     )
 }
 
 export function PlantList(props) {
-    
+
     // creating dom elements for filter
     const costArray = ['$', '$$', '$$$'];
     const [selectedCost, isSelectedCostType] = useState('');
