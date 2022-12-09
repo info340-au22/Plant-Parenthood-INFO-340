@@ -20,10 +20,6 @@ import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import DEFAULT_USERS from '../data/users.json';
 
 export default function App(props) {
-    
-    // Sign In vars
-    // const [currentUser, setCurrentUser] = useState(DEFAULT_USERS[0]) //default to null user
-    // const navigateTo = useNavigate(); //navigation hook
 
     // state data for filter
     const [displayedPlants, changeDisplayedPlants] = useState(props.plants);
@@ -40,37 +36,42 @@ export default function App(props) {
         }
     }
 
-    // Sign In
+    const [currentUser, setCurrentUser] = useState(DEFAULT_USERS[0]) //default to null user
 
-    // useEffect(() => {
+    const navigateTo = useNavigate(); //navigation hook
+
+    //effect to run when the component first loads
+    useEffect(() => {
         //log in a default user
-    //     loginUser(DEFAULT_USERS[1])
+        // loginUser(DEFAULT_USERS[1])
+    
+        const auth = getAuth();
+        //                 authenticator, a callback
+        onAuthStateChanged(auth, (firebaseUser) => {
+          if(firebaseUser) {
+            console.log("signing in as", firebaseUser.displayName)
+            console.log(firebaseUser);
+            firebaseUser.userId = firebaseUser.uid;
+            firebaseUser.userName = firebaseUser.displayName;
+            firebaseUser.userImg = firebaseUser.photoURL || "/img/null.png";
+            setCurrentUser(firebaseUser);
+          }
+          else { //no user
+            console.log("signed out");
+            setCurrentUser(DEFAULT_USERS[0]); //change the null user
+          }
+        })
+    
+    
+      }, [])
 
-    //     const auth = getAuth();
-                        
-    //     onAuthStateChanged(auth, (firebaseUser) => {
-    //         if (firebaseUser) {
-    //             console.log("signing in as", firebaseUser.displayName)
-    //             console.log(firebaseUser);
-    //             firebaseUser.userId = firebaseUser.uid;
-    //             firebaseUser.userName = firebaseUser.displayName;
-    //             firebaseUser.userImg = firebaseUser.photoURL || "/img/null.png";
-    //             setCurrentUser(firebaseUser);
-    //         }
-    //         else { //no user
-    //             console.log("signed out");
-    //             setCurrentUser(DEFAULT_USERS[0]); //change the null user
-    //         }
-    //     })
-    // }, [])
-
-    // const loginUser = (userObj) => {
-    //     console.log("logging in as", userObj.userName);
-    //     setCurrentUser(userObj);
-        // if(userObj.userId !== null){
-        //   navigateTo('/chat/general'); //go to chat after login
-        // }
-    // }
+    const loginUser = (userObj) => {
+        console.log("logging in as", userObj.userName);
+        setCurrentUser(userObj);
+        if(userObj.userId !== null){
+          navigateTo('/'); //go to home
+        }
+    }
 
     // calendar popup
     const [show, setShow] = useState(false)
@@ -97,31 +98,14 @@ export default function App(props) {
             </>
             <div>
                 <Routes>
-
-                    {/* <Route element={<ProtectedPage currentUser={currentUser} />}> */}
                         <Route path="/" element={<Home />} />
                         <Route path="/QuestionTemplate.js" element={<Question />} />
-
-                        {/* <Route path="/SignIn.js" element={<SignIn currentUser={currentUser} loginCallback={loginUser} />} /> */}
-                        
+                        <Route path="/SignIn.js" element={<SignIn currentUser={currentUser} loginCallback={loginUser} />} />
                         <Route path="/Calendar.js" element={<PlantCalendar />} />
                         <Route path="/Explore.js" element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants} />} />
                         <Route path="/About.js" element={<About />} />
-                    {/* </Route> */}
-
                 </Routes>
             </div>
         </div>
     );
 }
-
-// function ProtectedPage(props) {
-//     //...determine if user is logged in
-//     if (props.currentUser.userId === null) { //if no user, send to sign in
-//         console.log("no user");
-//         return <Navigate to="/SignIn.js" />
-//     }
-//     else { //otherwise, show the child route content
-//         return <Outlet />
-//     }
-// }
