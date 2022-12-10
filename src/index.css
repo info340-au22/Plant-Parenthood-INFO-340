@@ -38,6 +38,12 @@ h3 {
     margin-top: 2rem; 
 }
 
+.btn-default {
+    background-color: #595c3f;
+    color:#FFF;
+    margin-top: 2rem; 
+}
+
 /* Nav Bar Styling */
 
 .color-Nav {
@@ -278,6 +284,8 @@ footer a:hover {
 }
 
 .explore-body {
+    width: 100vw;
+    min-height: 100vh;
     background-color: #F0F7F1;
 }
 
@@ -493,7 +501,6 @@ th, td {
 .form-btn-type button:last-child {
     margin-left: 1rem;
 }
-
 
 @media (min-width: 320px) {
     /* Quiz Result Page */

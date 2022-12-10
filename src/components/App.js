@@ -6,13 +6,13 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 
-import { Routes, Route, Link, useNavigate} from "react-router-dom";
+import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import { Home } from "./Home.js";
 import { PlantCalendar } from "./Calendar.js";
 import { PlantList } from "./Explore.js";
 import { About } from "./About.js"
 import { Question } from './QuestionTemplate.js';
-import { PlantInfo } from './PlantInfo.js' 
+import { PlantInfo } from './PlantInfo.js'
 import SignIn from './SignIn.js'
 
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
@@ -41,11 +41,8 @@ export default function App(props) {
 
     //effect to run when the component first loads
     useEffect(() => {
-        //log in a default user
-        // loginUser(DEFAULT_USERS[1])
-
         const auth = getAuth();
-        //                 authenticator, a callback
+
         onAuthStateChanged(auth, (firebaseUser) => {
             if (firebaseUser) {
                 console.log("signing in as", firebaseUser.displayName)
@@ -57,10 +54,9 @@ export default function App(props) {
             }
             else { //no user
                 console.log("signed out");
-                setCurrentUser(DEFAULT_USERS[0]); //change the null user
+                setCurrentUser(DEFAULT_USERS[0]);
             }
         })
-
 
     }, [])
 
@@ -68,7 +64,7 @@ export default function App(props) {
         console.log("logging in as", userObj.userName);
         setCurrentUser(userObj);
         if (userObj.userId !== null) {
-            navigateTo('/'); //go to home
+            navigateTo('/');
         }
     }
 
@@ -99,6 +95,9 @@ export default function App(props) {
                                 <Nav.Item>
                                     <Button variant="light" href='/SignIn.js'>Sign In</Button>
                                 </Nav.Item>
+                                {/* <Nav.Item>
+                                    <Button variant="light" href='/SignOut.js'>Sign Out</Button>
+                                </Nav.Item> */}
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
@@ -106,14 +105,13 @@ export default function App(props) {
             </>
             <div>
                 <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/QuestionTemplate.js" element={<Question />} />
-                        <Route path="/SignIn.js" element={<SignIn currentUser={currentUser} loginCallback={loginUser} />} />
-                        <Route path="/Calendar.js" element={<PlantCalendar />} />
-                        <Route path="/Explore.js" element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants} />} />
-                        <Route path="/PlantInfo.js" element={<PlantInfo plants={displayedPlants}/>}/>
-                        <Route path="/About.js" element={<About />} />
-                        <Route path="/SignIn.js" element={<SignIn currentUser={currentUser} loginCallback={loginUser} />} />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/QuestionTemplate.js" element={<Question />} />
+                    <Route path="/Calendar.js" element={<PlantCalendar />} />
+                    <Route path="/Explore.js" element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants} />} />
+                    <Route path="/PlantInfo.js" element={<PlantInfo plants={displayedPlants} />} />
+                    <Route path="/About.js" element={<About />} />
+                    <Route path="/SignIn.js" element={<SignIn currentUser={currentUser} loginCallback={loginUser} />} />
                 </Routes>
             </div>
         </div>
