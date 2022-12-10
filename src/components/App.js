@@ -85,19 +85,19 @@ export default function App(props) {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav>
                                 <Nav.Item>
-                                    <Nav.Link as={Link} to='/QuestionTemplate.js'>Quiz</Nav.Link>
+                                    <Nav.Link aria-label = "Quiz Page" as={Link} to='/QuestionTemplate.js'>Quiz</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link as={Link} to='/Calendar.js'>Calendar</Nav.Link>
+                                    <Nav.Link aria-label = "Calendar Page"as={Link} to='/Calendar.js'>Calendar</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link as={Link} to='/Explore.js'>Explore</Nav.Link>
+                                    <Nav.Link aria-label = "Explore Page" as={Link} to='/Explore.js'>Explore</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link as={Link} to='/About.js'>About</Nav.Link>
+                                    <Nav.Link as={Link} aria-lable = "About Page" to='/About.js'>About</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Button variant="light" href='/SignIn.js'>Sign In</Button>
+                                    <Button variant="light" aria-label = "Sign In" href='/SignIn.js'>Sign In</Button>
                                 </Nav.Item>
                             </Nav>
                         </Navbar.Collapse>
