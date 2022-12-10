@@ -33,7 +33,7 @@ export function PlantInfo(props) {
                 <ul>
                     <li>Lighting Description: {plant.LIGHTING_DESCRIPTION}</li>
                     <li>Watering: {plant.WATERING}</li>
-                    <li>Props: {plant.TEMPERATURE}</li>
+                    <li>Temperature: {plant.TEMPERATURE}</li>
                     {/* <li>WATERING: Keep compost moist and allow it to dry out slightly between watering's.</li>
                     <li>Average warmth at 15°C - 21°C / 60°F - 72°F. Try to keep the temperature above 15°C / 60°F in Winter.</li> */}
                 </ul>
