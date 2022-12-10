@@ -1,5 +1,5 @@
 import React from 'react';
-import { RegistrationForm } from './SubscribeForm.js'
+import  RegistrationForm  from './SubscribeForm.js'
 
 export function About() {
     return (
@@ -31,9 +31,8 @@ export function About() {
 
                         <h2>Sign Up for Our Newsletter:</h2>
 
-                        <p>
-                            {RegistrationForm}
-                        </p>
+                            <RegistrationForm />
+                        
                     </div>
                 </section>
             </main>
