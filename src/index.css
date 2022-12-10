@@ -340,9 +340,24 @@ cite {
 
 /* Calendar Page */
 .calendar {
-    height: 500;
+    height: 500px;
     margin: 50px;
 }
+
+.calendar-title {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.add-event {
+    text-align: center;
+}
+
+/* removing in-style attempt */
+/* .event-add-title {
+    width: "20%";
+    margin-right: "10px";
+} */
 
 .new-event {
     text-align: center;
@@ -466,7 +481,7 @@ cite {
     }
 
     /* Calendar Page */
-    table {
+    /* table {
         width: 30rem;
         height: 30rem;
     }
@@ -479,12 +494,12 @@ cite {
         position: absolute;
         bottom: -110px;
         margin-right: -1rem;
-    }
+    } */
 }
 
 @media (min-width: 576px) {
     /* Calendar Page */
-    table {
+    /* table {
         width: 35rem;
         height: 35rem;
     }
@@ -496,7 +511,7 @@ cite {
     .button-text {
         position: absolute;
         bottom: -70px;
-    }
+    } */
     
 }
 
@@ -541,7 +556,7 @@ cite {
 
     /* Calendar Page */
 
-    table {
+    /* table {
         width: 48rem;
         height: 35rem;
     }
@@ -557,7 +572,7 @@ cite {
     .button-text {
         position: absolute;
         bottom: -160px;
-    }
+    } */
 
 
     /* Plant Info Page */
