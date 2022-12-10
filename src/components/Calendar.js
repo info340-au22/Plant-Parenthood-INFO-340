@@ -151,7 +151,7 @@ export function PlantCalendar() {
                 </table> */}
 
                 <button className="new-event" aria-label="add event" onClick={() => setShow(true)}>+</button>
-                <p className="button-text">Add New Event</p>
+                <p className="button-text" aria-label = "Add New Event">Add New Event</p>
                 <Modal onClose={() => setShow(false)} show={show} />
 
             </div>

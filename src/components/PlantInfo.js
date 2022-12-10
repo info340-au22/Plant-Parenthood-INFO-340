@@ -6,7 +6,7 @@ export function PlantInfo(props) {
     const plants = props.plants.map((plant) => 
         <p key={plant.name} plantData={plant}></p>
     );
-    console.log(props.plantData);
+    console.log(props.plants);
 
     return (
         <div className="plant-info-container">

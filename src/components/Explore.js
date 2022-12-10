@@ -17,7 +17,7 @@ export function PlantCard(props) {
                 <div className="plant-img">
                     <img src={props.plants.img} alt={props.plants.alt}></img>
                 </div>
-                <button className="btn btn-default" onClick={() => setFlip(!flip)}>Details</button>
+                <button className="btn btn-default" aria-label = "View Details"onClick={() => setFlip(!flip)} >Details</button>
             </div>
             <div className="explore-item">
                 <div className="card-info">
@@ -55,9 +55,9 @@ export function PlantCard(props) {
                     </Link>
 
                 </div>
-                
+
                 <br />
-                <button className="btn btn-default" onClick={() => setFlip(!flip)}>Plant</button>
+                <button className="btn btn-default" aria-label = "View Plant"onClick={() => setFlip(!flip)}>Plant</button>
 
                 {/* <button></button> */}
             </div>
@@ -113,7 +113,7 @@ export function PlantList(props) {
                         {optionElems}
                     </select>
                     <div className="col-auto">
-                        <button onClick={handleClick} id="submitButton" type="submit" className="btn btn-secondary">Apply Filter</button>
+                        <button onClick={handleClick} id="submitButton" type="submit" className="btn btn-secondary" aria-label="Apply Filter">Apply Filter</button>
                     </div>
                 </div>
             </div>
