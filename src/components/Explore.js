@@ -50,7 +50,7 @@ export function PlantCard(props) {
                     </p>
 
 
-                    <Link to="/PlantInfo.js"className="plant-more-info-" >
+                    <Link to={"/PlantInfo/" + props.plants.name}className="plant-more-info-" >
                         More Info...
                     </Link>
 

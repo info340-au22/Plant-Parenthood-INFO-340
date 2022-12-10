@@ -108,11 +108,11 @@ export function Question() {
     const handleAnswerButtonClick = (answerOption) => {
         if (nextQuestion < questions.length) {
             setCurrQuestion(nextQuestion);
-            if (answerOption.type == "low") {
+            if (answerOption.type === "low") {
                 setScoreA(scoreA + 1);
-            } else if (answerOption.type == "medium") {
+            } else if (answerOption.type === "medium") {
                 setScoreB(scoreB + 1);
-            } else if (answerOption.type == "high") {
+            } else if (answerOption.type === "high") {
                 setScoreC(scoreC + 1);
             } else {
                 setScoreA(scoreA + 0);
@@ -120,9 +120,9 @@ export function Question() {
         } else {
             max = Math.max(scoreA, scoreB, scoreC);
 
-            if (scoreA == max) {
+            if (scoreA === max) {
                 setQuizResult("Low maintenance");
-            } else if (scoreB == max) {
+            } else if (scoreB === max) {
                 setQuizResult("Medium maintenance");
             } else {
                 setQuizResult("High maintenance");
