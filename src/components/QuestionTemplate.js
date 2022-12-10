@@ -87,7 +87,7 @@ export function Question() {
         {
             questionText: "You've reached the end of the quiz!",
             ansOptions: [
-                { text: quizResult},
+                { text: quizResult },
             ],
         },
     ];
@@ -99,11 +99,11 @@ export function Question() {
     const nextQuestion = currQuestion + 1;
 
     let max = 0;
-    console.log("A = " + scoreA);
-    console.log("B = " + scoreB);
-    console.log("C = " + scoreC);
+    // console.log("A = " + scoreA);
+    // console.log("B = " + scoreB);
+    // console.log("C = " + scoreC);
 
-    console.log(quizResult);
+    // console.log(quizResult);
 
     const handleAnswerButtonClick = (answerOption) => {
         if (nextQuestion < questions.length) {
@@ -131,7 +131,7 @@ export function Question() {
     };
 
     let questionBank = questions[currQuestion].ansOptions.map((ansOption, index) => (
-        <button key={index} className="btn btn-default" aria-label = "Click an Option"onClick={() => handleAnswerButtonClick(ansOption)}>{ansOption.text}</button>
+        <button key={index} className="btn btn-default" aria-label = "Click an Option" onClick={() => handleAnswerButtonClick(ansOption)}>{ansOption.text}</button>
     ))
     
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { RegistrationForm } from './SubscribeForm.js'
 
 export function About() {
     return (
@@ -8,7 +9,7 @@ export function About() {
                     <div className="container">
                         <h1>About Us</h1>
                         <p>
-                            Created by: Kriti Vajjhula, Ishita Saxena, Archita Singh, Manu Charu
+                            Created by: Kriti Vajjhula, Ishita Saxena, Archita Singh, Saimanasvi Charugundla
                         </p>
                         <h2>Why plant care?</h2>
                         <p>
@@ -26,6 +27,12 @@ export function About() {
                             resource that displays species suggestions, care tips, etc. A web app
                             could find these users’ preferences, provide them with helpful
                             information, and help them nurture their plants.
+                        </p>
+
+                        <h2>Sign Up for Our Newsletter:</h2>
+
+                        <p>
+                            {RegistrationForm}
                         </p>
                     </div>
                 </section>
