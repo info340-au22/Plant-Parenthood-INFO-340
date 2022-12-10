@@ -1,7 +1,7 @@
 [
     {
         "name": "African Violet",
-        "img": "./img/africanviolet.png",
+        "img": "../img/africanviolet.png",
         "MAINTENANCE": "Medium",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION":"The African Violet thrives in bright light as that is the best way to achieve flowers, but should never be placed in direct light. Too much bright light will cause leaf problems (yellow edges, patches, holes).",  
@@ -14,7 +14,7 @@
     },
     {
         "name": "Aglaonema",
-        "img": "./img/aglaonema.png",
+        "img": "../img/aglaonema.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "Most aglaonema species prefer bright indirect light. Direct sunlight can cause leaf scorch. Species with light green or heavily variegated types need more light than darker green and less variegation.", 
@@ -27,10 +27,10 @@
     },
     {
         "name": "Alocasia",
-        "img": "./img/alocasia.png",
+        "img": "../img/alocasia.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Indirect",
-        "LIGHTING_DESCRPTION": "It is best to avoid direct harsh sunlight and dark spots for your plant. Locations that are in the middle with bright indirect sunlight is the best option for this plant as prolonged exposure to sunlight can be detrimental to the plant.", 
+        "LIGHTING_DESCRIPTION": "It is best to avoid direct harsh sunlight and dark spots for your plant. Locations that are in the middle with bright indirect sunlight is the best option for this plant as prolonged exposure to sunlight can be detrimental to the plant.", 
         "HUMIDITY": "High",
         "WATERING": "For continuous growth and a healthy plant, make sure to keep the soil moist at all times but not soggy as too much and too less water will hurt the roots.", 
         "TEMPERATURE":" 61+ degrees", 
@@ -40,7 +40,7 @@
     },
     {
         "name": "Aloe Vera",
-        "img": "./img/aloevera.png",
+        "img": "../img/aloevera.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Direct",
         "LIGHTING_DESCRIPTION": "Strong indirect sunlight with some direct sunlight will help for an Aloe Vera plant to healthily grow.", 
@@ -53,7 +53,7 @@
     },
     {
         "name": "Angel Wing Begonia",
-        "img": "./img/angelwingbegonia.png",
+        "img": "../img/angelwingbegonia.png",
         "MAINTENANCE": "Medium",
         "LIGHTING": "Indirect", 
         "LIGHTING_DESCRIPTION": "Angel Wing Begonias need bright locations with indirect sunlight. Direct harsh sunlight will harm the plant, so this should be avoided.",
@@ -66,7 +66,7 @@
     },
     {
         "name": "Anthurium",
-        "img": "./img/anthurium.png",
+        "img": "../img/anthurium.png",
         "MAINTENANCE": " Low", 
         "LIGHTING": "Indirect", 
         "LIGHTING_DESCRIPTION": "Good bright light is perfect for Anthuriums and can help the plant produce new leaves and flowers. The plant can survive in low light for a few days, but bright indirect light is recommended for optimal growth of flowers and leaves.", 
@@ -79,7 +79,7 @@
     },
     {
         "name": "Areca Palm",
-        "img": "./img/arecapalm.png",
+        "img": "../img/arecapalm.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "Areca Palm can survive in dark shady areas and also areas with direct sunlight but both must be moderated. To avoid changing locations of the plant, keep the plant in a bright spot that receives no direct sunlight.",
@@ -92,7 +92,7 @@
     },
     {
         "name": "Aspidistra",
-        "img": "./img/aspidistra.png",
+        "img": "../img/aspidistra.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "Aspidistra plants are okay with any light as long as it is not direct sunlight. ",
@@ -105,7 +105,7 @@
     },
     {
         "name": "Baby Rubber Plant",
-        "img": "./img/babyrubberplant.png",
+        "img": "../img/babyrubberplant.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Indirect",
         "LIGHTING_DESRIPTION": "Baby Rubber Plants need a lot of light and can handle direct sunlight as long as it is not too hot. For good growth, it is important to have indirect sunlight.", 
@@ -118,7 +118,7 @@
     },
     {
         "name": "Bird's Nest Fern",
-        "img": "./img/birdsnestfern.png",
+        "img": "../img/birdsnestfern.png",
         "MAINTENANCE": "Medium",
         "LIGHTING":  "Indirect", 
         "LIGHTING_DESCRIPTION": "Consistent Indirect medium sunlight is perfect for Bird’s Nest Fern plants.", 
@@ -131,7 +131,7 @@
     },
     {
         "name": "Bird of Paradise",
-        "img": "./img/birdofparadise.png",
+        "img": "../img/birdofparadise.png",
         "MAINTENANCE": "Medium",  
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "For lots of growth and flowers, Bird of Paradise plants need a lot of bright light and some direct sunlight. A east, west, or north facing window is perfect.", 
@@ -144,7 +144,7 @@
     },
     {
         "name": "Blue Star Fern",
-        "img": "./img/bluestarfern.png",
+        "img": "../img/bluestarfern.png",
         "MAINTENANCE": "Medium",  
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "A lot of light is needed for the Blue Star Fern plant. Indirect bright light is the best so the brightest spot in your home that does not get direct sunlight is best.", 
@@ -157,7 +157,7 @@
     },
     {
         "name": "Bonsai",
-        "img": "./img/bonsai.png",
+        "img": "../img/bonsai.png",
         "MAINTENANCE": "High",  
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "Most Indoor Bonsai require a brightly lit spot. A few will accept direct sunlight but because of the watering demands covered below and as you will not usually want a great deal of growth, a bright spot is almost always enough.", 
@@ -170,7 +170,7 @@
     },
     {
         "name": "Boston Fern",
-        "img": "./img/bostonFern.png",
+        "img": "../img/bostonFern.png",
         "MAINTENANCE": " ",  
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "Moderate light levels are needed for the Boston fern. This plant accepts some direct sunlight and also shady areas but for a healthy plant, find a bright place in your home that receives indirect sunlight.", 
@@ -183,7 +183,7 @@
     },
     {
         "name": "Cacti (Desert Cactus)",
-        "img": "./img/cacti.png",
+        "img": "../img/cacti.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "Cacti require four to six hours of bright sunlight daily. Some species, however, can burn in direct sunlight. Place your cactus by a sunny window, and choose a spot that gets filtered bright light in the summer and direct light in the winter. You can move your cactus outdoors in the summer, but only when night temperatures are 50 degrees Fahrenheit or above.",
@@ -196,7 +196,7 @@
     },
     {
         "name": "Calathea",
-        "img": "./img/Calathea.png",
+        "img": "../img/Calathea.png",
         "MAINTENANCE": "High",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "The Calathea plant should not receive any direct sunlight, otherwise the markings will disappear. Any location where you can provide shielding from direct sunlight would work well. Markings can become more vivid or completely lost if the lighting is off. Closely observe your plant and move it if it appears less vibrant.",
@@ -209,7 +209,7 @@
     },
     {
         "name": "Christmas Cactus",
-        "img": "./img/ChristmasCactus.png",
+        "img": "../img/ChristmasCactus.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "Direct harsh sunlight should be avoided otherwise the leaves will take on an almost damaged looking hue. The Christmas Cactus needs a well lit spot, but darker locations can work if they’re given brighter light for at least a few months of the year.",
@@ -222,7 +222,7 @@
     },
     {
         "name": "Coleus",
-        "img": "./img/Coleus.png",
+        "img": "../img/Coleus.png",
         "MAINTENANCE": "Medium",
         "LIGHTING": "Direct",
         "LIGHTING_DESCRIPTION": "Coleus plants need a good light source without scorching sun to retain their markings. Sitting directly in a North, East or West facing window is ideal, filtered sunlight through a South facing window could work as well.",
@@ -235,7 +235,7 @@
     },
     {
         "name": "Corn Plant",
-        "img": "./img/CornPlant.png",
+        "img": "../img/CornPlant.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "The Corn Plant does best in light shade or filtered sunlight. If the lighting is too bright, the leaves will scorch. If the lighting is too dark, the new leaves will be small and the stripe(s) may look quite different to those on older leaves.",
@@ -248,7 +248,7 @@
     },
     {
         "name": "Croton",
-        "img": "./img/Croton.png",
+        "img": "../img/Croton.png",
         "MAINTENANCE": "High",
         "LIGHTING": "Direct",
         "LIGHTING_DESCRIPTION": "Make sure you place your Croton in bright light. They can cope with fairly low light, but after a few months, you will notice that the leaf colors and markings have diminished or become completely dull. Getting direct sun on the leaves is ideal, especially ub early mornings and late afternoons. Avoid intense midday sunlight to prevent leaf scorching.",
@@ -261,7 +261,7 @@
     },
     {
         "name": "Crown of Thorns",
-        "img": "./img/CrownOfThorns.png",
+        "img": "../img/CrownOfThorns.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Direct",
         "LIGHTING_DESCRIPTION": "The Crown of Thorns thrives in full sunshine and will struggle in shade. A few hours of sunlight as a minimum will give you a healthy plant. If direct sun can't be provided, they'll require the brightest spot you have. If grown in low light they end up looking ugly and ragged, small leaves, minimal to no blooms and lots of visible stem.",
@@ -274,7 +274,7 @@
     },
     {
         "name": "Curly Spider",
-        "img": "./img/CurlySpider.png",
+        "img": "../img/CurlySpider.png",
         "MAINTENANCE": "Medium",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "The Curly Spider plant grows best in bright indirect light but can tolerate low light well. It grows slightly slower in less light, but there’s no significant difference in the leaf color. More than three hours of full sun can affect the leaves, causing them to develop brown tips and spots. It’s ideal to give the plant partial to full shade when treated as an outdoor plant.",
@@ -287,7 +287,7 @@
     },
     {
         "name": "Cyclamen",
-        "img": "./img/Cyclamen.png",
+        "img": "../img/Cyclamen.png",
         "MAINTENANCE": "Medium",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "The Cyclamen thrives in bright light away from direct sunlight. If conditions are too dark, the blooms become more sporadic. If the light is too bright, the flowers and leaves can fade in color.",
@@ -300,7 +300,7 @@
     },
     {
         "name": "Cyperus",
-        "img": "./img/Cyperus.png",
+        "img": "../img/Cyperus.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Direct/Indirect",
         "LIGHTING_DESCRIPTION": "​​The Cyperus plant can be grown equally well in full sun, bright light, light shade or medium shade. If it’s too dark the plant will indicate that to you by producing very little new shoots or stems.",
@@ -313,7 +313,7 @@
     },
     {
         "name": "Devil's Ivy",
-        "img": "./img/DevilsIvy.png",
+        "img": "../img/DevilsIvy.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "Devil’s Ivy is a very low-light tolerant plant. If the room you are thinking of using has a window, then you most likely have enough light. In a darker space, the plant will grow slower and need less water, but it will adapt. It’s best not to move the plant into a brighter space to give it extra light for a short time, as the sudden extra sunlight can burn its leaves. Some minimal direct sun is fine, but these plants easily thrive without it and grow quickly in any well-lit space.",
@@ -326,7 +326,7 @@
     },
     {
         "name": "Dieffenbachia",
-        "img": "./img/Dieffenbachia.png",
+        "img": "../img/Dieffenbachia.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "Light shade is acceptable but nothing darker. To maintain a healthy plant you should be giving indirect bright light. Keep it away from direct sunlight during the middle of the day and early afternoon when the sun is at its hottest. If the light levels are too bright, the leaves will scorch. If it’s too dark, you will be left with a sickly looking plant.",
@@ -339,7 +339,7 @@
     },
     {
         "name": "Donkey Tail Succulent",
-        "img": "./img/DonkeyTail.png",
+        "img": "../img/DonkeyTail.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "As with many succulents, Donkey's Tail thrives best with lots of warm sunlight, though it will tolerate a partial shade location. If you’re keeping your plant indoors, opt for a sunny windowsill that provides several hours of daily light. If you're growing your succulent outdoors, put it somewhere that gets plenty of morning sunlight but is partially shaded during more aggressive afternoon hours to avoid scorching its leaves.",
@@ -352,7 +352,7 @@
     },
     {
         "name": "Dragon Tree",
-        "img": "./img/DragonTree.png",
+        "img": "../img/DragonTree.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "Light shade is best for your Dragon Tree plant. Sitting on a North facing window ledge, close to an East or West facing window or some distance away from a South facing one are all good locations. The leaves will scorch if it's too bright. If it's too dark, newer leaves will be small and limp looking.",

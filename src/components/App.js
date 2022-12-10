@@ -9,10 +9,12 @@ import Button from 'react-bootstrap/Button';
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import { Home } from "./Home.js";
 import { PlantCalendar } from "./Calendar.js";
-import { PlantList } from "./Explore.js";
 import { About } from "./About.js"
 import { Question } from './QuestionTemplate.js';
-import { PlantInfo } from './PlantInfo.js'
+import { PlantInfo } from './PlantInfo.js';
+import { Explore } from './Explore.js';
+import { PlantList } from './PlantList.js';
+
 import SignIn from './SignIn.js'
 
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
@@ -109,8 +111,9 @@ export default function App(props) {
                     <Route path="/" element={<Home />} />
                     <Route path="/QuestionTemplate.js" element={<Question />} />
                     <Route path="/Calendar.js" element={<PlantCalendar />} />
-                    <Route path="/Explore.js" element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants} />} >
-                        {/* <Route path="/PlantInfo/:plantName" element={<PlantInfo plants={displayedPlants} />} /> */}
+                    <Route path="/Explore.js" element={<Explore />} >
+                        <Route path="/Explore.js/:plantName" element={<PlantInfo plants={displayedPlants} />} />
+                        <Route index={true} element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants}/>} />
                     </Route>
                     <Route path="/About.js" element={<About />} />
                     <Route path="/SignIn.js" element={<SignIn currentUser={currentUser} loginCallback={loginUser} />} />
