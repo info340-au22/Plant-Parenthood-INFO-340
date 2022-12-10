@@ -8,6 +8,8 @@ import { BrowserRouter } from 'react-router-dom';
 // import CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../src/index.css';
+import "react-big-calendar/lib/css/react-big-calendar.css";
+import "react-datepicker/dist/react-datepicker.css";
 
 import App from './components/App';
 import SAMPLE_PLANTS from './data/plants.json';

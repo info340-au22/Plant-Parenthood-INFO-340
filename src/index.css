@@ -340,68 +340,9 @@ cite {
 
 /* Calendar Page */
 .calendar {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    height: 500;
+    margin: 50px;
 }
-.react-calendar__navigation {
-    padding-top: 1rem;
-    text-align: center;
-    font-size: 1.25rem;
-}
-
-.react-calendar__navigation button {
-    background-color: white;
-}
-
-.react-calendar__navigation button:hover {
-    background-color: #9c9898;
-}
-
-abbr[title] {
-    text-decoration: none;
-    cursor:default;
-}
-
-.react-calendar__month-view__weekdays__weekday {
-    text-align: center;
-    font-size: 1.25rem;
-    padding-top: 1rem;
-    font-weight: bold;
-}
-
-.react-calendar__tile {
-    padding-top: 0.5rem;
-    padding-bottom: 4.75rem;
-    background-color: white;
-}
-
-.react-calendar__tile:hover {
-    background-color: #A0A66F;
-}
-/* .month-name {
-    text-align: center;
-    padding-top: .5rem;
-} */
-
-/* table {
-    margin-right: auto;
-    margin-left: auto;
-    table-layout: fixed;
-    width: 40rem;
-    height: 20rem;
-    border: 1px black solid;
-    background-color: white;
-}
-
-td {
-    border: 1px solid black;
-    vertical-align: text-top;
-    padding: .5rem;
-}
-
-th, td {
-    text-align: center;
-} */
 
 .new-event {
     text-align: center;
