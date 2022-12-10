@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -8,13 +8,15 @@ import Button from 'react-bootstrap/Button';
 
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import { Home } from "./Home.js";
-import { Quiz } from "./Quiz.js";
 import { PlantCalendar } from "./Calendar.js";
 import { PlantList } from "./Explore.js";
 import { About } from "./About.js"
 import { Question } from './QuestionTemplate.js';
 import { PlantInfo } from './PlantInfo.js'
 import SignIn from './SignIn.js'
+
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import DEFAULT_USERS from '../data/users.json';
 
 
 
@@ -107,8 +109,9 @@ export default function App(props) {
                     <Route path="/" element={<Home />} />
                     <Route path="/QuestionTemplate.js" element={<Question />} />
                     <Route path="/Calendar.js" element={<PlantCalendar />} />
-                    <Route path="/Explore.js" element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants} />} />
-                    <Route path="/PlantInfo.js" element={<PlantInfo plants={displayedPlants} />} />
+                    <Route path="/Explore.js" element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants} />} >
+                        {/* <Route path="/PlantInfo/:plantName" element={<PlantInfo plants={displayedPlants} />} /> */}
+                    </Route>
                     <Route path="/About.js" element={<About />} />
                     <Route path="/SignIn.js" element={<SignIn currentUser={currentUser} loginCallback={loginUser} />} />
                 </Routes>
