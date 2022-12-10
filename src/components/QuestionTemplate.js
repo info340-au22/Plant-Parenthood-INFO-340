@@ -108,11 +108,11 @@ export function Question() {
     const handleAnswerButtonClick = (answerOption) => {
         if (nextQuestion < questions.length) {
             setCurrQuestion(nextQuestion);
-            if (answerOption.type == "low") {
+            if (answerOption.type === "low") {
                 setScoreA(scoreA + 1);
-            } else if (answerOption.type == "medium") {
+            } else if (answerOption.type === "medium") {
                 setScoreB(scoreB + 1);
-            } else if (answerOption.type == "high") {
+            } else if (answerOption.type === "high") {
                 setScoreC(scoreC + 1);
             } else {
                 setScoreA(scoreA + 0);
@@ -120,12 +120,12 @@ export function Question() {
         } else {
             max = Math.max(scoreA, scoreB, scoreC);
 
-            if (scoreA == max) {
-                setQuizResult("Low maintenance");
-            } else if (scoreB == max) {
-                setQuizResult("Medium maintenance");
+            if (scoreA === max) {
+                setQuizResult("A low maintenance plant would fit you best. You're interested in a plant that will require low effort. Maybe you're a newbie who doesn't have much experience, or maybe you've had your fair share of plant care experience but you like a plant that doesn't require too much of a fuss. These are our recommendations for you: ");
+            } else if (scoreB === max) {
+                setQuizResult("A medium maintenance plant would fit you best. You like a plant that can present a bit of a challenge, but nothing too crazy. You're willing to put in some work, frequent watering and the occassional need for fertilizer doesn't scare you. We respect that. These are our recommendations for you: ");
             } else {
-                setQuizResult("High maintenance");
+                setQuizResult("A high maintenance plant would fit you best. Looks like we got a plant care expert in the house! You don't mind plants that require the perfect amount of lighting, watering, and temperature to thrive. You're ready to take on a challenge - we love to see it. These are our recommendations for you: ");
             }
         }
     };
@@ -133,7 +133,7 @@ export function Question() {
     let questionBank = questions[currQuestion].ansOptions.map((ansOption, index) => (
         <button key={index} className="btn btn-default" aria-label = "Click an Option" onClick={() => handleAnswerButtonClick(ansOption)}>{ansOption.text}</button>
     ))
-    
+
 
     return (
         // add prev/next button if time
@@ -149,6 +149,9 @@ export function Question() {
             <div className="answers">
                 {questionBank}
             </div>
+            {/* <div>
+                answer description
+            </div> */}
         </div>
     );
 }

@@ -3,8 +3,9 @@ import { useState } from 'react';
 import { PlantList } from "./Explore.js";
 
 export function PlantInfo(props) {
-    const plants = props.plants.map((plant) => 
-        <p key={plant.name} plantData={plant}></p>
+    const plants = props.plants.map((plant) => {
+        return <p key={plant.name} plantdata={plant}></p>
+    }
     );
     console.log(props.plants);
 
