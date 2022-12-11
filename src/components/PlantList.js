@@ -85,12 +85,12 @@ function PlantCard(props) {
         <ReactCardFlip isFlipped={flip} flipDirection="vertical">
             {/* yarn add react-card-flip */}
 
-            <div className="explore-item">
+            <div className="explore-item text-center">
                 <h3>{plant.name}</h3>
                 <div className="plant-img">
                     <img src={plant.img} alt={plant.alt}></img>
                 </div>
-                <button className="btn btn-default" aria-label="View Details" onClick={() => setFlip(!flip)} >Details</button>
+                <button className="btn btn-default detail" aria-label="View Details" onClick={() => setFlip(!flip)} >Details</button>
             </div>
             <div className="explore-item">
                 <div className="card-info">
@@ -113,7 +113,7 @@ function PlantCard(props) {
                 </div>
 
                 <br />
-                <button className="btn btn-default" aria-label="View Plant" onClick={() => setFlip(!flip)}>Plant</button>
+                <button className="btn btn-default plant" aria-label="View Plant" onClick={() => setFlip(!flip)}>Plant</button>
             </div>
         </ReactCardFlip>
 
