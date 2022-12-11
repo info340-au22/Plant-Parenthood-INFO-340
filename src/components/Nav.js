@@ -23,7 +23,7 @@ export function PlantNav() {
                             <Nav.Link aria-label="Explore Page" as={Link} to='/Explore.js'>Explore</Nav.Link>
                             <Nav.Link as={Link} aria-label="About Page" to='/About.js'>About</Nav.Link>
                             <Button variant="light" aria-label="Sign In" href='/SignIn.js'>Sign In</Button>
-                            <Button variant="light" onClick={handleSignOut}>Sign Out</Button>
+                            <Button variant="light" aria-label="Sign Out" onClick={handleSignOut}>Sign Out</Button>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
