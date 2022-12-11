@@ -354,6 +354,16 @@ cite {
     justify-content: space-between;
 }
 
+.explore-item button {
+     margin-top: 1rem; 
+     margin-bottom: 1rem;
+}
+
+.explore-item button.plant {
+    padding-left: 10rem;
+
+}
+
 /* Calendar Page */
 .calendar {
     height: 500px;
