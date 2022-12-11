@@ -1,12 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Button from 'react-bootstrap/Button';
 
-import { Routes, Route, Link, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import { PlantNav } from './Nav.js';
 import { Home } from "./Home.js";
 import { PlantCalendar } from "./Calendar.js";
 import { About } from "./About.js"
@@ -20,10 +16,8 @@ import SignIn from './SignIn.js'
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import DEFAULT_USERS from '../data/users.json';
 
-
-
 export default function App(props) {
-    // state data for filter
+    // Search/filter rendered plants
     const [displayedPlants, changeDisplayedPlants] = useState(props.plants);
 
     function applyFilter(selectedCostLevel) {
@@ -38,8 +32,9 @@ export default function App(props) {
         }
     }
 
-    const [currentUser, setCurrentUser] = useState(DEFAULT_USERS[0]) //default to null user
+    // Sign in user
 
+    const [currentUser, setCurrentUser] = useState(DEFAULT_USERS[0]) //default to null user
     const navigateTo = useNavigate(); //navigation hook
 
     //effect to run when the component first loads
@@ -71,41 +66,9 @@ export default function App(props) {
         }
     }
 
-    // calendar popup
-    const [show, setShow] = useState(false)
-
     return (
         <div>
-            <>
-                <Navbar className="color-Nav" variant="dark" expand="lg">
-                    <Container>
-                        <Navbar.Brand href="/">Plant Parenthood</Navbar.Brand>
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav>
-                                <Nav.Item>
-                                    <Nav.Link aria-label = "Quiz Page" as={Link} to='/QuestionTemplate.js'>Quiz</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link aria-label = "Calendar Page"as={Link} to='/Calendar.js'>Calendar</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link aria-label = "Explore Page" as={Link} to='/Explore.js'>Explore</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link as={Link} aria-label = "About Page" to='/About.js'>About</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Button variant="light" aria-label = "Sign In" href='/SignIn.js'>Sign In</Button>
-                                </Nav.Item>
-                                {/* <Nav.Item>
-                                    <Button variant="light" href='/SignOut.js'>Sign Out</Button>
-                                </Nav.Item> */}
-                            </Nav>
-                        </Navbar.Collapse>
-                    </Container>
-                </Navbar>
-            </>
+            <PlantNav />
             <div>
                 <Routes>
                     <Route path="/" element={<Home />} />
