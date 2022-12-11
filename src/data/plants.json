@@ -365,7 +365,7 @@
     },
     {
         "name": "Easter Cactus",
-        "img": "./img/EasterCactus.png",
+        "img": "../img/EasterCactus.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "Avoid giving it both deep shade and direct sunlight for prolonged periods. Deep shade will result in little growth and limited or no flowers. The Easter Cactus isn't a desert cactus though so direct sunlight must be avoided. Too much sunlight will cause reddish hues on the leaves." ,
@@ -378,7 +378,7 @@
     },
     {
         "name": "Echeveria",
-        "img": "./img/Echeveria.png",
+        "img": "../img/Echeveria.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "Almost all Echeveria plants love bright light with some sunlight. They struggle in low light conditions and equally with constant direct intense sunlight, especially if your watering skills aren't up to scratch. Window ledges are a perfect location for your Echeveria, but if going for one which has a southern exposure try and give it some shielding and if you notice any damage move it immediately.",
@@ -391,7 +391,7 @@
     },
     {
         "name": "Euphorbia Trigona",
-        "img": "./img/EuphorbiaTrigona.png",
+        "img": "../img/EuphorbiaTrigona.png",
         "MAINTENANCE": "Medium",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "These are succulents and not true cacti, so intense pounding sun isn't something your plant wants or will enjoy. Coming from Central Africa, they're well adapted and expecting to deal with heat and some sun though, so they do need either bright light all day or some sunlight for an hour or two.You should not suddenly move your plant into intense sunlight if it's been in a darker spot for a while, or you'll risk scorching. Get them acclimatised for a week or so by moving them into the sun for an hour or so a day then back into shade again, gradually increasing the time in the sun. They absolutely do not do well in lower light settings. This plant needs good light levels and if you can't give this, a grow light will be required.",
@@ -404,7 +404,7 @@
     },
     {
         "name": "Fiddle-Leaf Fig",
-        "img": "./img/FiddleLeafFig.png",
+        "img": "../img/FiddleLeafFig.png",
         "MAINTENANCE": "High",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "It's essential you find a bright space in your home if you want to grow one of these plants successfully. Setting it back far from a window or trying to grow it in anything that resembles 'low-light' will start to give you a sickly looking plant within a few months as they're not getting enough light for new growth. Sit it close to a bright window as an absolute minimum. The best results will come from those grown in East, South or West facing aspects.",
@@ -417,7 +417,7 @@
     },
     {
         "name": "Fittonia",
-        "img": "./img/Fittonia.png",
+        "img": "../img/Fittonia.png",
         "MAINTENANCE": "Medium",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "“Fittonia plants are well adapted to lower light levels and so don't mind being set back from a window. They aren't truly 'low-light' plants and so if you're attempting to grow them in a really shady spot, you may notice some of the markings fading and becoming less vivid over time. If the markings fade, your plant's not growing or it looks quite spindly and lanky, try and move them to a slighter brighter place that gets medium light. Either way, avoid direct sunlight as they can quickly burn and develop crispy leaves.",
@@ -430,7 +430,7 @@
     },
     {
         "name": "Gasteria",
-        "img": "./img/Gasteria.png",
+        "img": "../img/Gasteria.png",
         "MAINTENANCE": "Medium",
         "LIGHTING": "Direct/Indirect",
         "LIGHTING_DESCRIPTION": "These are weird plants when it comes to light requirements. They can cope with a broad range, but allowing some time for them to adapt is essential. They're looking for bright light, some full sun is okay too. Be warned that any direct sunlight from around 11am to 3pm will probably be too harsh and again you'll get the red leaf issue.",
@@ -443,7 +443,7 @@
     },
     {
         "name": "Gerbera",
-        "img": "./img/Gerbera.png",
+        "img": "../img/Gerbera.png",
         "MAINTENANCE": "Medium",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "These plants must have good bright light if you expect repeat blooming, but direct harsh sunlight can quickly damage your Gerbera. Intense sun can scorch the leaves and increase the temperature around your plant to very high (and undesirable) levels. If your intended placement receives full sun for a few hours a day either in the morning or late afternoon this would be perfect.",
@@ -456,7 +456,7 @@
     },
     {
         "name": "Haworthia",
-        "img": "./img/Haworthia.png",
+        "img": "../img/Haworthia.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "Haworthias are reasonably adaptable plants that that will take various light conditions, but neither direct sunlight nor deep shade. Direct sunlight will make the leaves of all Haworthia's go an ugly red, purple or brown colour. Move to a shady spot and if the damage isn't too bad these colourings will fade over time. Deep shade tends to weaken the plant over a prolonged period. You might notice it becoming an excessive light green, losing the markings or that the plant stops being compact and instead becomes lanky. If you notice this happening more light is needed.",
@@ -469,7 +469,7 @@
     },
     {
         "name": "Hedgehog Aloe Plant",
-        "img": "./img/HedgehogAloePlant.png",
+        "img": "../img/HedgehogAloePlant.png",
         "MAINTENANCE": "Medium",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "Place in a bright room that is sun drenched almost all day. Or directly in a south-facing window. Your Aloe plant prefers bright indirect light to full sun. Insufficient light will cause the leaves to droop downwards. If you don’t have a location with ideal lighting for your plant, use a Grow Light.",
@@ -482,7 +482,7 @@
     },
     {
         "name": "Hibiscus",
-        "img": "./img/Hibiscus.png",
+        "img": "../img/Hibiscus.png",
         "MAINTENANCE": "High",
         "LIGHTING": "Direct/Indirect",
         "LIGHTING_DESCRIPTION": "Hibiscus trees need quite a lot of light and even tolerate some direct sun as long as the heat isn’t too intense.",
@@ -495,7 +495,7 @@
     },
     {
         "name": "Hippeastrum",
-        "img": "./img/Hippeastrum.png",
+        "img": "../img/Hippeastrum.png",
         "MAINTENANCE": "High",
         "LIGHTING": "Direct/Indirect",
         "LIGHTING_DESCRIPTION": "Bright light with some sun for part of the day is a must for your Hippeastrum if you are hoping for a repeat flower display next year. Too little light during the flowering period will also result in the stalks bending towards light sources and increasing the chances of it falling over",
@@ -508,7 +508,7 @@
     },
     {
         "name": "Howea Palms",
-        "img": "./img/HoweaPalms.png",
+        "img": "../img/HoweaPalms.png",
         "MAINTENANCE": "Medium",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "Low light is acceptable, deep shade will also be tolerated for a short time, more so than most houseplants for sure, but it's not ideal. A situation in direct sunlight will likely prove too much for your plant and should be avoided to prevent scorch marks on the leaves. These plants do need some shielding. The best balance between growth, health and good appearance is a decent semi-bright spot.",
@@ -521,7 +521,7 @@
     },
     {
         "name": "Hoya Kerrii",
-        "img": "./img/HoyaKerrii.png",
+        "img": "../img/HoyaKerrii.png",
         "MAINTENANCE": "Low",
         "LIGHTING": "Direct/Indirect",
         "LIGHTING_DESCRIPTION": "This plant will need a reasonably light room in order to actually grow, although it will still get by even if you pick a shadier spot, very dark places need to be avoided though. Sunlight is acceptable too, so in reality you could position it almost anywhere in your home or office.",
@@ -534,7 +534,7 @@
     },
     {
         "name": "Hyacinth",
-        "img": "./img/Hyacinth.png",
+        "img": "../img/Hyacinth.png",
         "MAINTENANCE": "High",
         "LIGHTING": "Direct/Indirect",
         "LIGHTING_DESCRIPTION": "Hyacinths need good light to bring into flower and to prevent the stems from becoming leggy and top-heavy. They will also need good light to build energy if you plan to keep the bulbs and plant them outside in Spring. If you're in a hurry to bring the flowers on, direct Winter sunlight will rapidly increase the speed of growth and flowering stem. Make sure you rotate the pot every couple of days to keep balance as the growth will lean towards the light source.",
@@ -547,7 +547,7 @@
     },
     {
         "name": "Ivy",
-        "img": "./img/Ivy.png",
+        "img": "../img/Ivy.png",
         "MAINTENANCE": "Medium",
         "LIGHTING": "Indirect",
         "LIGHTING_DESCRIPTION": "The variegated version needs average to bright light to retain its colorings. The all-green type will take darker locations, although growth will be slower as a trade off. No direct sunlight or deep shade for either type.",
