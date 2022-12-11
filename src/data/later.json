@@ -457,15 +457,6 @@
         "Source": "Indoor Home Garden"
     },
     {
-        "name": "Dumb Cane",
-        "img": "./img/DumbCane.png",
-        "MAINTENANCE": ,
-        "LIGHTING": ,
-        "HUMIDITY": ,
-        "alt": "Dumb Cane",
-        "Source": "House Plants Expert"
-    },
-    {
         "name": "Easter Cactus",
         "img": "./img/EasterCactus.png",
         "MAINTENANCE": "Low",
