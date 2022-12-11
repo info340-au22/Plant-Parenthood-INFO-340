@@ -83,37 +83,27 @@ function PlantCard(props) {
 
     return (
         <ReactCardFlip isFlipped={flip} flipDirection="vertical">
-            {/* yarn add react-card-flip */}
-
             <div className="explore-item text-center">
                 <h3>{plant.name}</h3>
                 <div className="plant-img">
                     <img src={plant.img} alt={plant.alt}></img>
                 </div>
-                <button className="btn btn-default detail" aria-label="View Details" onClick={() => setFlip(!flip)} >Details</button>
+                <button className="btn btn-default detail" aria-label="View Details" onClick={() => setFlip(!flip)}>Details</button>
             </div>
             <div className="explore-item">
                 <div className="card-info">
-                    <h5>Maintenance:</h5>
-                    <p>{plant.MAINTENANCE}</p>
-
-                    <h5>Lighting:</h5>
-                    <p>{plant.LIGHTING}</p>
-
-                    <h5>Humidity:</h5>
-                    <p>{plant.HUMIDITY}</p>
-
-                    <h5>Cost:</h5>
-                    <p>{plant.COST}</p>
-
-                    <Link to={"/Explore.js/" + plant.name} className="plant-more-info-" >
+                    <h4><em>Maintenance: </em>{plant.MAINTENANCE}</h4>
+                    <h4><em>Lighting: </em>{plant.LIGHTING}</h4>
+                    <h4><em>Humidity: </em>{plant.HUMIDITY}</h4>
+                    <h4><em>Cost: </em>{plant.COST}</h4> 
+                    <Link to={"/Explore.js/" + plant.name} className="plant-more-info" >
                         More Info...
                     </Link>
-
                 </div>
-
                 <br />
-                <button className="btn btn-default plant" aria-label="View Plant" onClick={() => setFlip(!flip)}>Plant</button>
+                <div className="text-center">
+                    <button className="btn btn-default explore-plant" aria-label="View Plant" onClick={() => setFlip(!flip)}>Plant</button>
+                </div>
             </div>
         </ReactCardFlip>
 
