@@ -117,15 +117,17 @@ export function Question() {
             } else {
                 setScoreA(scoreA + 0);
             }
+        // else if last question then calculate max score and based on max score return info from QuizResult file after
+        // they click on button
         } else {
             max = Math.max(scoreA, scoreB, scoreC);
 
             if (scoreA === max) {
-                setQuizResult("A low maintenance plant would fit you best. You're interested in a plant that will require low effort. Maybe you're a newbie who doesn't have much experience, or maybe you've had your fair share of plant care experience but you like a plant that doesn't require too much of a fuss. These are our recommendations for you: ");
+                setQuizResult("A low maintenance plant would fit you best. You're interested in a plant that will require low effort. Maybe you're a newbie who doesn't have much experience, or maybe you've had your fair share of plant care experience but you like a plant that doesn't require too much of a fuss. These are our recommendations for you: Aglaonema, Baby Rubber Plant and Cacti!");
             } else if (scoreB === max) {
-                setQuizResult("A medium maintenance plant would fit you best. You like a plant that can present a bit of a challenge, but nothing too crazy. You're willing to put in some work, frequent watering and the occassional need for fertilizer doesn't scare you. We respect that. These are our recommendations for you: ");
+                setQuizResult("A medium maintenance plant would fit you best. You like a plant that can present a bit of a challenge, but nothing too crazy. You're willing to put in some work, frequent watering and the occassional need for fertilizer doesn't scare you. We respect that. These are our recommendations for you: African Violet, Angel Wing Begonia, and Cyclamen!");
             } else {
-                setQuizResult("A high maintenance plant would fit you best. Looks like we got a plant care expert in the house! You don't mind plants that require the perfect amount of lighting, watering, and temperature to thrive. You're ready to take on a challenge - we love to see it. These are our recommendations for you: ");
+                setQuizResult("A high maintenance plant would fit you best. Looks like we got a plant care expert in the house! You don't mind plants that require the perfect amount of lighting, watering, and temperature to thrive. You're ready to take on a challenge - we love to see it. These are our recommendations for you: Bonsai, Calathea, and Croton!");
             }
         }
     };

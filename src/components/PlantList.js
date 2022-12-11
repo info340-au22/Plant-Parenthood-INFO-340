@@ -10,9 +10,16 @@ export function PlantList(props) {
     const costArray = ['$', '$$', '$$$'];
     const [selectedCost, isSelectedCostType] = useState('');
 
-    const optionElems = costArray.map((level) => {
+    // const maintenanceArray = ['Low', 'Medium', 'High'];
+    // const [selectedMaintenance, isSelectedMaintenanceType] = useState('');
+
+    const costOptionElems = costArray.map((level) => {
         return <option key={level} value={level}>{level}</option>
     })
+
+    // const maintenanceOptionElems = maintenanceArray.map((level) => {
+    //     return <option key={level} value={level}>{level}</option>
+    // })
 
     // search bar
     const [query, setQuery] = useState("");
@@ -21,13 +28,21 @@ export function PlantList(props) {
     }
     );
 
-    function changeSelectedElem(event) {
+    function changeCostSelectedElem(event) {
         isSelectedCostType(event.target.value);
     }
+
+    // function changeMaintenanceSelectedElem(event) {
+    //     isSelectedMaintenanceType(event.target.value);
+    // }
 
     function handleClick() {
         props.applyFilterCallback(selectedCost);
     }
+
+    // function handleClick() {
+    //     props.applyFilterCallback(selectedMaintenance);
+    // }
 
     return (
         <div>
@@ -38,14 +53,21 @@ export function PlantList(props) {
             {/* Filter By */}
             <div className="row align-items-center mb-3">
                 <div className="col-auto">
-                    <select id="costSelect" className="form-select" value={selectedCost} onChange={changeSelectedElem}>
-                        <option value="">Select Cost level</option>
-                        {optionElems}
+                    <select id="costSelect" className="form-select" value={selectedCost} onChange={changeCostSelectedElem}>
+                        <option value="">Select Cost Level</option>
+                        {costOptionElems}
                     </select>
+
+                    {/* <select id="maintenanceSelect" className="form-select" value={selectedMaintenance} onChange={changeMaintenanceSelectedElem}>
+                        <option value="">Select Maintenance level</option>
+                        {maintenanceOptionElems}
+                    </select> */}
+
                     <div className="col-auto">
                         <button onClick={handleClick} id="submitButton" type="submit" className="btn btn-secondary" aria-label="Apply Filter">Apply Filter</button>
                     </div>
                 </div>
+
             </div>
             {/* Plant Cards */}
             <div className="explore-container">
@@ -54,9 +76,6 @@ export function PlantList(props) {
         </div>
     )
 }
-
-
-
 
 function PlantCard(props) {
     const [flip, setFlip] = useState(false);
