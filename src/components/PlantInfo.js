@@ -10,7 +10,7 @@ export function PlantInfo(props) {
     const plantNameString = useParams();
     console.log(plantNameString);
 
-    let plant =  _.find(PLANT_DATA, {name: plantNameString.plantName}); //find pet in data
+    let plant =  _.find(PLANT_DATA, {name: plantNameString.plantName}); //find plant in data
 
     console.log(plant)
 
