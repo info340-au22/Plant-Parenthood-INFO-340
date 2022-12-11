@@ -465,6 +465,7 @@
         "HUMIDITY": "Medium",
         "WATERING": "Like all cacti they can store water inside their thick fleshy leaves and live off this during droughts. However if you allow the soil to dry out completely for too long expect a strop as the plant will start shedding its leaf segments. Aim for constantly moist rather than wet soil and water with tepid rather than cold water.",
         "TEMPERATURE": "55 to 60 degrees F",
+        "COST": "$$",
         "alt": "Easter Cactus",
         "Source": "The Spruce"
     },
@@ -477,6 +478,7 @@
         "HUMIDITY": "Low",
         "WATERING": "Echeverias like good deep through watering occasionally then a wait until they dry out, either mostly or completely. They aren't cacti though, so they shouldn't be deprived of water for excessive periods. From Spring to Summer water deeply and regularly whenever the soil fully dries out. From late Fall to Winter, water less deeply and wait until the soil dries out fully then at least a few more days on top.",
         "TEMPERATURE": "Over 41 degrees F",
+        "COST": "$",
         "alt": "Echeveria",
         "Source": "Pixabay"
     },
@@ -489,6 +491,7 @@
         "HUMIDITY": "Medium",
         "WATERING": "Although it's considered to be a drought-tolerant plant, they're surprisingly quite thirsty plants, using lots of water and drying out fast in warm temperatures. Wait until the top inch or so dries completely, then water well again. When they're very dehydrated, you might notice the stems seem a little soft to the touch. Once well watered and about 5 hours later if you feel the stems again they will feel full and puffy. They can be easily overwatered, so if there is any doubt whether your plant needs a top-up or not, wait a few more days to be safe.",
         "TEMPERATURE": "70 to 80 degrees F",
+        "COST": "$$",
         "alt": "Euphorbia Trigona",
         "Source": "Magic Valley Gardens"
     },
@@ -501,6 +504,7 @@
         "HUMIDITY": "Medium",
         "WATERING": "They can be thirsty plants and it's important you try and keep up with this demand. After watering your plant, leave it alone until the surface has dried out. This is your first sign it might need to be watered again. The second test is to feel just below the surface. If it's dry then water it, if it feels damp, wait a couple more days and test again. The container does not have to dry out completely, nor does it need to be constantly moist.",
         "TEMPERATURE": "60 to 79 degrees F",
+        "COST": "$$$",
         "alt": "Fiddle-Leaf Fig",
         "Source": "LeonAndGeorge"
     },
@@ -513,6 +517,7 @@
         "HUMIDITY": "High",
         "WATERING": "They love a relatively constant damp growing medium. They're not bog plants, so they need a mix of moisture and air around the roots. If you press the soil and water drips out, it's too wet. When they urgently need water they're very 'showy' and overly dramatic. Throwing themselves over the side of whatever container they're growing in and looking pretty unhealthy and sorry for themselves. You'll definitely spot the call for attention when they do this. A splash of water and within a few hours it will perk right up again.",
         "TEMPERATURE": "60 to 75 degrees F",
+        "COST": "$",
         "alt": "Fittonia",
         "Source": "Laidback Gardener"
     },
@@ -524,8 +529,9 @@
         "LIGHTING_DESCRIPTION": "These are weird plants when it comes to light requirements. They can cope with a broad range, but allowing some time for them to adapt is essential. They're looking for bright light, some full sun is okay too. Be warned that any direct sunlight from around 11am to 3pm will probably be too harsh and again you'll get the red leaf issue.",
         "HUMIDITY": "Medium",
         "WATERING": "These are succulent plants, so this means they're excellent at conserving water and coping with relatively long periods between waterings.What they really want from you, is a good soaking and then being allowed to dry out. Once this happens, water again. How often you do this will depend on your environmental conditions. i.e. warmer spots in your home with lots of light will mean more water is needed than those in colder areas with more shade. More than once a week is likely overdoing it and isn't a typical watering requirement for these plants.",
-        "alt": "Gasteria",
         "TEMPERATURE": "62 to 77 degrees F",
+        "COST": "$",
+        "alt": "Gasteria",
         "Source": "Little Prince Plants"
     },
     {
@@ -537,6 +543,7 @@
         "HUMIDITY": "Medium",
         "WATERING": "The target you're aiming for should be to have moist, rather than dry or soaking wet, soil. Don't re-water a moist plant, wait for the top of the soil to dry out first. Try to water often in warmer months of the year perhaps once or twice a week. It will depend of course how warm your home is and how much light your plant is getting. Plants grown in cooler and less bright conditions will take longer to dry out and therefore need less water than those in warm and sunny areas.",
         "TEMPERATURE": "55 to 75 degrees F",
+        "COST": "$",
         "alt": "Gerbera",
         "Source": "My Garden Life"
     },
@@ -549,6 +556,7 @@
         "HUMIDITY": "Medium",
         "WATERING": "A surviving plant will get by with watering just once a month, however to get the plant thriving it will need to be done at least once a fortnight, possibly once a week in very warm temperatures. Either way, water well and then only water again when the soil has largely dried out. These plants are very tolerant of underwatering but will succumb quickly to rotting if overwatered.Make sure you try your best to keep water out of the crown or rosette of the plant, in cool temperatures doing this will again encourage rotting.",
         "TEMPERATURE": "Over 40 degrees F",
+        "COST": "$",
         "alt": "Haworthia",
         "Source": "Hirt's Garden"
     },
@@ -561,6 +569,7 @@
         "HUMIDITY": "Low",
         "WATERING": "All of the soil should be dry before watering. If the soil is still moist, you risk giving this plant too much water which can make it start to rot. When you water this plant, water well and then allow the soil to dry out completely before you water it again. Discard excess water to discourage root rot.",
         "TEMPERATURE": "65 to 75 degrees F",
+        "COST": "$$",
         "alt": "Hedgehog Aloe Plant",
         "Source": "Planetrina"
     },
@@ -573,6 +582,7 @@
         "HUMIDITY": "Medium/High",
         "WATERING": "During times when hibiscus is actively producing new leaves and flowers, they need more water than during times when there is no new growth appearing. They don’t want to dry out but neither do they want to sit in sopping wet. Leaves will wilt to tell you when it’s thirsty.",
         "TEMPERATURE": "60 to 75 degrees F",
+        "COST": "$$",
         "alt": "Hibiscus",
         "Source": "Laidback Gardener"
     },
@@ -585,6 +595,7 @@
         "HUMIDITY": "Medium",
         "WATERING": "If brought in the dormant state you want to water just enough to ensure the soil is evenly moist then wait until growth starts before watering again. When 'actively growing' (so when the leaves have fully emerged) and the temperature is warm aim to keep the soil moist for most of the time, reducing water as you head towards Autumn / Fall before stopping completely.It's so easy to cause a Hippeastrum and Amaryllis bulb to rot from overwatering so don't ever let the bulb sit in water at anytime.",
         "TEMPERATURE": "70 to 75 degrees F before bloom, and 55 to 65 during flowering period",
+        "COST": "$",
         "alt": "Hippeastrum",
         "Source": "Blue Buddha Farm"
     },
@@ -597,6 +608,7 @@
         "HUMIDITY": "Medium",
         "WATERING": "Palms are thirsty plants and in most growing locations you'll need to be watering frequently to ensure the soil remains moist during the parts of the year when they're in active growth. The only time you need to reduce water is in Winter or in very low light spots, but even then the soil should still be a little moist rather than completely dry. Your plant won't grumble with some sporadic dryness at the roots, but if this happens too often or for too long the leaves will get brown tips or start turning yellow.Make sure your chosen pot has good drainage because trapped water will end up creating soggy and swampy conditions which both the Kentia Palm and Sentry Palm passionately dislike.",
         "TEMPERATURE": "Never lower than 50 F, on average between 59 to 77 degrees F",
+        "COST": "$$",
         "alt": "Howea Palms",
         "Source": "Gardening Know How"
     },
@@ -609,6 +621,7 @@
         "HUMIDITY": "Medium/High",
         "WATERING": "With its succulent qualities it's quite adapt at storing water for longish periods of time between waterings. This makes it a hardy and undemanding plant for the most part, of course only providing basic care will result in a surviving rather than thriving plant, so where possible wait until the soil has dried out a little and then water again.This means don't wait long periods between watering's just because you can. Do be careful not to overdo it though! The soil should never be saturated or boggy as this will lead to rotting. Take special care if the pot it comes in has no drainage holes.",
         "TEMPERATURE": "65 to 80 F",
+        "COST": "$",
         "alt": "Hoya Kerrii",
         "Source": "plants.com"
     },
@@ -621,6 +634,7 @@
         "HUMIDITY": "Medium",
         "WATERING": "When growing, Hyacinths are thirsty plants, especially if you have several bulbs in a small pot. Just before and during flowering, you must try to keep the soil moist at all times. If it dries out you run the risk of the flowers not opening at all or going over too quickly, if the soil is constantly very wet then the bulbs and flowers will rot.",
         "TEMPERATURE": "40 to 45 degrees F",
+        "COST": "$$",
         "alt": "Hyacinth",
         "Source": "Gardening Know How"
     },
@@ -633,6 +647,7 @@
         "HUMIDITY": "Medium/High",
         "WATERING": "No Ivy likes soaking wet conditions or completely dry soil. Aim for the middle ground by keeping the soil moist where possible. Once watered, leave it alone until the top inch or two has dried out. Too much water around the roots can cause brown leaves and too little will result in leaf drop. In darker, cooler spots, especially during winter, the soil will naturally stay moist for extended periods so you will need to water less at this time of the year.",
         "TEMPERATURE": "50 to 65 degrees F",
+        "COST": "$",
         "alt": "Ivy",
         "Source": "House Beautiful"
     },
