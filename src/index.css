@@ -736,6 +736,7 @@ cite {
 
     .plant-info-heading {
         font-size: 3rem;
+        padding-top: 0;
     }
     .care-info h2 {
         margin-bottom: 2rem;
