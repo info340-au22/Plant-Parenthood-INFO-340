@@ -1,15 +1,19 @@
 import React from 'react'; //import React Component
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import { getAuth, signOut } from 'firebase/auth';
 
-export function PlantNav() {
+export function PlantNav(props) {
+
     const handleSignOut = (event) => {
         signOut(getAuth());
+        console.log("signed out");
     }
+
+    const currentUser = props.currentUser;
     return (
         <>
             <Navbar className="color-Nav" variant="dark" expand="lg">

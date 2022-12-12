@@ -6,7 +6,7 @@ import { StyledFirebaseAuth } from 'react-firebaseui';
 
 export default function SignIn(props) {
   const currentUser = props.currentUser;
-  
+
   //the authenticator
   const auth = getAuth();
 
