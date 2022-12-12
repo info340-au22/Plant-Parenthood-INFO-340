@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { getDatabase, ref, push as firebasePush } from 'firebase/database'
 
-export default function RegistrationForm() {
+export function RegistrationForm() {
     const db = getDatabase();
     const [input, setInput] = useState("");
     const inputHandler = (e) => {

@@ -88,7 +88,7 @@ export default function App(props) {
 
     // Protected Routes
     function ProtectedPage(props) {
-        if (props.currentUser.userId == null) {                
+        if (props.currentUser.userId === null) {                
             return <Navigate to="/SignIn.js"></Navigate>
         } 
         else { 

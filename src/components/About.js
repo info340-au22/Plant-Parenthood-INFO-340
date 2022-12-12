@@ -1,5 +1,5 @@
 import React from 'react';
-import  RegistrationForm  from './SubscribeForm.js'
+import  { RegistrationForm } from './SubscribeForm.js'
 
 export function About() {
     return (
