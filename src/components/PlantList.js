@@ -72,6 +72,7 @@ export function PlantList(props) {
             {/* Plant Cards */}
             <div className="explore-container">
                 {plantsFiltered}
+                {plantsFiltered.length < 1 && <h2>Sorry, there are no results for your search.</h2>}
             </div>
         </div>
     )
