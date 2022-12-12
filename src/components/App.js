@@ -35,7 +35,7 @@ export default function App(props) {
 
     // Sign in user
     const [currentUser, setCurrentUser] = useState(DEFAULT_USERS[0]) //default to null user
-    const navigateTo = useNavigate(); //navigation hook
+    const navigateTo = useNavigate(); 
 
     //effect to run when the component first loads
     useEffect(() => {
@@ -61,16 +61,14 @@ export default function App(props) {
     const loginUser = (userObj) => {
         console.log("logging in as", userObj.userName);
         setCurrentUser(userObj);
-        if (userObj.userId !== null) {
-            navigateTo('/');
-        }
     }
 
     return (
         <div>
-            <PlantNav />
+            <PlantNav currentUser={currentUser}/>
             <div>
-                <Routes>
+                {/* name route components after what they are, state 'page' */}
+                <Routes>  
                     <Route path="/" element={<Home />} />
                     <Route path="/QuestionTemplate.js" element={<Question />} />
                     <Route path="/Explore.js" element={<Explore />} >

@@ -29,7 +29,7 @@ export function PlantCalendar(props) {
     const [newEvent, setNewEvent] = useState({ title: "", start: "", end: "" });
     const [allEvents, setAllEvents] = useState([]);
 
-    function handleAddEvent() {
+    function handleAddEvent() { // redundant, should only be changing state in db, remove this part
         setAllEvents([...allEvents, newEvent]);
         addEvent();
     }
@@ -38,12 +38,6 @@ export function PlantCalendar(props) {
 
         const db = getDatabase(); //"the database"
         const allEventsRef = ref(db, "allUsers/allEvents");
-        // const allUsersRef = ref(db, "allUsers");
-        // const updateUserList = "";
-        // if (currentUser.userId  ) {
-
-        // }
-        // firebasePush(allUsersRef, currentUser.userId);
 
         //returns the instructions how to turn it off
         const offFunction = onValue(allEventsRef, (snapshot) => {
@@ -91,8 +85,10 @@ export function PlantCalendar(props) {
         const eventRef = ref(db, "exEvent");
         console.log(eventRef);
     
-        const allEventsRef = ref(db, 'allEvents');
+        const allEventsRef = ref(db, 'allUsers/'+ currentUser.userId + '/allEvents');
         firebasePush(allEventsRef, newEventDB);
+
+        // firebaseSet(ref, null) - how to 'delete'
     }
 
     return (
@@ -108,6 +104,8 @@ export function PlantCalendar(props) {
                 />
                 <DatePicker className="event-date" placeholderText="End Date"
                     selected={newEvent.end} value={newEvent.end} onChange={(end) => setNewEvent({ ...newEvent, end })}
+                // hard to read setNewEvent line, prob delete anyway 
+                // (should be adding through db), or separate change handling function
                 />
                 <button className="event-btn"
                     onClick={handleAddEvent}>

@@ -16,11 +16,12 @@ export function Home() {
                             alt="plant icon"
                         />
                         <h1>Plant Parenthood</h1>
-                        <h2>Start your plant journey today</h2>
+                        {/* change to paras */}
+                        <h2>Start your plant journey today</h2> 
                         <h2>Explore different types of plants</h2>
                         <h2>Take the quiz to find the plants that work best for you</h2>
                         <h2>Use the calendar to track your watering schedule</h2>
-                        <a className="btn btn-default" aria-label = "Sign In" type="button" href="/SignIn.js">Sign In</a>
+                        <a className="btn btn-default" href="/SignIn.js">Sign In</a>
                     </div>
                     </div>
                 </div>

@@ -6,16 +6,38 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import { getAuth, signOut } from 'firebase/auth';
 
-export function PlantNav(props) {
+function SignIn() {
+    return (
+        <Button variant="light" aria-label="Sign In" href='/SignIn.js'>Sign In</Button>
+    );
+}
 
+function SignOut() {
     const handleSignOut = (event) => {
         signOut(getAuth());
         console.log("signed out");
     }
+    return (
+        <Button variant="light" aria-label="Sign Out" onClick={handleSignOut}>Sign Out</Button>
+    );
+}
 
+export function PlantNav(props) {
     const currentUser = props.currentUser;
+    let SignComponent = null;
+
+    if (currentUser.userId === null) {
+        console.log("show sign in button")
+        SignComponent = <SignIn />;
+    } else {
+        console.log("show sign out button")
+        SignComponent = <SignOut />;
+    }
+
     return (
         <>
+            {/* might need to make into flexbox, check if it's a flexbox, 
+        one div for left elems and one for right elems */}
             <Navbar className="color-Nav" variant="dark" expand="lg">
                 <Container>
                     <Navbar.Brand href="/">Plant Parenthood</Navbar.Brand>
@@ -26,12 +48,11 @@ export function PlantNav(props) {
                             <Nav.Link aria-label="Calendar Page" as={Link} to='/Calendar.js'>Calendar</Nav.Link>
                             <Nav.Link aria-label="Explore Page" as={Link} to='/Explore.js'>Explore</Nav.Link>
                             <Nav.Link as={Link} aria-label="About Page" to='/About.js'>About</Nav.Link>
-                            <Button variant="light" aria-label="Sign In" href='/SignIn.js'>Sign In</Button>
-                            <Button variant="light" aria-label="Sign Out" onClick={handleSignOut}>Sign Out</Button>
+                            {SignComponent}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
-            </Navbar>
+            </Navbar >
         </>
     );
 }
