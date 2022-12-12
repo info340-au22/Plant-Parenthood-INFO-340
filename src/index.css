@@ -402,7 +402,7 @@ cite {
 
 /* Calendar Page */
 .calendar {
-    height: 500px;
+    /* height: 500px; */
     margin: 50px;
 }
 
@@ -416,10 +416,19 @@ cite {
 }
 
 /* removing in-style attempt */
-/* .event-add-title {
-    width: "20%";
-    margin-right: "10px";
-} */
+.event-add-title {
+    width: 20%;
+    margin-right: 10px;
+}
+
+.event-date {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.event-btn {
+    margin-top: 10px;
+}
 
 .new-event {
     text-align: center;
