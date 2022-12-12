@@ -138,6 +138,11 @@ h1.plant-info-heading {
     text-align: center;
 }
 
+.more-info {
+    margin: auto;
+    display: block;
+}
+
 /* About Page */
 
 .about-text {
@@ -356,21 +361,6 @@ cite {
     justify-content: space-between;
 }
 
-.explore-item button.detail {
-     margin-top: 1rem; 
-     margin-bottom: 1rem;
-}
-
-.explore-item button.explore-plant {
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-    background-color: #4a3405;
-}
-
-.explore-item button.explore-plant:hover {
-    background-color: #79560b;
-}
-
 .card-info {
     padding: 2rem;
     padding-bottom: 0;
@@ -383,8 +373,8 @@ cite {
 
 .card-info h4 {
     font-size: 16px;
-    margin-bottom: 2rem;
-    margin-top: 1.6rem;
+    margin-bottom: 1.8rem;
+    margin-top: 1.8rem;
 }
 
 /* Calendar Page */
@@ -567,9 +557,11 @@ cite {
     /* Explore Page */
 
     .plant-img img {
-        width: 90%;
-        height: 90%;
+        width: 78%;
+        height: 78%;
         margin: auto;
+        padding-top: 1rem;
+        padding-bottom: 2.2rem;
         display: block;
     }
 
@@ -702,17 +694,18 @@ cite {
         max-width: 600px;
         max-height: 600px;
     }
+
     .care-info {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .plant-info-heading {
-        font-size: 3rem;
+        font-size: 2rem;
         padding-top: 0;
     }
     .care-info h2 {
         margin-bottom: 2rem;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
 
     }
 

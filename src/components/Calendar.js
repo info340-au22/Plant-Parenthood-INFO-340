@@ -52,7 +52,6 @@ export function PlantCalendar(props) {
             console.log("turn out the lights");
             offFunction();
         }
-
         return cleanup;
     }, [])
 

@@ -24,6 +24,7 @@ export function ComposeEvent(props) {
     const handleSubmit = (event) => {
         event.preventDefault();
         addEventCallback(typedValue, startDate, endDate);
+        setTypedValue(""); //empty the input!
     }
 
     return (
