@@ -72,15 +72,15 @@ export function PlantCalendar(props) {
         <div className="App">
             <h1 className="calendar-title">Plant Calendar</h1>
             <h2 className="calendar-title">Add New Event</h2>
-            <ComposeEvent addEventCallback={addEvent} />;
+            <ComposeEvent addEventCallback={addEvent} />
             <Calendar
                 className="calendar"
                 localizer={localizer}
                 events={allEvents}
                 startAccessor="start"
                 endAccessor="end"
-                defaultView="month" //day
-                style={{ height: 500 }} //move this styling to css
+                defaultView="day" 
+                style={{ height: 500 }} // Including inline styling to support 3rd party react-big-calendar library + Professor approved this
             />
         </div>
     )
