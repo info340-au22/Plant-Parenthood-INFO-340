@@ -37,7 +37,7 @@ export function PlantCalendar(props) {
     useEffect(() => {
 
         const db = getDatabase(); //"the database"
-        const allEventsRef = ref(db, "allUsers/allEvents");
+        const allEventsRef = ref(db, 'allUsers/'+ currentUser.userId + '/allEvents');
 
         //returns the instructions how to turn it off
         const offFunction = onValue(allEventsRef, (snapshot) => {
