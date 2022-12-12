@@ -106,8 +106,5 @@ function PlantCard(props) {
                 </div>
             </div>
         </ReactCardFlip>
-
-
-        //</ReactCardFlip>
     )
 }

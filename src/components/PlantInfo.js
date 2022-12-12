@@ -8,16 +8,7 @@ import _ from 'lodash';
 
 export function PlantInfo(props) {
     const plantNameString = useParams();
-    console.log(plantNameString);
-
     let plant =  _.find(PLANT_DATA, {name: plantNameString.plantName}); //find plant in data
-
-    console.log(plant)
-
-    // const plants = props.plants.map((plant) => {
-    //     return <p key={plant.name} plantdata={plant}></p>
-    // }
-    // );
 
     return (
         <div className="plant-info-container">
@@ -43,19 +34,6 @@ export function PlantInfo(props) {
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }
-
-// "name": "Areca Palm",
-// "img": "../img/arecapalm.png",
-// "MAINTENANCE": "Low",
-// "LIGHTING": "Indirect",
-// "LIGHTING_DESCRIPTION": "Areca Palm can survive in dark shady areas and also areas with direct sunlight but both must be moderated. To avoid changing locations of the plant, keep the plant in a bright spot that receives no direct sunlight.",
-// "HUMIDITY": "Medium",
-// "WATERING": "It would be ideal to ensure that the soil of the plant is always moist. In Spring and Summer months, you will need to water the plant more often to ensure that soil is moist.",
-// "TEMPERATURE": "59 to 70 degrees",
-// "COST": "$$",
-// "alt": "Areca Palm",
-// "Source": "GARDENING KNOW HOW

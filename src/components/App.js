@@ -33,7 +33,6 @@ export default function App(props) {
     }
 
     // Sign in user
-
     const [currentUser, setCurrentUser] = useState(DEFAULT_USERS[0]) //default to null user
     const navigateTo = useNavigate(); //navigation hook
 

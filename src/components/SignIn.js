@@ -1,16 +1,12 @@
 import React from 'react';
 
 import { Navigate } from 'react-router-dom';
-
 import { getAuth, EmailAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import { StyledFirebaseAuth } from 'react-firebaseui';
 
-import DEFAULT_USERS from '../data/users.json';
-
 export default function SignIn(props) {
   const currentUser = props.currentUser;
-  const loginFunction = props.loginCallback;
-
+  
   //the authenticator
   const auth = getAuth();
 
@@ -21,14 +17,14 @@ export default function SignIn(props) {
     ],
     signInFlow: 'popup',
     callbacks: {
-      signInSuccessWithAuthResult: () => false //don't do anything special on signin
+      signInSuccessWithAuthResult: () => false 
     },
     credentialHelper: 'none'
   }
 
-  // if (currentUser.userId) { //if signed in
-  //   return <Navigate to="/" />
-  // }
+  if (currentUser.userId) { 
+    return <Navigate to="/" />
+  }
 
   return (
     <div className="card bg-light">
