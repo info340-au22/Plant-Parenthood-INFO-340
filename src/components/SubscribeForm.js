@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
-import { getDatabase } from 'firebase/database';
-import firebase from 'firebase/app';
+import React, { useState } from 'react';
+import { getDatabase, ref, push as firebasePush } from 'firebase/database'
 
 export default function RegistrationForm() {
     const db = getDatabase();
@@ -10,21 +9,18 @@ export default function RegistrationForm() {
     };
     const submitHandler = (e) => {
         e.preventDefault();
-        if (input) {
-            console.log(input);
-            //add to firebase
-            db.collection("emails").add({
-                email: input,
-                // time: firebase.firestore.FieldValue.serverTimestamp(),
-            })
-        }
+        e.target.reset();
+        
+        const db = getDatabase(); 
+        const subscribeRef = ref(db, "subscribers");
+        const saveSubscriber = firebasePush(subscribeRef, input);
     }
     return (
         <div>
             <form onSubmit={submitHandler}>
-                <input type="email" onChange={inputHandler} placeholder="Enter Email..."/>
-                <button type="submit" className = "btn btn-default">Submit</button>
+                <input type="email" onChange={inputHandler} placeholder="Enter Email..." />
+                <button type="submit" className="btn btn-default">Submit</button>
             </form>
         </div>
-    )       
+    )
 }

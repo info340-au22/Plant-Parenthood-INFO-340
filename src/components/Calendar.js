@@ -37,7 +37,13 @@ export function PlantCalendar(props) {
     useEffect(() => {
 
         const db = getDatabase(); //"the database"
-        const allEventsRef = ref(db, "allEvents");
+        const allEventsRef = ref(db, "allUsers/allEvents");
+        // const allUsersRef = ref(db, "allUsers");
+        // const updateUserList = "";
+        // if (currentUser.userId  ) {
+
+        // }
+        // firebasePush(allUsersRef, currentUser.userId);
 
         //returns the instructions how to turn it off
         const offFunction = onValue(allEventsRef, (snapshot) => {
@@ -72,14 +78,12 @@ export function PlantCalendar(props) {
       const addEvent = (eventText) => {
         const userObj = currentUser;
         const newEventDB = {
-          "userId": userObj.userId,
-          "text": newEvent.title,
+          "title": newEvent.title,
           "start": newEvent.start.toString(),
           "end": newEvent.end.toString()
         } 
     
         const updateEvents = [...allEvents, newEvent];
-        //setChatMessages(updateChatMessages); //update state and re-render
     
         //play with the database
         console.log("databasing");
@@ -87,9 +91,6 @@ export function PlantCalendar(props) {
         const db = getDatabase(); //"the database"
         const eventRef = ref(db, "exEvent");
         console.log(eventRef);
-
-        //          where to change,
-        //firebaseSet(messageRef, newMessage );
     
         const allEventsRef = ref(db, 'allEvents');
         firebasePush(allEventsRef, newEventDB);
