@@ -10,7 +10,7 @@ import DatePicker from "react-datepicker";
 import { getDatabase, ref, onValue, set as firebaseSet, push as firebasePush } from 'firebase/database' // realtime
 
 export function PlantCalendar(props) {
-
+    // calendar locale
     const locales = {
         "en-US": require("date-fns/locale/en-US"),
     };
@@ -59,7 +59,6 @@ export function PlantCalendar(props) {
             return theMessageObj;
           })
           console.log(objArray);
-    
          setAllEvents(objArray); //needs to be an array
         })
     
@@ -85,7 +84,7 @@ export function PlantCalendar(props) {
     
         const updateEvents = [...allEvents, newEvent];
     
-        //play with the database
+        // database referencing
         console.log("databasing");
     
         const db = getDatabase(); //"the database"
@@ -116,13 +115,13 @@ export function PlantCalendar(props) {
                 </button>
             </div>
             <Calendar
-            className="calendar"
-            localizer={localizer}
-            events={allEvents}
-            startAccessor="start"
-            endAccessor="end"
-            defaultView="day"
-            style={{ height: 500}}
+                className="calendar"
+                localizer={localizer}
+                events={allEvents}
+                startAccessor="start"
+                endAccessor="end"
+                defaultView="day"
+                style={{ height: 500}} //move this styling to css
             />
                 
         </div>
