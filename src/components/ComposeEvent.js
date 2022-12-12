@@ -29,6 +29,7 @@ export function ComposeEvent(props) {
 
     return (
         <div className="add-event">
+            <h2 className="event-title">Add New Event</h2>
             <input className="event-add-title" type="text" placeholder="Add Title"
                 onChange={handleTitleChange}
             />
@@ -41,7 +42,7 @@ export function ComposeEvent(props) {
                 selected={endDate}  
                 onChange={handleEndDateChange} />
 
-            <button className="event-btn"
+            <button className="btn btn-default event-btn"
                 onClick={handleSubmit}>
                 Add Event
             </button>

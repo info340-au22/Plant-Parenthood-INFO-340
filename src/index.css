@@ -122,7 +122,7 @@ nav a:hover {
     margin-bottom: 3.2rem;
 }
 
-.right-col-container h2 {
+.right-col-container p {
     margin-top: 2rem;
     font-weight: lighter;
 }
@@ -389,13 +389,7 @@ cite {
 }
 
 .add-event {
-    text-align: center;
-}
-
-/* removing in-style attempt */
-.event-add-title {
-    width: 20%;
-    margin-right: 10px;
+    padding-left: 2rem;
 }
 
 .event-date {
@@ -426,6 +420,16 @@ cite {
     bottom: -50px;
     right: 3px;
     margin-right: 2rem;
+}
+
+.add-event {
+    margin-right: 85%;
+    background-color: #A0A66F;
+    padding: 2rem;
+    margin-left: 2rem;
+    border-radius: 16px;
+    color: white;
+    box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
 }
 
 /* Calendar Event */
@@ -673,7 +677,7 @@ cite {
         font-size: 2.4rem;
     }
 
-    .right-col-container h2 {
+    .right-col-container p {
         font-size: 1.5rem;
         margin-top: 2rem;
     }
@@ -712,6 +716,4 @@ cite {
     .care-info {
         padding-top: 0;
     }
-
-
 }

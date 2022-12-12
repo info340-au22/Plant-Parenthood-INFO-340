@@ -70,7 +70,7 @@ export function PlantCalendar(props) {
     return (
         <div className="App">
             <h1 className="calendar-title">Plant Calendar</h1>
-            <h2 className="calendar-title">Add New Event</h2>
+            {/* <h2 className="event-title">Add New Event</h2> */}
             <ComposeEvent addEventCallback={addEvent} />
             <Calendar
                 className="calendar"

@@ -63,7 +63,6 @@ export function PlantList(props) {
 function PlantCard(props) {
     const [flip, setFlip] = useState(false);
     let plant = props.plants;
-    console.log(plant.Source);
 
     return (
         <ReactCardFlip isFlipped={flip} flipDirection="vertical">
