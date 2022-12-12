@@ -15,7 +15,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Nunito Sans', Helvetica, sans-serif;
     font-weight: 300;
 }
@@ -31,6 +32,10 @@ h2 {
 
 h3 {
     font-size: 1rem;
+}
+
+p {
+    font-weight: 200;
 }
 
 .col .btn {
@@ -354,13 +359,44 @@ cite {
     justify-content: space-between;
 }
 
-.explore-item button {
+.explore-item button.detail {
      margin-top: 1rem; 
      margin-bottom: 1rem;
 }
 
-.explore-item button.plant {
-    padding-left: 10rem;
+.explore-item button.detail:hover {
+    background-color: #858866;
+    color: white;
+}
+
+.explore-item button.explore-plant {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    background-color: #4a3405;
+}
+
+.explore-item button.explore-plant:hover {
+    background-color: #79560b;
+    color: white;
+}
+
+.card-info {
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.card-info em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.card-info h4 {
+    font-size: 16px;
+    margin-bottom: 2rem;
+    margin-top: 1.6rem;
+}
+
+.plant-more-info {
 
 }
 
@@ -405,18 +441,6 @@ cite {
     right: 3px;
     margin-right: 2rem;
 }
-
-/* th, td, .water-text, .soil, .fertilizer {
-    font-size: .8rem;
-} */
-
-/* .water-text {
-    background-color:  #A0A66F;
-}
-
-.soil, .fertilizer {
-    background-color: #A98467;
-} */
 
 /* Calendar Event */
 
@@ -500,6 +524,9 @@ cite {
         text-align: center;
     }
 
+    .search-bar {
+        font-size: 0.75rem;
+    }
 
     /* Quiz Result Page */
 
@@ -521,41 +548,9 @@ cite {
         padding: 10px 15px;
         font-size: 15px;
     }
-
-    /* Calendar Page */
-    /* table {
-        width: 30rem;
-        height: 30rem;
-    }
-
-    .new-event {
-        bottom: -100px;
-    }
-
-    .button-text {
-        position: absolute;
-        bottom: -110px;
-        margin-right: -1rem;
-    } */
 }
 
 @media (min-width: 576px) {
-
-    /* Calendar Page */
-    /* table {
-        width: 35rem;
-        height: 35rem;
-    }
-
-    .new-event {
-        bottom: -60px;
-        right: 135px;
-    }
-
-    .button-text {
-        position: absolute;
-        bottom: -70px;
-    }
 
     /* Plant Info */
     .plant-info-img img {
@@ -604,35 +599,6 @@ cite {
         border-radius: 25px;
         max-width: 100%;
     }
-
-    /* .explore-item:hover {
-        transform: rotateX(180deg);
-    } */
-
-    .card-info {
-        padding: 2rem;
-    }
-
-    /* Calendar Page */
-
-    /* table {
-        width: 48rem;
-        height: 35rem;
-    }
-
-    th, td, .water-text, .soil, .fertilizer {
-        font-size: 1rem;
-    }
-
-    .new-event {
-        bottom: -150px;
-    }
-
-    .button-text {
-        position: absolute;
-        bottom: -160px;
-    } */
-
 
     /* Plant Info Page */
 
@@ -704,7 +670,6 @@ cite {
     .plant {
         max-width: 3.2rem;
         max-height: 3.2rem;
-        margin-bottom: 1.5rem;
     }
 
     .col .btn-light {
