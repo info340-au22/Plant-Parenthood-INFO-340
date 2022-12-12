@@ -80,7 +80,7 @@ export function PlantCalendar(props) {
                 startAccessor="start"
                 endAccessor="end"
                 defaultView="day" 
-                style={{ height: 500 }} //move this styling to css
+                style={{ height: 500 }} // Including inline styling to support 3rd party react-big-calendar library + Professor approved this
             />
         </div>
     )
