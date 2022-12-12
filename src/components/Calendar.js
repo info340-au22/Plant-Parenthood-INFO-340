@@ -102,7 +102,6 @@ export function PlantCalendar(props) {
             <h2 className="calendar-title">Add New Event</h2>
             <div className="add-event">
                 <input className="event-add-title" type="text" placeholder="Add Title"
-                    style={{ width: "20%", marginRight: "10px" }}
                     value={newEvent.title} onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })}
                 />
                 <DatePicker className="event-date" placeholderText="Start Date"

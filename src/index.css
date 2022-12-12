@@ -51,6 +51,12 @@ p {
     margin-top: 2rem;
 }
 
+.btn-default:hover {
+    background-color: #bcbfa3;
+    color: white;
+    border: none;
+}
+
 /* Nav Bar Styling */
 
 .color-Nav {
@@ -66,12 +72,16 @@ p {
 nav a:hover {
     color: #f0f0f0;
     border-bottom: .2rem dotted #f0f0f0;
-    transition: .25s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
 .navbar-nav .btn {
     margin-right: .4rem;
     color: #595c3f;
+}
+
+.navbar-nav .btn:hover {
+    border-bottom: none;
 }
 
 /* Home Page */
@@ -117,18 +127,6 @@ nav a:hover {
     font-weight: lighter;
 }
 
-.col .btn-light {
-    background-color: #595c3f;
-    color: #F0F7F1;
-    margin-top: 4rem;
-    font-size: 1.4rem;
-    font-weight: 200;
-}
-
-.col .btn-light:hover {
-    background-color: #A0A66F;
-}
-
 /* Plant Info */
 
 .care-info em {
@@ -149,7 +147,7 @@ h1.plant-info-heading {
 }
 
 .about-text h2 {
-    padding-top: 4rem;
+    padding-top: 2.8rem;
     font-weight: bold;
 }
 
@@ -180,6 +178,11 @@ footer a:hover {
 .contact-text {
     font-size: 1.25rem;
     padding-top: 1.25rem;
+}
+
+form .btn-default {
+    margin-top: 0;
+    margin-left: 1rem;
 }
 
 /* Quiz Page */
@@ -228,8 +231,6 @@ footer a:hover {
     font-size: 18px;
 }
 
-/* Quiz Template Page */
-
 .quiz-question-container {
     /* Center the div  */
     margin: 0 auto;
@@ -254,10 +255,6 @@ footer a:hover {
 
 .quiz-question-container .btn:last-child {
     margin-right: 0rem;
-}
-
-.quiz-question-container .btn:hover {
-    background-color: #bcbfa3;
 }
 
 .questionText {
@@ -337,7 +334,7 @@ cite {
 }
 
 .search-bar {
-    font-size: 1.5rem;
+    font-size: 0.75rem;
     align-self: center;
 }
 
@@ -364,11 +361,6 @@ cite {
      margin-bottom: 1rem;
 }
 
-.explore-item button.detail:hover {
-    background-color: #858866;
-    color: white;
-}
-
 .explore-item button.explore-plant {
     margin-top: 0rem;
     margin-bottom: 1rem;
@@ -377,7 +369,6 @@ cite {
 
 .explore-item button.explore-plant:hover {
     background-color: #79560b;
-    color: white;
 }
 
 .card-info {
@@ -394,10 +385,6 @@ cite {
     font-size: 16px;
     margin-bottom: 2rem;
     margin-top: 1.6rem;
-}
-
-.plant-more-info {
-
 }
 
 /* Calendar Page */
@@ -533,10 +520,6 @@ cite {
         text-align: center;
     }
 
-    .search-bar {
-        font-size: 0.75rem;
-    }
-
     /* Quiz Result Page */
 
     .plant-picture img {
@@ -654,6 +637,11 @@ cite {
     .button-text {
         position: absolute;
         bottom: -200px;
+    }
+
+    .search-bar {
+        font-size: 1.5rem;
+        align-self: center;
     }
 
 }
