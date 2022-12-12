@@ -15,7 +15,6 @@ import { PlantList } from './PlantList.js';
 import SignIn from './SignIn.js'
 
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import { useAuthState, AuthContextProvider} from 'firebase/auth';
 import DEFAULT_USERS from '../data/users.json';
 
 export default function App(props) {
@@ -67,8 +66,6 @@ export default function App(props) {
         }
     }
 
-
-
     return (
         <div>
             <PlantNav />
@@ -82,10 +79,9 @@ export default function App(props) {
                     </Route>
                     <Route path="/About.js" element={<About />} />
                     <Route path="/SignIn.js" element={<SignIn currentUser={currentUser} loginCallback={loginUser} />} />
-                    
-                    Calendar Page Protected
+                    {/* Calendar Page Protected */}
                     <Route element={<ProtectedPage currentUser={currentUser} />}>
-                        <Route path="/Calendar.js" element={<PlantCalendar />} />
+                        <Route path="/Calendar.js" element={<PlantCalendar currentUser={currentUser} />} />
                     </Route>
                 </Routes>
             </div>
