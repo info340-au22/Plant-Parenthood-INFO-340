@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { Navigate } from 'react-router-dom';
 
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate, Outlet } from "react-router-dom";
 import { PlantNav } from './Nav.js';
 import { Home } from "./Home.js";
 import { PlantCalendar } from "./Calendar.js";
@@ -14,6 +15,7 @@ import { PlantList } from './PlantList.js';
 import SignIn from './SignIn.js'
 
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { useAuthState, AuthContextProvider} from 'firebase/auth';
 import DEFAULT_USERS from '../data/users.json';
 
 export default function App(props) {
@@ -66,6 +68,8 @@ export default function App(props) {
         }
     }
 
+
+
     return (
         <div>
             <PlantNav />
@@ -73,15 +77,29 @@ export default function App(props) {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/QuestionTemplate.js" element={<Question />} />
-                    <Route path="/Calendar.js" element={<PlantCalendar />} />
                     <Route path="/Explore.js" element={<Explore />} >
                         <Route path="/Explore.js/:plantName" element={<PlantInfo plants={displayedPlants} />} />
                         <Route index={true} element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants}/>} />
                     </Route>
                     <Route path="/About.js" element={<About />} />
                     <Route path="/SignIn.js" element={<SignIn currentUser={currentUser} loginCallback={loginUser} />} />
+                    
+                    Calendar Page Protected
+                    <Route element={<ProtectedPage currentUser={currentUser} />}>
+                        <Route path="/Calendar.js" element={<PlantCalendar />} />
+                    </Route>
                 </Routes>
             </div>
         </div>
     );
+
+    // Protected Routes
+    function ProtectedPage(props) {
+        if (props.currentUser.userId == null) {                
+            return <Navigate to="/SignIn.js"></Navigate>
+        } 
+        else { 
+            return <Outlet />
+        }
+    }
 }
