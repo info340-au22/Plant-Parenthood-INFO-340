@@ -402,8 +402,13 @@ cite {
     margin-top: 5px;
 }
 
+.event-title {
+    font-size: 1rem;
+}
+
 .event-btn {
     margin-top: 10px;
+    font-size: 0.8rem;
 }
 
 .new-event {
@@ -431,7 +436,7 @@ cite {
     text-align: center;
     background-color: #A0A66F;
     width: min-content;
-    padding: 3.2rem;
+    padding: 1rem;
     border-radius: 16px;
     color: white;
     box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;

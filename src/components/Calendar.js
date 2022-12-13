@@ -6,10 +6,7 @@ import React from 'react';
 import { useEffect, useState } from "react";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import { ComposeEvent } from './ComposeEvent.js';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import { getDatabase, ref, onValue, set as firebaseSet, push as firebasePush } from 'firebase/database' // realtime
-
+import { getDatabase, ref, onValue, set as firebaseSet, push as firebasePush, child } from 'firebase/database' // realtime
 
 export function PlantCalendarPage(props) {
     // calendar locale
@@ -26,9 +23,10 @@ export function PlantCalendarPage(props) {
     });
 
     const currentUser = props.currentUser;
-    const [allEvents, setAllEvents] = useState([]);
+    const [allEvents, setAllEvents] = useState();
 
     // const db = getDatabase();
+    // console.log(Object.keys(allEvents).length());
     // const dummyEventRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents');
     //     firebasePush(dummyEventRef, {
     //         "title": "",
@@ -36,11 +34,21 @@ export function PlantCalendarPage(props) {
     //         "end": ""
     //     });
 
-
     useEffect(() => {
         const db = getDatabase(); //"the database"
         const allEventsRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents');
         
+        const dummyEventRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents');
+        
+        if (child(dummyEventRef, "dummy")) {
+            firebasePush(dummyEventRef, {
+                "title": "",
+                "start": "",
+                "end": "",
+                "key": "dummy"
+            });
+        } 
+
         //returns the instructions how to turn it off
         const offFunction = onValue(allEventsRef, (snapshot) => {
             const valueObj = snapshot.val();
@@ -55,6 +63,7 @@ export function PlantCalendarPage(props) {
             })
 
             setAllEvents(objArray); //needs to be an array
+            console.log(objArray)
         })
 
         //when the component goes away, we turn off the listener
@@ -75,7 +84,6 @@ export function PlantCalendarPage(props) {
         const db = getDatabase();
         const allEventsRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents');
         firebasePush(allEventsRef, newEventDB);
-
     }
 
     const handleClickDeleteEvent = (event) => {
@@ -85,12 +93,9 @@ export function PlantCalendarPage(props) {
         firebaseSet(eventToDeleteRef, null);
     }
 
-
-
     return (
         <div className="App">
             <h1 className="calendar-title">Plant Calendar</h1>
-            {/* <h2 className="event-title">Add New Event</h2> */}
             <ComposeEvent addEventCallback={addEvent} />
             <Calendar
                 className="calendar"
