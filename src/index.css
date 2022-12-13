@@ -355,7 +355,7 @@ cite {
 }
 
 .explore-body {
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .form-select {
@@ -573,7 +573,7 @@ cite {
     .plant-info-heading {
         margin-top: 1rem;
         margin-left: 1rem;
-        padding: 3rem;
+        padding: 1rem;
     }
 
     .plant-info-img img {
@@ -683,6 +683,10 @@ cite {
         font-size: 1.5rem;
     }
 
+    .care-info ul {
+        font-size: 1rem;
+    }
+
     /* Home Page */
 
     .plant {
@@ -720,8 +724,8 @@ cite {
     /* Plant Info Page */
 
     .plant-info-img img {
-        max-width: 600px;
-        max-height: 600px;
+        max-width: 500px;
+        max-height: 500px;
     }
 
     .care-info {
@@ -766,8 +770,6 @@ cite {
 /* Subscribe Form */
 .form {
     width: 50%;
-    /* margin: 0 auto; */
-
 }
 
 .form-input {
