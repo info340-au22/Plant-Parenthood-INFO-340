@@ -23,6 +23,7 @@ export default function SignInPage(props) {
   }
 
   if (currentUser.userId) { 
+    window.alert("Signed in!");
     return <Navigate to="/" />
   }
 

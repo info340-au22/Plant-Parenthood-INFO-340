@@ -7,7 +7,7 @@ export function HomePage() {
         <div className="home-body">
             <div className="container-fluid">
                 <div className="row">
-                    <div id="backdrop-container" className="col"></div>
+                    <div className="col backdrop-container"></div>
                     <div className="col">
                         <div className="right-col-container">
                         <img
@@ -16,7 +16,6 @@ export function HomePage() {
                             alt="plant icon"
                         />
                         <h1>Plant Parenthood</h1>
-                       
                         <p>Start your plant journey today</p> 
                         <p>Explore different types of plants</p>
                         <p>Take the quiz to find the plants that work best for you</p>

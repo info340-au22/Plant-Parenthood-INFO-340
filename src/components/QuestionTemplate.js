@@ -128,7 +128,7 @@ export function QuestionPage() {
     };
 
     let questionBank = questions[currQuestion].ansOptions.map((ansOption, index) => (
-        <button key={index} className="btn btn-default" aria-label = "Click an Option" onClick={() => handleAnswerButtonClick(ansOption)}>{ansOption.text}</button>
+        <button key={index} className="btn btn-default" aria-label = "answer option" onClick={() => handleAnswerButtonClick(ansOption)}>{ansOption.text}</button>
     ))
 
 
