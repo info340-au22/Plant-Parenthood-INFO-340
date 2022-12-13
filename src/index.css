@@ -73,8 +73,8 @@ nav a:hover {
 }
 
 .navbar-nav .btn {
-    margin-right: .4rem;
     color: #595c3f;
+    width: fit-content;
 }
 
 .navbar-nav .btn:hover {
