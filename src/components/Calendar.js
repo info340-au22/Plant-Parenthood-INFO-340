@@ -96,6 +96,7 @@ export function PlantCalendarPage(props) {
     return (
         <div className="App">
             <h1 className="calendar-title">Plant Calendar</h1>
+            <div className="compose-calendar">
             <ComposeEvent addEventCallback={addEvent} />
             <Calendar
                 className="calendar"
@@ -106,8 +107,9 @@ export function PlantCalendarPage(props) {
                 onSelectEvent={handleClickDeleteEvent}
                 defaultView="day"
                 views={["month", "week", "day"]}
-                style={{ height: 500 }} // Including inline styling to support 3rd party react-big-calendar library + Professor approved this
+                style={{ height: 550 }} // Including inline styling to support 3rd party react-big-calendar library + Professor approved this
             />
+            </div>
             <br></br>
         </div>
     )

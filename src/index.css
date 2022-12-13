@@ -143,21 +143,21 @@ h1.plant-info-heading {
 /* About Page */
 
 .about-text {
-    padding-top: 2.8rem;
+    padding-top: 2rem;
     height: 100vh;
 }
 
 .about-text h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
 }
 
 .about-text h2 {
-    padding-top: 2rem;
+    padding-top: 1.4rem;
     font-weight: bold;
 }
 
 .about-text p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .about-body {
@@ -395,7 +395,9 @@ cite {
 
 .calendar-title {
     text-align: center;
-    padding-top: 50px;
+    font-size: 1.5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
 }
 
 .event-date {
@@ -647,6 +649,20 @@ cite {
 
     .result-descrip {
         font-size: 1.5rem;
+    }
+
+    .calendar {
+        width: 80%;
+        margin-top: 0rem;
+        height: 100%;
+    }
+
+    .compose-calendar {
+        display:flex;
+    }
+
+    .add-event {
+        height:fit-content;
     }
 
 }
