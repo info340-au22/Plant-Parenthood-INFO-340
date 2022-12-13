@@ -19,7 +19,7 @@ export function QuizResultCPage (props) {
                     <figcaption>Croton</figcaption>                
                 </div>
             </div>
-            <p className = "result-descrip">Looks like we got a plant care expert in the house! You don't mind plants that require the perfect amount of lighting, watering, and temperature to thrive. You're ready to take on a challenge - we love to see it. These are our recommendations for you: Bonsai, Calathea, and Croton!</p>
+            <p className = "result-descrip">Looks like we got a plant care expert in the house! You don't mind plants that require the perfect amount of lighting, watering, and temperature to thrive. You're ready to take on a challenge - we love to see it. These are our recommendations for you: Bonsai, Calathea, and Croton! Refer to our Explore Page for more information!</p>
         </div>
     )
 }
