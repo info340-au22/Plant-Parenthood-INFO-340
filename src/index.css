@@ -485,6 +485,34 @@ cite {
         font-size: 15px;
     }
 
+    .quiz-question-container {
+        /* Center the div  */
+        margin: 0 auto;
+        margin-top: 4rem;
+    
+        /* Dimensions  */
+        width: 70%;
+        /* Can be in percentage also. */
+        background-color: #A0A66F;
+        padding: 3rem;
+        border-radius: 16px;
+        color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+            rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+        text-align: center;
+    }
+
+    .questionText {
+        color: white;
+        font-size: 1rem;
+    }
+
+    .question-count {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+
     /* Quiz Result Pages */
     .quiz-result-heading {
         padding-top: 2rem;
@@ -497,6 +525,7 @@ cite {
         margin-right: auto;
         width: 50%;
     }
+
 }
 
 @media (min-width: 576px) {
@@ -510,6 +539,35 @@ cite {
 
     .add-event {
         margin-left: 2rem;
+    }
+
+    /* Quiz Page */
+    .quiz-question-container {
+        /* Center the div  */
+        margin: 0 auto;
+        margin-top: 4rem;
+    
+        /* Dimensions  */
+        width: 70%;
+        /* Can be in percentage also. */
+        background-color: #A0A66F;
+        padding: 8rem;
+        border-radius: 16px;
+        color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+            rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+        text-align: center;
+    }
+
+    .questionText {
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .question-count {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
     }
 
     /* Quiz Result Pages */
