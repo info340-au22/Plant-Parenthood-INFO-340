@@ -68,18 +68,17 @@ export default function App(props) {
         <div>
             <PlantNav currentUser={currentUser}/>
             <div>
-                {/* name route components after what they are, state 'page' */}
                 <Routes>  
                     <Route path="/" element={<HomePage />} />
                     <Route path="/QuestionTemplate" element={<QuestionPage />} />
                     <Route path="/QuizResultA" element={<QuizResultAPage plants={displayedPlants}/>} />
-
                     <Route path="/Explore" element={<ExplorePage />} >
                         <Route path="/Explore/:plantName" element={<PlantInfoPage plants={displayedPlants} />} />
                         <Route index={true} element={<PlantListPage applyFilterCallback={applyFilter} plants={displayedPlants}/>} />
                     </Route>
                     <Route path="/About" element={<AboutPage />} />
                     <Route path="/SignIn" element={<SignInPage currentUser={currentUser} loginCallback={loginUser} />} />
+                    
                     {/* Calendar Page Protected */}
                     <Route element={<ProtectedPage currentUser={currentUser} />}>
                         <Route path="/Calendar" element={<PlantCalendarPage currentUser={currentUser} />} />

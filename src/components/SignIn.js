@@ -22,10 +22,9 @@ export default function SignInPage(props) {
     credentialHelper: 'none'
   }
 
-  // uncomment when done debugging
-  // if (currentUser.userId) { 
-  //   return <Navigate to="/" />
-  // }
+  if (currentUser.userId) { 
+    return <Navigate to="/" />
+  }
 
   return (
     <div className="card bg-light">
