@@ -19,7 +19,7 @@ export function QuizResultBPage (props) {
                     <figcaption>Cyclamen</figcaption>
                 </div>
             </div>
-            <p className = "result-descrip">You like a plant that can present a bit of a challenge, but nothing too crazy. You're willing to put in some work, frequent watering and the occassional need for fertilizer doesn't scare you. We respect that. These are our recommendations for you: African Violet, Angel Wing Begonia, and Cyclamen!</p>
+            <p className = "result-descrip">You like a plant that can present a bit of a challenge, but nothing too crazy. You're willing to put in some work, frequent watering and the occassional need for fertilizer doesn't scare you. We respect that. These are our recommendations for you: African Violet, Angel Wing Begonia, and Cyclamen! Refer to our Explore Page for more information!</p>
         </div>
     )
 }

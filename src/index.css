@@ -94,7 +94,7 @@ nav a:hover {
     height: 100vh;
 }
 
-#backdrop-container {
+.backdrop-container {
     display: none;
     height: 100vh;
 }
@@ -143,21 +143,21 @@ h1.plant-info-heading {
 /* About Page */
 
 .about-text {
-    padding-top: 2.8rem;
+    padding-top: 2rem;
     height: 100vh;
 }
 
 .about-text h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
 }
 
 .about-text h2 {
-    padding-top: 2rem;
+    padding-top: 1.4rem;
     font-weight: bold;
 }
 
 .about-text p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .about-body {
@@ -355,7 +355,7 @@ cite {
 }
 
 .explore-body {
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .form-select {
@@ -395,7 +395,9 @@ cite {
 
 .calendar-title {
     text-align: center;
-    padding-top: 50px;
+    font-size: 1.5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
 }
 
 .event-date {
@@ -532,7 +534,7 @@ cite {
 
     /* Home Page */
 
-    #backdrop-container {
+    .backdrop-container {
         background-image: url('../public/img/bg-image.jpg');
         background-size: cover;
         display: flex;
@@ -571,7 +573,7 @@ cite {
     .plant-info-heading {
         margin-top: 1rem;
         margin-left: 1rem;
-        padding: 3rem;
+        padding: 1rem;
     }
 
     .plant-info-img img {
@@ -649,6 +651,20 @@ cite {
         font-size: 1.5rem;
     }
 
+    .calendar {
+        width: 80%;
+        margin-top: 0rem;
+        height: 100%;
+    }
+
+    .compose-calendar {
+        display:flex;
+    }
+
+    .add-event {
+        height:fit-content;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -665,6 +681,10 @@ cite {
 
     .explore-subheading {
         font-size: 1.5rem;
+    }
+
+    .care-info ul {
+        font-size: 1rem;
     }
 
     /* Home Page */
@@ -704,8 +724,8 @@ cite {
     /* Plant Info Page */
 
     .plant-info-img img {
-        max-width: 600px;
-        max-height: 600px;
+        max-width: 500px;
+        max-height: 500px;
     }
 
     .care-info {
@@ -750,8 +770,6 @@ cite {
 /* Subscribe Form */
 .form {
     width: 50%;
-    /* margin: 0 auto; */
-
 }
 
 .form-input {

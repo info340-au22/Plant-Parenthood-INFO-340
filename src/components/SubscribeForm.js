@@ -47,7 +47,7 @@ export function RegistrationForm() {
                         </label>
                     </div>
                     <div className = "form-btn">
-                        <button type="submit" className="btn btn-default" aria-label = "Submit">Submit</button>
+                        <button type="submit" className="btn btn-default" aria-label ="submit">Submit</button>
                     </div>
                 </div>
             </form>
