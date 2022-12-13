@@ -33,15 +33,23 @@ export function RegistrationForm() {
     return (
         <div>
             <form onSubmit={submitHandler}>
-                <label for="your-name">
-                    Full Name:
-                    <input id="your-name" onChange={nameInputHandler} placeholder="John Doe" />
-                </label>
-                <label for="email">
-                    Email:
-                    <input id="email" onChange={emailInputHandler} placeholder="example@gmail.com" />
-                </label>
-                <button type="submit" className="btn btn-default">Submit</button>
+                <div className = "form">
+                    <div className = "form-input">
+                        <label for="your-name">
+                            Full Name:&nbsp;
+                            <input id="your-name" onChange={nameInputHandler} placeholder="John Doe" />
+                        </label>
+                    </div>
+                    <div className = "form-input">
+                        <label for="email">
+                            Email:&nbsp;
+                            <input id="email" onChange={emailInputHandler} placeholder="example@gmail.com" />
+                        </label>
+                    </div>
+                    <div className = "form-btn">
+                        <button type="submit" className="btn btn-default" aria-label = "Submit">Submit</button>
+                    </div>
+                </div>
             </form>
         </div>
     )

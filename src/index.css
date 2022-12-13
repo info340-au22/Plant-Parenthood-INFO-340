@@ -152,7 +152,7 @@ h1.plant-info-heading {
 }
 
 .about-text h2 {
-    padding-top: 2.8rem;
+    padding-top: 2rem;
     font-weight: bold;
 }
 
@@ -184,14 +184,18 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.contact-text {
-    font-size: 1.25rem;
-    padding-top: 1.25rem;
+.footer-text {
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
 }
 
-form .btn-default {
-    margin-top: 0;
-    margin-left: 1rem;
+.copy-right {
+    font-size:0.9rem;
+    padding-top: 0rem;
+}
+
+.form-btn button {
+    margin-top: 0rem;
 }
 
 /* Quiz Page */
@@ -732,4 +736,15 @@ cite {
     .result-descrip {
         font-size: 1.5rem;
     }
+}
+
+/* Subscribe Form */
+.form {
+    width: 50%;
+    /* margin: 0 auto; */
+
+}
+
+.form-input {
+    padding-bottom: 1rem;
 }
