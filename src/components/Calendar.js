@@ -101,11 +101,14 @@ export function PlantCalendarPage(props) {
     )
 }
 
-export function DeleteModal() {
+export function DeleteModal(props) {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    if (!props.show) {
+        return null
+    }
   
     return (
       <>
