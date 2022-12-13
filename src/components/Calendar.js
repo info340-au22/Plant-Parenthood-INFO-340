@@ -43,15 +43,12 @@ export function PlantCalendarPage(props) {
                 return theEventObject;
             })
 
-            // console.log(objArray);
             setAllEvents(objArray); //needs to be an array
         })
 
         //when the component goes away, we turn off the listener
         //the useEffect callback returns...
         function cleanup() {
-            console.log("component is being removed");
-            console.log("turn out the lights");
             offFunction();
         }
         return cleanup;
@@ -71,12 +68,8 @@ export function PlantCalendarPage(props) {
     
     const handleClickDeleteEvent = (event) => {
         // <DeleteModal />
-        console.log(event.key);
-        console.log(event.title);
         const db = getDatabase();
-        console.log(currentUser);
         const eventToDeleteRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents/' + event.key);
-        console.log('allUsers/' + currentUser.userId + '/allEvents/' + event.key);
         firebaseSet(eventToDeleteRef, null);
     }
 
@@ -101,11 +94,14 @@ export function PlantCalendarPage(props) {
     )
 }
 
-export function DeleteModal() {
+export function DeleteModal(props) {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    if (!props.show) {
+        return null
+    }
   
     return (
       <>
