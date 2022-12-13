@@ -779,30 +779,7 @@
         "alt": "Peace Lily",
         "Source": "MyDomaine"
     },
-    {
-        "name": "Peperomia",
-        "img": "../img/Peperomia.png",
-        "alt": "Peperomia",
-        "Source": "Sunset Magazine"
-    },
-    {
-        "name": "Philodendron Micans",
-        "img": "../img/PhilodendronMicans.png",
-        "alt": "Philodendron Micans",
-        "Source": "Art Terrarium"
-    },
-    {
-        "name": "Pilea Peperomioides",
-        "img": "../img/PileaPeperomioides.png",
-        "alt": "Pilea Peperomioides",
-        "Source": "plants.com"
-    },
-    {
-        "name": "Pitcher Plant",
-        "img": "../img/PitcherPlant.png",
-        "alt": "Pitcher Plant",
-        "Source": "OurHouseplants"
-    },
+    
     {
         "name": "Poinsettia",
         "img": "../img/Poinsettia.png",
