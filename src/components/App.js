@@ -70,7 +70,6 @@ export default function App(props) {
         <div>
             <PlantNav currentUser={currentUser}/>
             <div>
-                {/* name route components after what they are, state 'page' */}
                 <Routes>  
                     <Route path="/" element={<HomePage />} />
 
