@@ -736,6 +736,10 @@ cite {
     .result-descrip {
         font-size: 1.5rem;
     }
+
+    figcaption {
+        text-align: center;
+    }
 }
 
 /* Subscribe Form */
