@@ -45,7 +45,7 @@ export function PlantListPage(props) {
                         {costOptionElems}
                     </select>
                     <div className="col-auto">
-                        <button onClick={handleClick} id="submitButton" type="submit" className="btn btn-secondary" aria-label="Apply Filter">Apply Filter</button>
+                        <button onClick={handleClick} id="submitButton" type="submit" className="btn btn-secondary" aria-label="apply filter">Apply Filter</button>
                     </div>
                 </div>
 
@@ -66,7 +66,7 @@ function PlantCard(props) {
 
     return (
         <ReactCardFlip isFlipped={flip} flipDirection="vertical">
-            <div className="explore-item text-center" onClick={() => setFlip(!flip)}>
+            <div role="plant info card" className="explore-item text-center" onClick={() => setFlip(!flip)}>
                 <h3>{plant.name}</h3>
                 <div className="plant-img">
                     <img title={plant.Source} src={plant.img} alt={plant.alt}></img>

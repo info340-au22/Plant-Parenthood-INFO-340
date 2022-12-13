@@ -7,7 +7,7 @@ import { getAuth, signOut } from 'firebase/auth';
 
 function SignIn() {
     return (
-        <Button variant="light" aria-label="Sign In" href='/SignIn'>Sign In</Button>
+        <Button variant="light" aria-label="sign in" href='/SignIn'>Sign In</Button>
     );
 }
 
@@ -16,7 +16,7 @@ function SignOut() {
         signOut(getAuth());
     }
     return (
-        <Button variant="light" aria-label="Sign Out" onClick={handleSignOut}>Sign Out</Button>
+        <Button variant="light" aria-label="sign out" onClick={handleSignOut}>Sign Out</Button>
     );
 }
 

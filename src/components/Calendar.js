@@ -90,6 +90,7 @@ export function PlantCalendarPage(props) {
             <div className="compose-calendar">
             <ComposeEvent addEventCallback={addEvent} />
             <Calendar
+                role="calendar"
                 className="calendar"
                 localizer={localizer}
                 events={allEvents}
