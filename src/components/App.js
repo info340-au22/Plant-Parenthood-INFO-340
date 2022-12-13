@@ -68,7 +68,7 @@ export default function App(props) {
             <div>
                 <Routes>
                     <Route path="*" element={<Navigate to="/" />} />
-                    <Route path="/" element={<HomePage />} />
+                    <Route path="/" element={<HomePage />} currentUser={currentUser} />
                     <Route path="/QuestionTemplate" element={<QuestionPage />} />
                     <Route path="/QuizResultA" element={<QuizResultAPage plants={displayedPlants} />} />
                     <Route path="/QuizResultB" element={<QuizResultBPage plants={displayedPlants} />} />

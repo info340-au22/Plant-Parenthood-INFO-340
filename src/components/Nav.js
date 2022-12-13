@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import { getAuth, signOut } from 'firebase/auth';
 
-function SignIn() {
+export function SignIn() {
     return (
         <Button variant="light" aria-label="sign in" href='/SignIn'>Sign In</Button>
     );
