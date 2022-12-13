@@ -1041,12 +1041,6 @@
         "Source": "OurHouseplants"
     },
     {
-        "name": "Wandering Dude Plant",
-        "img": "../img/WanderingDudePlant.png",
-        "alt": "Wandering Dude Plant",
-        "Source": "Amazon.com"
-    },
-    {
         "name": "Weeping Fig",
         "img": "../img/WeepingFig.png",
         "MAINTENANCE": "Low",
