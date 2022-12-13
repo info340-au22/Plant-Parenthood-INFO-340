@@ -471,6 +471,19 @@ cite {
         padding: 10px 15px;
         font-size: 15px;
     }
+
+    /* Quiz Result Pages */
+    .quiz-result-heading {
+        padding-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .quiz-img-column {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
 }
 
 @media (min-width: 576px) {
@@ -484,6 +497,23 @@ cite {
 
     .add-event {
         margin-left: 2rem;
+    }
+
+    /* Quiz Result Pages */
+    .quiz-result-heading {
+        padding-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .quiz-img-column {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .result-descrip {
+        font-size: 1.2rem;
     }
 }
 
@@ -567,6 +597,14 @@ cite {
         padding: 5px;
     }
 
+    .quiz-result-heading {
+        padding-top: 2rem;
+    }
+
+    .result-descrip {
+        font-size: 1.2rem;
+    }
+
 }
 
 @media (min-width: 960px) {
@@ -591,6 +629,15 @@ cite {
         float: left;
         width: 33.33%;
         padding: 5px;
+    }
+
+    .quiz-result-heading {
+        padding-top: 2.5rem;
+        font-size: 2.5rem;
+    }
+
+    .result-descrip {
+        font-size: 1.5rem;
     }
 
 }
@@ -675,5 +722,14 @@ cite {
         float: left;
         width: 33.33%;
         padding: 5px;
+    }
+
+    .quiz-result-heading {
+        padding-top: 2.5rem;
+        font-size: 2.5rem;
+    }
+
+    .result-descrip {
+        font-size: 1.5rem;
     }
 }
