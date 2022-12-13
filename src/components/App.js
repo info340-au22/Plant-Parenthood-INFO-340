@@ -38,7 +38,7 @@ export default function App(props) {
 
     // Sign in user
     const [currentUser, setCurrentUser] = useState(DEFAULT_USERS[0]) //default to null user
-    const navigateTo = useNavigate(); 
+    const navigateTo = useNavigate();
 
     //effect to run when the component first loads
     useEffect(() => {
@@ -46,15 +46,12 @@ export default function App(props) {
 
         onAuthStateChanged(auth, (firebaseUser) => {
             if (firebaseUser) {
-                console.log("signing in as", firebaseUser.displayName)
-                console.log(firebaseUser);
                 firebaseUser.userId = firebaseUser.uid;
                 firebaseUser.userName = firebaseUser.displayName;
                 firebaseUser.userImg = firebaseUser.photoURL || "/img/null.png";
                 setCurrentUser(firebaseUser);
             }
             else { //no user
-                console.log("signed out");
                 setCurrentUser(DEFAULT_USERS[0]);
             }
         })
@@ -62,30 +59,27 @@ export default function App(props) {
     }, [])
 
     const loginUser = (userObj) => {
-        console.log("logging in as", userObj.userName);
         setCurrentUser(userObj);
     }
 
     return (
         <div>
-            <PlantNav currentUser={currentUser}/>
+            <PlantNav currentUser={currentUser} />
             <div>
-                <Routes>  
+                <Routes>
+                    <Route path="*" element={<Navigate to="/" />} />
                     <Route path="/" element={<HomePage />} />
-
                     <Route path="/QuestionTemplate" element={<QuestionPage />} />
-                    <Route path="/QuizResultA" element={<QuizResultAPage plants={displayedPlants}/>} />
-                    <Route path="/QuizResultB" element={<QuizResultBPage plants={displayedPlants}/>} />
-                    <Route path="/QuizResultC" element={<QuizResultCPage plants={displayedPlants}/>} />
-
+                    <Route path="/QuizResultA" element={<QuizResultAPage plants={displayedPlants} />} />
+                    <Route path="/QuizResultB" element={<QuizResultBPage plants={displayedPlants} />} />
+                    <Route path="/QuizResultC" element={<QuizResultCPage plants={displayedPlants} />} />
                     <Route path="/Explore" element={<ExplorePage />} >
                         <Route path="/Explore/:plantName" element={<PlantInfoPage plants={displayedPlants} />} />
-                        <Route index={true} element={<PlantListPage applyFilterCallback={applyFilter} plants={displayedPlants}/>} />
+                        <Route index={true} element={<PlantListPage applyFilterCallback={applyFilter} plants={displayedPlants} />} />
                     </Route>
-                    
                     <Route path="/About" element={<AboutPage />} />
                     <Route path="/SignIn" element={<SignInPage currentUser={currentUser} loginCallback={loginUser} />} />
-                    
+
                     {/* Calendar Page Protected */}
                     <Route element={<ProtectedPage currentUser={currentUser} />}>
                         <Route path="/Calendar" element={<PlantCalendarPage currentUser={currentUser} />} />
@@ -97,10 +91,10 @@ export default function App(props) {
 
     // Protected Routes
     function ProtectedPage(props) {
-        if (props.currentUser.userId === null) {                
+        if (props.currentUser.userId === null) {
             return <Navigate to="/SignIn"></Navigate>
-        } 
-        else { 
+        }
+        else {
             return <Outlet />
         }
     }

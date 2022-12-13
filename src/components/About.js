@@ -28,22 +28,25 @@ export function AboutPage() {
                             could find these users’ preferences, provide them with helpful
                             information, and help them nurture their plants.
                         </p>
-
-                        <h2>Sign Up for Our Newsletter:</h2>
-
-                            <RegistrationForm />
                         
+                        <div className = "form">
+                            <h2>Sign Up for Our Newsletter: </h2>
+                                <RegistrationForm />
+                        </div>
                     </div>
                 </section>
             </main>
+
+            <br />
+
             <footer>
                 <div>
-                    <p className="contact-text">Contact Us:
+                    <p className="footer-text">Contact Us:
                         <a href="mailto:plant@plantparenthood.com">
-                            <span className="material-icons"> plant@plantparenthood.com</span>
+                            <span className="contact-text"> plant@plantparenthood.com</span>
                         </a>
                     </p>
-                    <p>© Plant Parenthood 2022</p>
+                    <p className = "copy-right">© Plant Parenthood 2022</p>
                 </div>
             </footer>
         </>

@@ -152,7 +152,7 @@ h1.plant-info-heading {
 }
 
 .about-text h2 {
-    padding-top: 2.8rem;
+    padding-top: 2rem;
     font-weight: bold;
 }
 
@@ -184,14 +184,18 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.contact-text {
-    font-size: 1.25rem;
-    padding-top: 1.25rem;
+.footer-text {
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
 }
 
-form .btn-default {
-    margin-top: 0;
-    margin-left: 1rem;
+.copy-right {
+    font-size:0.9rem;
+    padding-top: 0rem;
+}
+
+.form-btn button {
+    margin-top: 0rem;
 }
 
 /* Quiz Page */
@@ -323,7 +327,6 @@ form .btn-default {
     margin-right: auto;
     max-width: 90%;
     gap: 2rem;
-    /* background: green; */
 }
 
 .explore-item img {
@@ -335,6 +338,10 @@ form .btn-default {
     font-size: 1.5rem;
     padding-top: 1.8rem;
     text-align: center;
+}
+
+.explore-item:hover {
+    background-color: #ded3c0;
 }
 
 cite {
@@ -383,7 +390,6 @@ cite {
 
 /* Calendar Page */
 .calendar {
-    /* height: 500px; */
     margin: 50px;
 }
 
@@ -549,8 +555,6 @@ cite {
     }
 
     .explore-item {
-        /* width: 26%; */
-        /* display: flex; */
         width: 16rem;
         background-color: #E5DDCF;
         border-radius: 25px;
@@ -732,4 +736,15 @@ cite {
     .result-descrip {
         font-size: 1.5rem;
     }
+}
+
+/* Subscribe Form */
+.form {
+    width: 50%;
+    /* margin: 0 auto; */
+
+}
+
+.form-input {
+    padding-bottom: 1rem;
 }

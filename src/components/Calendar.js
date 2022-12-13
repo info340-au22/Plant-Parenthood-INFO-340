@@ -45,15 +45,12 @@ export function PlantCalendarPage(props) {
                 return theEventObject;
             })
 
-            // console.log(objArray);
             setAllEvents(objArray); //needs to be an array
         })
 
         //when the component goes away, we turn off the listener
         //the useEffect callback returns...
         function cleanup() {
-            console.log("component is being removed");
-            console.log("turn out the lights");
             offFunction();
         }
         return cleanup;
