@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import ReactCardFlip from "react-card-flip";
 
-export function PlantList(props) {
+export function PlantListPage(props) {
     let plants = props.plants;
 
     // creating dom elements for filter
@@ -78,7 +78,7 @@ function PlantCard(props) {
                     <h4><em>Lighting: </em>{plant.LIGHTING}</h4>
                     <h4><em>Humidity: </em>{plant.HUMIDITY}</h4>
                     <h4><em>Cost: </em>{plant.COST}</h4> 
-                    <Link to={"/Explore.js/" + plant.name} className="btn btn-default more-info" >
+                    <Link to={"/Explore/" + plant.name} className="btn btn-default more-info" >
                         More Info...
                     </Link>
                 </div>

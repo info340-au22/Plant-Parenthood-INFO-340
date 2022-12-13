@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
 
 
-export function Question() {
+export function QuestionPage() {
     const [currQuestion, setCurrQuestion] = useState(0);
     const [quizResult, setQuizResult] = useState("Click to see your results!");
 

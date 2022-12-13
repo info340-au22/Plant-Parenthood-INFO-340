@@ -5,7 +5,7 @@ import { PlantList } from "./Explore.js";
 import PLANT_DATA from "../data/plants.json";
 import _ from 'lodash';
 
-export function QuizResultA (props) {
+export function QuizResultAPage (props) {
     const plantNameString = useParams();
     let plant =  _.find(PLANT_DATA, {name: plantNameString.plantName}); //find plant in data
 

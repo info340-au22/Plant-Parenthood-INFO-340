@@ -9,7 +9,7 @@ import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import { ComposeEvent } from './ComposeEvent.js';
 import { getDatabase, ref, onValue, set as firebaseSet, push as firebasePush, remove as firebaseRemove} from 'firebase/database' // realtime
 
-export function PlantCalendar(props) {
+export function PlantCalendarPage(props) {
     // calendar locale
     const locales = {
         "en-US": require("date-fns/locale/en-US"),
@@ -93,6 +93,7 @@ export function PlantCalendar(props) {
                 endAccessor="end"
                 onSelectEvent={handleClickDeleteEvent}
                 defaultView="day" 
+                views={["month", "week", "day"]}
                 style={{ height: 500 }} // Including inline styling to support 3rd party react-big-calendar library + Professor approved this
             />
             <br></br>
