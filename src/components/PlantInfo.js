@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
-import { PlantList } from "./Explore.js";
+import { PlantListPage } from "./Explore.js";
 import PLANT_DATA from "../data/plants.json";
 import _ from 'lodash';
 
 
-export function PlantInfo(props) {
+export function PlantInfoPage(props) {
     const plantNameString = useParams();
     let plant =  _.find(PLANT_DATA, {name: plantNameString.plantName}); //find plant in data
 

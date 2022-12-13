@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 
 
-export function Explore(props) {
+export function ExplorePage(props) {
     return (
         <div className="explore-body">
             <Outlet/>

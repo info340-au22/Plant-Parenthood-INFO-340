@@ -4,7 +4,7 @@ import { Navigate } from 'react-router-dom';
 import { getAuth, EmailAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import { StyledFirebaseAuth } from 'react-firebaseui';
 
-export default function SignIn(props) {
+export default function SignInPage(props) {
   const currentUser = props.currentUser;
 
   //the authenticator
