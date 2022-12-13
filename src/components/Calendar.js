@@ -28,9 +28,9 @@ export function PlantCalendarPage(props) {
     useEffect(() => {
         const db = getDatabase(); //"the database"
         const allEventsRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents');
-        
+
         const dummyEventRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents');
-        
+
         if (child(dummyEventRef, "dummy")) {
             firebasePush(dummyEventRef, {
                 "title": "",
@@ -38,7 +38,7 @@ export function PlantCalendarPage(props) {
                 "end": "",
                 "key": "dummy"
             });
-        } 
+        }
 
         //returns the instructions how to turn it off
         const offFunction = onValue(allEventsRef, (snapshot) => {
@@ -88,21 +88,20 @@ export function PlantCalendarPage(props) {
         <div className="App">
             <h1 className="calendar-title">Plant Calendar</h1>
             <div className="compose-calendar">
-            <ComposeEvent addEventCallback={addEvent} />
-            <Calendar
-                role="calendar"
-                className="calendar"
-                localizer={localizer}
-                events={allEvents}
-                startAccessor="start"
-                endAccessor="end"
-                onSelectEvent={handleClickDeleteEvent}
-                defaultView="day"
-                views={["month", "week", "day"]}
-                style={{ height: 550 }} // Including inline styling to support 3rd party react-big-calendar library + Professor approved this
-            />
+                <ComposeEvent addEventCallback={addEvent} />
+                <Calendar
+                    role="calendar"
+                    className="calendar"
+                    localizer={localizer}
+                    events={allEvents}
+                    startAccessor="start"
+                    endAccessor="end"
+                    onSelectEvent={handleClickDeleteEvent}
+                    defaultView="day"
+                    views={["month", "week", "day"]}
+                    style={{ height: 550 }} // Including inline styling to support 3rd party react-big-calendar library + Professor approved this
+                />
             </div>
-            <br></br>
         </div>
     )
 }

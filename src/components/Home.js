@@ -7,7 +7,7 @@ export function HomePage() {
         <div className="home-body">
             <div className="container-fluid">
                 <div className="row">
-                    <div id="backdrop-container" className="col"></div>
+                    <div className="col backdrop-container"></div>
                     <div className="col">
                         <div className="right-col-container">
                         <img

@@ -94,7 +94,7 @@ nav a:hover {
     height: 100vh;
 }
 
-#backdrop-container {
+.backdrop-container {
     display: none;
     height: 100vh;
 }
@@ -534,7 +534,7 @@ cite {
 
     /* Home Page */
 
-    #backdrop-container {
+    .backdrop-container {
         background-image: url('../public/img/bg-image.jpg');
         background-size: cover;
         display: flex;

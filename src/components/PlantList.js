@@ -82,7 +82,6 @@ function PlantCard(props) {
                         More Info...
                     </Link>
                 </div>
-                <br />
                 <div className="text-center">
                 </div>
             </div>

@@ -37,8 +37,6 @@ export function AboutPage() {
                 </section>
             </main>
 
-            <br />
-
             <footer>
                 <div>
                     <p className="footer-text">Contact Us:
