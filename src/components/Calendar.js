@@ -54,7 +54,6 @@ export function PlantCalendarPage(props) {
             })
 
             setAllEvents(objArray); //needs to be an array
-            console.log(objArray)
         })
 
         //when the component goes away, we turn off the listener
