@@ -21,7 +21,7 @@ export function Home() {
                         <p>Explore different types of plants</p>
                         <p>Take the quiz to find the plants that work best for you</p>
                         <p>Use the calendar to track your watering schedule</p>
-                        <a className="btn btn-default" href="/SignIn.js">Sign In</a>
+                        <a className="btn btn-default sign-in" href="/SignIn.js">Sign In</a>
                     </div>
                     </div>
                 </div>
