@@ -16,12 +16,12 @@ export function Home() {
                             alt="plant icon"
                         />
                         <h1>Plant Parenthood</h1>
-                        {/* change to paras */}
-                        <h2>Start your plant journey today</h2> 
-                        <h2>Explore different types of plants</h2>
-                        <h2>Take the quiz to find the plants that work best for you</h2>
-                        <h2>Use the calendar to track your watering schedule</h2>
-                        <a className="btn btn-default" href="/SignIn.js">Sign In</a>
+                       
+                        <p>Start your plant journey today</p> 
+                        <p>Explore different types of plants</p>
+                        <p>Take the quiz to find the plants that work best for you</p>
+                        <p>Use the calendar to track your watering schedule</p>
+                        <a className="btn btn-default sign-in" href="/SignIn.js">Sign In</a>
                     </div>
                     </div>
                 </div>

@@ -38,11 +38,8 @@ p {
     font-weight: 200;
 }
 
-.col .btn {
-    background-color: #595c3f;
-    color: #FFF;
-    border-color: #595c3f;
-    margin-top: 2rem;
+.sign-in {
+    font-size: 1.4rem;
 }
 
 .btn-default {
@@ -122,7 +119,7 @@ nav a:hover {
     margin-bottom: 3.2rem;
 }
 
-.right-col-container h2 {
+.right-col-container p {
     margin-top: 2rem;
     font-weight: lighter;
 }
@@ -138,17 +135,29 @@ h1.plant-info-heading {
     text-align: center;
 }
 
+.more-info {
+    margin: auto;
+    display: block;
+}
+
 /* About Page */
 
 .about-text {
-    padding-top: 2rem;
+    padding-top: 2.8rem;
     height: 100vh;
-    font-size: 1rem;
+}
+
+.about-text h1 {
+    font-size: 2.4rem;
 }
 
 .about-text h2 {
     padding-top: 2.8rem;
     font-weight: bold;
+}
+
+.about-text p {
+    font-size: 1.2rem;
 }
 
 .about-body {
@@ -356,21 +365,6 @@ cite {
     justify-content: space-between;
 }
 
-.explore-item button.detail {
-     margin-top: 1rem; 
-     margin-bottom: 1rem;
-}
-
-.explore-item button.explore-plant {
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-    background-color: #4a3405;
-}
-
-.explore-item button.explore-plant:hover {
-    background-color: #79560b;
-}
-
 .card-info {
     padding: 2rem;
     padding-bottom: 0;
@@ -383,8 +377,8 @@ cite {
 
 .card-info h4 {
     font-size: 16px;
-    margin-bottom: 2rem;
-    margin-top: 1.6rem;
+    margin-bottom: 1.8rem;
+    margin-top: 1.8rem;
 }
 
 /* Calendar Page */
@@ -398,18 +392,7 @@ cite {
     padding-top: 50px;
 }
 
-.add-event {
-    text-align: center;
-}
-
-/* removing in-style attempt */
-.event-add-title {
-    width: 20%;
-    margin-right: 10px;
-}
-
 .event-date {
-    margin-right: 10px;
     margin-top: 5px;
 }
 
@@ -438,70 +421,14 @@ cite {
     margin-right: 2rem;
 }
 
-/* Calendar Event */
-
-.modal {
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.modal-content {
-    width: 500px;
-    height: 290px;
-    background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.modal-body {
-    padding: 10px;
-}
-
-.close-btn {
-    cursor: pointer;
-    position: absolute;
-    right: .5rem;
-    top: 0.5rem;
-    width: 30px;
-    height: 30px;
-    color: black;
-    font-size: 25px;
-}
-
-.add-event:visited~.calendar-Event {
-    display: inline-block;
-}
-
-.form-title {
-    margin: 0;
-}
-
-.card-container .form-item {
-    padding-bottom: 0.5rem;
-}
-
-.card-container {
-    background-color: #787C53;
-}
-
-.form-item {
-    padding-bottom: 0.75rem;
-}
-
-.modal .close-btn:hover {
-    color: rgb(143, 0, 0)
-}
-
-.form-btn-type button:hover {
-    background-color: #9c9898;
-}
-
-.form-btn-type button:last-child {
-    margin-left: 1rem;
+.add-event {
+    text-align: center;
+    background-color: #A0A66F;
+    width: min-content;
+    padding: 3.2rem;
+    border-radius: 16px;
+    color: white;
+    box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
 }
 
 @media (min-width: 320px) {
@@ -518,6 +445,10 @@ cite {
 
     .care-info h2 {
         text-align: center;
+    }
+
+    .add-event {
+        margin: 0 auto;
     }
 
     /* Quiz Result Page */
@@ -551,7 +482,9 @@ cite {
         border-radius: 70px;
     }
 
-
+    .add-event {
+        margin-left: 2rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -567,9 +500,11 @@ cite {
     /* Explore Page */
 
     .plant-img img {
-        width: 90%;
-        height: 90%;
+        width: 78%;
+        height: 78%;
         margin: auto;
+        padding-top: 1rem;
+        padding-bottom: 2.2rem;
         display: block;
     }
 
@@ -681,7 +616,7 @@ cite {
         font-size: 2.4rem;
     }
 
-    .right-col-container h2 {
+    .right-col-container p {
         font-size: 1.5rem;
         margin-top: 2rem;
     }
@@ -702,23 +637,22 @@ cite {
         max-width: 600px;
         max-height: 600px;
     }
+
     .care-info {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .plant-info-heading {
-        font-size: 3rem;
+        font-size: 2rem;
         padding-top: 0;
     }
     .care-info h2 {
         margin-bottom: 2rem;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
 
     }
 
     .care-info {
         padding-top: 0;
     }
-
-
 }

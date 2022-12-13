@@ -2,10 +2,10 @@ import format from "date-fns/format";
 import getDay from "date-fns/getDay";
 import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import { ComposeEvent } from './ComposeEvent.js';
-import { getDatabase, ref, onValue, set as firebaseSet, push as firebasePush } from 'firebase/database' // realtime
+import { getDatabase, ref, onValue, set as firebaseSet, push as firebasePush, remove as firebaseRemove} from 'firebase/database' // realtime
 
 export function PlantCalendar(props) {
     // calendar locale
@@ -41,7 +41,7 @@ export function PlantCalendar(props) {
                 return theEventObject;
             })
 
-            console.log(objArray);
+            // console.log(objArray);
             setAllEvents(objArray); //needs to be an array
         })
 
@@ -52,7 +52,6 @@ export function PlantCalendar(props) {
             console.log("turn out the lights");
             offFunction();
         }
-
         return cleanup;
     }, [])
 
@@ -67,11 +66,23 @@ export function PlantCalendar(props) {
         const allEventsRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents');
         firebasePush(allEventsRef, newEventDB);
     }
+    
+    const handleClickDeleteEvent = (event) => {
+        console.log(event.key);
+        console.log(event.title);
+        // window.alert("Do you want to delete " + event.title + "?");
+        const db = getDatabase();
+        console.log(currentUser);
+        const eventToDeleteRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents/' + event.key);
+        console.log('allUsers/' + currentUser.userId + '/allEvents/' + event.key);
+        firebaseSet(eventToDeleteRef, null);
+    }
+    
 
     return (
         <div className="App">
             <h1 className="calendar-title">Plant Calendar</h1>
-            <h2 className="calendar-title">Add New Event</h2>
+            {/* <h2 className="event-title">Add New Event</h2> */}
             <ComposeEvent addEventCallback={addEvent} />
             <Calendar
                 className="calendar"
@@ -79,6 +90,7 @@ export function PlantCalendar(props) {
                 events={allEvents}
                 startAccessor="start"
                 endAccessor="end"
+                onSelectEvent={handleClickDeleteEvent}
                 defaultView="day" 
                 style={{ height: 500 }} // Including inline styling to support 3rd party react-big-calendar library + Professor approved this
             />
