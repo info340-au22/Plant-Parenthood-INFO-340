@@ -1,3 +1,5 @@
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 import format from "date-fns/format";
 import getDay from "date-fns/getDay";
 import parse from "date-fns/parse";
@@ -68,16 +70,15 @@ export function PlantCalendar(props) {
     }
     
     const handleClickDeleteEvent = (event) => {
+        // <DeleteModal />
         console.log(event.key);
         console.log(event.title);
-        // window.alert("Do you want to delete " + event.title + "?");
         const db = getDatabase();
         console.log(currentUser);
         const eventToDeleteRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents/' + event.key);
         console.log('allUsers/' + currentUser.userId + '/allEvents/' + event.key);
         firebaseSet(eventToDeleteRef, null);
     }
-    
 
     return (
         <div className="App">
@@ -94,6 +95,44 @@ export function PlantCalendar(props) {
                 defaultView="day" 
                 style={{ height: 500 }} // Including inline styling to support 3rd party react-big-calendar library + Professor approved this
             />
+            <br></br>
         </div>
     )
+}
+
+export function DeleteModal() {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+  
+    return (
+      <>
+        {/* <Button variant="primary" onClick={handleShow}>
+          Launch static backdrop modal
+        </Button>
+   */}
+        <Modal
+          show={show}
+          onHide={handleClose}
+          backdrop="static"
+          keyboard={false}
+        >
+          <Modal.Header closeButton>
+            <Modal.Title>Modal title</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+          Are you sure you want to delete your event?
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+                No
+            </Button>
+            <Button variant="primary" onClick>
+                Yes
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </>
+    );
 }
