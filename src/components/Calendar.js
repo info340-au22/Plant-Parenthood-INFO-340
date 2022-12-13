@@ -2,10 +2,10 @@ import format from "date-fns/format";
 import getDay from "date-fns/getDay";
 import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import { ComposeEvent } from './ComposeEvent.js';
-import { getDatabase, ref, onValue, set as firebaseSet, push as firebasePush } from 'firebase/database' // realtime
+import { getDatabase, ref, onValue, set as firebaseSet, push as firebasePush} from 'firebase/database' // realtime
 
 export function PlantCalendar(props) {
     // calendar locale
@@ -41,7 +41,7 @@ export function PlantCalendar(props) {
                 return theEventObject;
             })
 
-            console.log(objArray);
+            // console.log(objArray);
             setAllEvents(objArray); //needs to be an array
         })
 
@@ -67,6 +67,18 @@ export function PlantCalendar(props) {
         const allEventsRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents');
         firebasePush(allEventsRef, newEventDB);
     }
+    
+    const handleClickDeleteEvent = (event) => {
+        console.log(event.key);
+        console.log(event.title);
+        // window.alert("Do you want to delete " + event.title + "?");
+        const db = getDatabase();
+        console.log(currentUser);
+        const eventToDeleteRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents/' + event.key);
+        console.log('allUsers/' + currentUser.userID + '/allEvents' + event.key);
+        firebaseSet(eventToDeleteRef, null);
+    }
+    
 
     return (
         <div className="App">
@@ -79,6 +91,7 @@ export function PlantCalendar(props) {
                 events={allEvents}
                 startAccessor="start"
                 endAccessor="end"
+                onSelectEvent={handleClickDeleteEvent}
                 defaultView="day" 
                 style={{ height: 500 }} // Including inline styling to support 3rd party react-big-calendar library + Professor approved this
             />
