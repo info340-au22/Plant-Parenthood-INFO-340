@@ -97,15 +97,8 @@ export function QuestionPage() {
     const [scoreA, setScoreA] = useState(0);
     const [scoreB, setScoreB] = useState(0);
     const [scoreC, setScoreC] = useState(0);
-
     const nextQuestion = currQuestion + 1;
-
     let max = 0;
-    // console.log("A = " + scoreA);
-    // console.log("B = " + scoreB);
-    // console.log("C = " + scoreC);
-
-    // console.log(quizResult);
 
     const handleAnswerButtonClick = (answerOption) => {
         if (nextQuestion < questions.length) {

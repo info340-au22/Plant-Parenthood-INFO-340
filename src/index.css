@@ -323,7 +323,6 @@ form .btn-default {
     margin-right: auto;
     max-width: 90%;
     gap: 2rem;
-    /* background: green; */
 }
 
 .explore-item img {
@@ -335,6 +334,10 @@ form .btn-default {
     font-size: 1.5rem;
     padding-top: 1.8rem;
     text-align: center;
+}
+
+.explore-item:hover {
+    background-color: #ded3c0;
 }
 
 cite {
@@ -383,7 +386,6 @@ cite {
 
 /* Calendar Page */
 .calendar {
-    /* height: 500px; */
     margin: 50px;
 }
 
@@ -549,8 +551,6 @@ cite {
     }
 
     .explore-item {
-        /* width: 26%; */
-        /* display: flex; */
         width: 16rem;
         background-color: #E5DDCF;
         border-radius: 25px;

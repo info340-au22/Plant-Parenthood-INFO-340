@@ -14,7 +14,6 @@ function SignIn() {
 function SignOut() {
     const handleSignOut = (event) => {
         signOut(getAuth());
-        console.log("signed out");
     }
     return (
         <Button variant="light" aria-label="Sign Out" onClick={handleSignOut}>Sign Out</Button>
@@ -26,10 +25,8 @@ export function PlantNav(props) {
     let SignComponent = null;
 
     if (currentUser.userId === null) {
-        console.log("show sign in button")
         SignComponent = <SignIn />;
     } else {
-        console.log("show sign out button")
         SignComponent = <SignOut />;
     }
 
