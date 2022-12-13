@@ -1,13 +1,15 @@
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
 import format from "date-fns/format";
 import getDay from "date-fns/getDay";
 import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
-import React, { useEffect, useState, useCallback } from "react";
+import React from 'react';
+import { useEffect, useState } from "react";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import { ComposeEvent } from './ComposeEvent.js';
-import { getDatabase, ref, onValue, set as firebaseSet, push as firebasePush, remove as firebaseRemove} from 'firebase/database' // realtime
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import { getDatabase, ref, onValue, set as firebaseSet, push as firebasePush } from 'firebase/database' // realtime
+
 
 export function PlantCalendarPage(props) {
     // calendar locale
@@ -38,7 +40,7 @@ export function PlantCalendarPage(props) {
             const objArray = objKeys.map((keyString) => {
                 const theEventObject = valueObj[keyString];
                 theEventObject.key = keyString;
-                theEventObject.start = new Date (theEventObject.start);
+                theEventObject.start = new Date(theEventObject.start);
                 theEventObject.end = new Date(theEventObject.end);
                 return theEventObject;
             })
@@ -64,21 +66,19 @@ export function PlantCalendarPage(props) {
             "end": end.toString()
         }
 
-        const db = getDatabase(); 
+        const db = getDatabase();
         const allEventsRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents');
         firebasePush(allEventsRef, newEventDB);
     }
-    
+
     const handleClickDeleteEvent = (event) => {
-        // <DeleteModal />
-        console.log(event.key);
-        console.log(event.title);
         const db = getDatabase();
-        console.log(currentUser);
         const eventToDeleteRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents/' + event.key);
-        console.log('allUsers/' + currentUser.userId + '/allEvents/' + event.key);
+        window.alert("Warning! You are about to delete your calendar event!");
         firebaseSet(eventToDeleteRef, null);
     }
+
+
 
     return (
         <div className="App">
@@ -92,51 +92,11 @@ export function PlantCalendarPage(props) {
                 startAccessor="start"
                 endAccessor="end"
                 onSelectEvent={handleClickDeleteEvent}
-                defaultView="day" 
+                defaultView="day"
                 views={["month", "week", "day"]}
                 style={{ height: 500 }} // Including inline styling to support 3rd party react-big-calendar library + Professor approved this
             />
             <br></br>
         </div>
     )
-}
-
-export function DeleteModal(props) {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-    if (!props.show) {
-        return null
-    }
-  
-    return (
-      <>
-        {/* <Button variant="primary" onClick={handleShow}>
-          Launch static backdrop modal
-        </Button>
-   */}
-        <Modal
-          show={show}
-          onHide={handleClose}
-          backdrop="static"
-          keyboard={false}
-        >
-          <Modal.Header closeButton>
-            <Modal.Title>Modal title</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-          Are you sure you want to delete your event?
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-                No
-            </Button>
-            <Button variant="primary" onClick>
-                Yes
-            </Button>
-          </Modal.Footer>
-        </Modal>
-      </>
-    );
 }
