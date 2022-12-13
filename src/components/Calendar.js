@@ -5,7 +5,7 @@ import startOfWeek from "date-fns/startOfWeek";
 import React, { useEffect, useState, useCallback } from "react";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import { ComposeEvent } from './ComposeEvent.js';
-import { getDatabase, ref, onValue, set as firebaseSet, push as firebasePush} from 'firebase/database' // realtime
+import { getDatabase, ref, onValue, set as firebaseSet, push as firebasePush, remove as firebaseRemove} from 'firebase/database' // realtime
 
 export function PlantCalendar(props) {
     // calendar locale
@@ -74,7 +74,7 @@ export function PlantCalendar(props) {
         const db = getDatabase();
         console.log(currentUser);
         const eventToDeleteRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents/' + event.key);
-        console.log('allUsers/' + currentUser.userID + '/allEvents' + event.key);
+        console.log('allUsers/' + currentUser.userId + '/allEvents/' + event.key);
         firebaseSet(eventToDeleteRef, null);
     }
     
