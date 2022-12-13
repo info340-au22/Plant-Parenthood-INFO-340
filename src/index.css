@@ -373,8 +373,7 @@ cite {
 }
 
 .card-info {
-    padding: 2rem;
-    padding-bottom: 0;
+    padding: 1.8rem;
 }
 
 .card-info em {
@@ -398,6 +397,12 @@ cite {
     font-size: 1.5rem;
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
+}
+
+.calendar-explanation {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .event-date {
@@ -566,6 +571,7 @@ cite {
         background-color: #E5DDCF;
         border-radius: 25px;
         max-width: 100%;
+        height: fit-content;
     }
 
     /* Plant Info Page */

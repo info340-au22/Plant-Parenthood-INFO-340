@@ -29,20 +29,20 @@ export function ComposeEvent(props) {
 
     return (
         <div className="add-event" role="add calendar event box">
-            <h2 className="event-title">Add New Event</h2>
             <input className="event-add-title" type="text" placeholder="Add Title"
                 onChange={handleTitleChange}
             />
             <DatePicker className="event-date" placeholderText="Start Date"
-                selected={startDate} 
-                onChange={handleStartDateChange} 
-              /> 
-            
+                style={{ marginRight: "10px" }}
+                selected={startDate}
+                onChange={handleStartDateChange}
+            />
+
             <DatePicker className="event-date" placeholderText="End Date"
-                selected={endDate}  
+                selected={endDate}
                 onChange={handleEndDateChange} />
 
-            <button className="btn btn-default event-btn"
+            <button style={{ marginTop: "10px" }}className="btn btn-default event-btn"
                 onClick={handleSubmit} aria-label="add an event">
                 Add Event
             </button>

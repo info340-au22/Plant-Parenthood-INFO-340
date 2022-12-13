@@ -87,6 +87,7 @@ export function PlantCalendarPage(props) {
     return (
         <div className="App">
             <h1 className="calendar-title">Plant Calendar</h1>
+            <p className="calendar-explanation"> Track your plant watering schedule by adding events below! </p>
             <div className="compose-calendar">
                 <ComposeEvent addEventCallback={addEvent} />
                 <Calendar

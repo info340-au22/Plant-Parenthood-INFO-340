@@ -82,8 +82,6 @@ function PlantCard(props) {
                         More Info...
                     </Link>
                 </div>
-                <div className="text-center">
-                </div>
             </div>
         </ReactCardFlip>
     )
