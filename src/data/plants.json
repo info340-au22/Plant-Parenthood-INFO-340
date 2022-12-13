@@ -1066,25 +1066,45 @@
     {
         "name": "Wandering Dude Plant",
         "img": "../img/WanderingDudePlant.png",
-        
         "alt": "Wandering Dude Plant",
         "Source": "Amazon.com"
     },
     {
         "name": "Weeping Fig",
         "img": "../img/WeepingFig.png",
+        "MAINTENANCE": "Low",
+        "LIGHTING": "Direct/Indirect",
+        "LIGHTING_DESCRIPTION": "For this plant to thrive indoors, you should put it in a fairly bright location. Some shade is okay, but if light levels are too low your Weeping Fig will begin to shed leaves. Early morning or late afternoon sunshine is the best.",
+        "HUMIDITY": "Moderate",
+        "WATERING": "These plants are pretty adaptable, so if you overwater or underwater occasionally, will not cause any harm. For a thriving plant, keeping the soil moist is ideal.",
+        "TEMPERATURE": "Above 59 degrees F",
+        "COST": "$",
         "alt": "Weeping Fig",
         "Source": "PlantVine"
     },
     {
         "name": "Yucca",
         "img": "../img/Yucca.png",
+        "MAINTENANCE": "Medium",
+        "LIGHTING": "Direct",
+        "LIGHTING_DESCRIPTION": "This plant will be quite happy with as much as sun as you give it. Ideally, place it in a South facing window or wherever you can give as much light as possible. Less bright conditions will slow growth, and shady/dark areas should be avoided to keep this plant healthy.",
+        "HUMIDITY": "Moderate",
+        "WATERING": "In ideal conditions during warmer months, you should expect to water this plant once or week or more. Make sure the soil has dried out before watering. In colder months, a lot less water is required.",
+        "TEMPERATURE": "Over 45 degrees F",
+        "COST": "$$",
         "alt": "Yucca",
         "Source": "OurHouseplants"
     },
     {
         "name": "ZZ Plant",
         "img": "../img/ZZPlant.png",
+        "MAINTENANCE": "Low",
+        "LIGHTING": "Indirect",
+        "LIGHTING_DESCRIPTION": "The ZZ plant accommodates a pretty board spectrum of light conditions including low-light, but deep shade should be avoided for optimal growth. Too much light will be damaging, since it doesn’t thrive on direct sunlight such as those found from South facing windows. Aim for North, East, or West facing windows that get good natural light.",
+        "HUMIDITY": "Low",
+        "WATERING": "This plant is pretty drought tolerant, and can actually survive months without water, so infrequent watering and dry soil is okay. However, heavy consistent watering will cause leaves to turn yellow before rotting the tubers. It is important to have drainage holes in your growing container to get rid of excess water. Water when soil is dry, most likely once a week.",
+        "TEMPERATURE": "55 - 79 Degrees F",
+        "COST": "$",
         "alt": "ZZ Plant",
         "Source": "The Sill"
     }
