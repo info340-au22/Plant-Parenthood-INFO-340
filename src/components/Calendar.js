@@ -28,10 +28,19 @@ export function PlantCalendarPage(props) {
     const currentUser = props.currentUser;
     const [allEvents, setAllEvents] = useState([]);
 
+    // const db = getDatabase();
+    // const dummyEventRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents');
+    //     firebasePush(dummyEventRef, {
+    //         "title": "",
+    //         "start": "",
+    //         "end": ""
+    //     });
+
+
     useEffect(() => {
         const db = getDatabase(); //"the database"
         const allEventsRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents');
-
+        
         //returns the instructions how to turn it off
         const offFunction = onValue(allEventsRef, (snapshot) => {
             const valueObj = snapshot.val();
@@ -66,6 +75,7 @@ export function PlantCalendarPage(props) {
         const db = getDatabase();
         const allEventsRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents');
         firebasePush(allEventsRef, newEventDB);
+
     }
 
     const handleClickDeleteEvent = (event) => {
