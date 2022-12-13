@@ -25,15 +25,6 @@ export function PlantCalendarPage(props) {
     const currentUser = props.currentUser;
     const [allEvents, setAllEvents] = useState();
 
-    // const db = getDatabase();
-    // console.log(Object.keys(allEvents).length());
-    // const dummyEventRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents');
-    //     firebasePush(dummyEventRef, {
-    //         "title": "",
-    //         "start": "",
-    //         "end": ""
-    //     });
-
     useEffect(() => {
         const db = getDatabase(); //"the database"
         const allEventsRef = ref(db, 'allUsers/' + currentUser.userId + '/allEvents');
