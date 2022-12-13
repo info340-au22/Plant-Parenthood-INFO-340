@@ -143,21 +143,21 @@ h1.plant-info-heading {
 /* About Page */
 
 .about-text {
-    padding-top: 2.8rem;
+    padding-top: 2rem;
     height: 100vh;
 }
 
 .about-text h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
 }
 
 .about-text h2 {
-    padding-top: 2rem;
+    padding-top: 1.4rem;
     font-weight: bold;
 }
 
 .about-text p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .about-body {
@@ -355,7 +355,7 @@ cite {
 }
 
 .explore-body {
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .form-select {
@@ -395,15 +395,22 @@ cite {
 
 .calendar-title {
     text-align: center;
-    padding-top: 50px;
+    font-size: 1.5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
 }
 
 .event-date {
     margin-top: 5px;
 }
 
+.event-title {
+    font-size: 1rem;
+}
+
 .event-btn {
     margin-top: 10px;
+    font-size: 0.8rem;
 }
 
 .new-event {
@@ -431,7 +438,7 @@ cite {
     text-align: center;
     background-color: #A0A66F;
     width: min-content;
-    padding: 3.2rem;
+    padding: 1rem;
     border-radius: 16px;
     color: white;
     box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
@@ -566,7 +573,7 @@ cite {
     .plant-info-heading {
         margin-top: 1rem;
         margin-left: 1rem;
-        padding: 3rem;
+        padding: 1rem;
     }
 
     .plant-info-img img {
@@ -644,6 +651,20 @@ cite {
         font-size: 1.5rem;
     }
 
+    .calendar {
+        width: 80%;
+        margin-top: 0rem;
+        height: 100%;
+    }
+
+    .compose-calendar {
+        display:flex;
+    }
+
+    .add-event {
+        height:fit-content;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -660,6 +681,10 @@ cite {
 
     .explore-subheading {
         font-size: 1.5rem;
+    }
+
+    .care-info ul {
+        font-size: 1rem;
     }
 
     /* Home Page */
@@ -699,8 +724,8 @@ cite {
     /* Plant Info Page */
 
     .plant-info-img img {
-        max-width: 600px;
-        max-height: 600px;
+        max-width: 500px;
+        max-height: 500px;
     }
 
     .care-info {
@@ -745,8 +770,6 @@ cite {
 /* Subscribe Form */
 .form {
     width: 50%;
-    /* margin: 0 auto; */
-
 }
 
 .form-input {
