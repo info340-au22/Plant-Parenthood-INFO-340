@@ -32,8 +32,8 @@ export function PlantListPage(props) {
     return (
         <div>
             <h1 className="explore-heading">Find your perfect plant!</h1>
-            <h2 className="explore-subheading">Search for different species of houseplants in our houseplant index and click the cards below to learn more about each plant!</h2>
-            
+            <h2 className="explore-subheading">Search for different species of houseplants in our houseplant index!</h2>
+            <h3>Click the cards below to learn more about each plant!</h3>
             {/* Search Bar */}
             <input className="search-bar" type="text" placeholder="Search..." onChange={(e) => setQuery(e.target.value)} />
            
