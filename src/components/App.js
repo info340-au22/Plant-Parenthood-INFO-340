@@ -4,16 +4,16 @@ import { Navigate } from 'react-router-dom';
 
 import { Routes, Route, useNavigate, Outlet } from "react-router-dom";
 import { PlantNav } from './Nav.js';
-import { Home } from "./Home.js";
-import { PlantCalendar } from "./Calendar.js";
-import { About } from "./About.js"
-import { Question } from './QuestionTemplate.js';
-import { PlantInfo } from './PlantInfo.js';
-import { Explore } from './Explore.js';
-import { PlantList } from './PlantList.js';
-import { QuizResultA } from './QuizResultA.js';
+import { HomePage } from "./Home.js";
+import { PlantCalendarPage } from "./Calendar.js";
+import { AboutPage } from "./About.js"
+import { QuestionPage } from './QuestionTemplate.js';
+import { PlantInfoPage } from './PlantInfo.js';
+import { ExplorePage } from './Explore.js';
+import { PlantListPage } from './PlantList.js';
+import { QuizResultAPage } from './QuizResultA.js';
 
-import SignIn from './SignIn.js'
+import SignInPage from './SignIn.js'
 
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import DEFAULT_USERS from '../data/users.json';
@@ -70,19 +70,19 @@ export default function App(props) {
             <div>
                 {/* name route components after what they are, state 'page' */}
                 <Routes>  
-                    <Route path="/" element={<Home />} />
-                    <Route path="/QuestionTemplate" element={<Question />} />
-                    <Route path="/QuizResultA" element={<QuizResultA plants={displayedPlants}/>} />
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/QuestionTemplate" element={<QuestionPage />} />
+                    <Route path="/QuizResultA" element={<QuizResultAPage plants={displayedPlants}/>} />
 
-                    <Route path="/Explore" element={<Explore />} >
-                        <Route path="/Explore/:plantName" element={<PlantInfo plants={displayedPlants} />} />
-                        <Route index={true} element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants}/>} />
+                    <Route path="/Explore" element={<ExplorePage />} >
+                        <Route path="/Explore/:plantName" element={<PlantInfoPage plants={displayedPlants} />} />
+                        <Route index={true} element={<PlantListPage applyFilterCallback={applyFilter} plants={displayedPlants}/>} />
                     </Route>
-                    <Route path="/About" element={<About />} />
-                    <Route path="/SignIn" element={<SignIn currentUser={currentUser} loginCallback={loginUser} />} />
+                    <Route path="/About" element={<AboutPage />} />
+                    <Route path="/SignIn" element={<SignInPage currentUser={currentUser} loginCallback={loginUser} />} />
                     {/* Calendar Page Protected */}
                     <Route element={<ProtectedPage currentUser={currentUser} />}>
-                        <Route path="/Calendar" element={<PlantCalendar currentUser={currentUser} />} />
+                        <Route path="/Calendar" element={<PlantCalendarPage currentUser={currentUser} />} />
                     </Route>
                 </Routes>
             </div>

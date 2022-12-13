@@ -1,7 +1,7 @@
 import React from 'react';
 import  { RegistrationForm } from './SubscribeForm.js'
 
-export function About() {
+export function AboutPage() {
     return (
         <>
             <main>
