@@ -11,6 +11,7 @@ import { Question } from './QuestionTemplate.js';
 import { PlantInfo } from './PlantInfo.js';
 import { Explore } from './Explore.js';
 import { PlantList } from './PlantList.js';
+import { QuizResultA } from './QuizResultA.js';
 
 import SignIn from './SignIn.js'
 
@@ -70,16 +71,18 @@ export default function App(props) {
                 {/* name route components after what they are, state 'page' */}
                 <Routes>  
                     <Route path="/" element={<Home />} />
-                    <Route path="/QuestionTemplate.js" element={<Question />} />
-                    <Route path="/Explore.js" element={<Explore />} >
-                        <Route path="/Explore.js/:plantName" element={<PlantInfo plants={displayedPlants} />} />
+                    <Route path="/QuestionTemplate" element={<Question />} />
+                    <Route path="/QuizResultA" element={<QuizResultA plants={displayedPlants}/>} />
+
+                    <Route path="/Explore" element={<Explore />} >
+                        <Route path="/Explore/:plantName" element={<PlantInfo plants={displayedPlants} />} />
                         <Route index={true} element={<PlantList applyFilterCallback={applyFilter} plants={displayedPlants}/>} />
                     </Route>
-                    <Route path="/About.js" element={<About />} />
-                    <Route path="/SignIn.js" element={<SignIn currentUser={currentUser} loginCallback={loginUser} />} />
+                    <Route path="/About" element={<About />} />
+                    <Route path="/SignIn" element={<SignIn currentUser={currentUser} loginCallback={loginUser} />} />
                     {/* Calendar Page Protected */}
                     <Route element={<ProtectedPage currentUser={currentUser} />}>
-                        <Route path="/Calendar.js" element={<PlantCalendar currentUser={currentUser} />} />
+                        <Route path="/Calendar" element={<PlantCalendar currentUser={currentUser} />} />
                     </Route>
                 </Routes>
             </div>
@@ -89,7 +92,7 @@ export default function App(props) {
     // Protected Routes
     function ProtectedPage(props) {
         if (props.currentUser.userId === null) {                
-            return <Navigate to="/SignIn.js"></Navigate>
+            return <Navigate to="/SignIn"></Navigate>
         } 
         else { 
             return <Outlet />
